@@ -503,7 +503,10 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Inc/tim.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Inc/usart.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/bsp_uart.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/pid_.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/timer_it.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Src/main.c
 
 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
@@ -703,6 +706,7 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Inc/usart.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.c
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.h
+CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/retarget.h
 
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -769,6 +773,8 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/motor_control.c
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/motor_control.h
+CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/pid_.h
+CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/tracker.h
 
 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
@@ -835,6 +841,41 @@ CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../bsp/retarget.c
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../bsp/retarget.h
+
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/cmsis_version.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/core_cm3.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/CMSIS/Include/mpu_armv7.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/main.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/stm32f1xx_hal_conf.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/tim.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/motor_control.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/timer_it.c
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/timer_it.h
 
 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h

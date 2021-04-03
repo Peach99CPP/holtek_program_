@@ -52,6 +52,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Clion/stm32/holtek/bsp/motor_control.c" "D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj"
   "D:/Clion/stm32/holtek/bsp/pid_.c" "D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj"
   "D:/Clion/stm32/holtek/bsp/retarget.c" "D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj"
+  "D:/Clion/stm32/holtek/bsp/timer_it.c" "D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj"
   "D:/Clion/stm32/holtek/bsp/tracker.c" "D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

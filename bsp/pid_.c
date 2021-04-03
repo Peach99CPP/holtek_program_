@@ -79,7 +79,8 @@ void PID_clear(pid_type_def *pid) {
 pid_type_def motor_[2],tracker_;
 void global_pid_init()
 {
-    PID_clear(&motor_);
+    PID_clear(&motor_[0]);
+    PID_clear(&motor_[1]);
     PID_clear(&tracker_);
     static const float Tracker_PID[3]={8.0f,0,0};
     static const float Motor_PID[3]={90,8,0};

@@ -26,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj"
   "CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj"
   "CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj"
+  "CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj"
   "CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj"
   "CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj"
   "holtek.elf"

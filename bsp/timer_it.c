@@ -7,7 +7,7 @@
 #include "timer_it.h"
 #include "motor_control.h"
 
-uint32_t sys_time = 0,max;
+uint32_t sys_time = 0;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim == (&htim6)) {
@@ -22,7 +22,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 uint32_t *get_sys_ptr() {
     return &sys_time;
 }
-void Init_TIMS(void){
+void Init_TIMS(void){//对定时器进行初始化
     //开启定时器
     HAL_TIM_Base_Start(&htim1);
     HAL_TIM_Base_Start(&htim2);

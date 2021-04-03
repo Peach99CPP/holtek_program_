@@ -26,6 +26,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "pid_.h"
+#include <stdlib.h>
+#include <timer_it.h>
+#include "bsp_uart.h"
+#include"led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,15 +99,23 @@ int main(void) {
     MX_USART2_UART_Init();
     MX_USART3_UART_Init();
     /* USER CODE BEGIN 2 */
+    led_control(0,0,0);
+    Init_UARTS();
+    Init_TIMS();
+    UART_transmit(&huart2,"test\n");
     global_pid_init();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    while (1) {
+    while (1) {//记得改成1
         /* USER CODE END WHILE */
 
+        UART_global_handler();
+
+
         /* USER CODE BEGIN 3 */
+        break;//切记删除break!!!!!!
     }
     /* USER CODE END 3 */
 }

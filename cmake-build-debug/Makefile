@@ -871,6 +871,33 @@ bsp/retarget.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/retarget.c.s
 .PHONY : bsp/retarget.c.s
 
+bsp/timer_it.obj: bsp/timer_it.c.obj
+
+.PHONY : bsp/timer_it.obj
+
+# target to build an object file
+bsp/timer_it.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+.PHONY : bsp/timer_it.c.obj
+
+bsp/timer_it.i: bsp/timer_it.c.i
+
+.PHONY : bsp/timer_it.i
+
+# target to preprocess a source file
+bsp/timer_it.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/timer_it.c.i
+.PHONY : bsp/timer_it.c.i
+
+bsp/timer_it.s: bsp/timer_it.c.s
+
+.PHONY : bsp/timer_it.s
+
+# target to generate assembly for a file
+bsp/timer_it.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/timer_it.c.s
+.PHONY : bsp/timer_it.c.s
+
 bsp/tracker.obj: bsp/tracker.c.obj
 
 .PHONY : bsp/tracker.obj
@@ -997,6 +1024,9 @@ help:
 	@echo ... bsp/retarget.obj
 	@echo ... bsp/retarget.i
 	@echo ... bsp/retarget.s
+	@echo ... bsp/timer_it.obj
+	@echo ... bsp/timer_it.i
+	@echo ... bsp/timer_it.s
 	@echo ... bsp/tracker.obj
 	@echo ... bsp/tracker.i
 	@echo ... bsp/tracker.s
