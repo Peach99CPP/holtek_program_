@@ -9,9 +9,9 @@ void led_control(int is_red, int is_green, int is_blue) {//1就是开 0就是关
     else HAL_GPIO_WritePin(red_GPIO_Port, red_Pin, GPIO_PIN_RESET);
 
     if (is_green) HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, GPIO_PIN_SET);
-    else HAL_GPIO_WritePin(red_GPIO_Port, green_Pin, GPIO_PIN_RESET);
+    else HAL_GPIO_WritePin(green_GPIO_Port, green_Pin, GPIO_PIN_RESET);
 
-    if (is_blue) HAL_GPIO_WritePin(red_GPIO_Port, blue_Pin, GPIO_PIN_SET);
-    else HAL_GPIO_WritePin(red_GPIO_Port, blue_Pin, GPIO_PIN_RESET);
+    if (is_blue) HAL_GPIO_WritePin(blue_GPIO_Port, blue_Pin, GPIO_PIN_SET);
+    else HAL_GPIO_WritePin(blue_GPIO_Port, blue_Pin, GPIO_PIN_RESET);
 }
 
