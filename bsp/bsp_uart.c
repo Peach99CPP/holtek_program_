@@ -10,10 +10,8 @@
 int uart2_receive_flag, uart3_receive_flag, uart4_receive_flag, uart5_receive_flag,
         uart2_index, uart3_index, uart4_index, uart4_index, uart5_index;
 static int temp_flag_4 = 0, temp_flag_2 = 0, temp_flag_3 = 0, temp_flag_5 = 0;
-#define MAX_SIZE 199
 uint8_t uart2_[MAX_SIZE], uart3_[MAX_SIZE], uart4_[MAX_SIZE], uart5_[MAX_SIZE];
-
-void UART_Init(void) {
+void Init_UARTS(void) {
     __HAL_UART_ENABLE(&huart2);
     __HAL_UART_ENABLE(&huart3);
     __HAL_UART_ENABLE(&huart4);
@@ -126,4 +124,21 @@ void UART5_IRQHandler() {
             }
         }
     }
+}
+
+void UART_global_handler(void) {
+    if (uart2_receive_flag) {
+        uart2_receive_flag = 0;
+    }
+    if (uart3_receive_flag) {
+        uart3_receive_flag = 0;
+    }
+    if (uart4_receive_flag) {
+        uart4_receive_flag = 0;
+    }
+    if (uart5_receive_flag) {
+        uart5_receive_flag = 0;
+    }
+
+
 }
