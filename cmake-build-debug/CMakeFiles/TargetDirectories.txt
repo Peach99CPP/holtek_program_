@@ -1,0 +1,3 @@
+D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/holtek.elf.dir
+D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Clion/stm32/holtek/cmake-build-debug/CMakeFiles/rebuild_cache.dir

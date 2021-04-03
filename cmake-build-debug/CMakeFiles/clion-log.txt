@@ -1,0 +1,5 @@
+C:\Users\peachRJ\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.6682.181\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" D:\Clion\stm32\holtek
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Clion/stm32/holtek/cmake-build-debug

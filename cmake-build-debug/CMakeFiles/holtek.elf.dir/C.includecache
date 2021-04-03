@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion/stm32/holtek/Src/syscalls.c
+sys/stat.h
+-
+stdlib.h
+-
+errno.h
+-
+stdio.h
+-
+signal.h
+-
+time.h
+-
+sys/time.h
+-
+sys/times.h
+-
+
