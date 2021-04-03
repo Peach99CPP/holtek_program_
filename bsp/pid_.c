@@ -76,13 +76,14 @@ void PID_clear(pid_type_def *pid) {
     pid->out_ = 0.0f;
     pid->ref_ = pid->set_ = 0.0f;
 }
-pid_type_def motor_,tracker_;
+pid_type_def motor_[2],tracker_;
 void global_pid_init()
 {
     PID_clear(&motor_);
     PID_clear(&tracker_);
     static const float Tracker_PID[3]={8.0f,0,0};
     static const float Motor_PID[3]={90,8,0};
-    PID_init(&motor_,PID_DELTA,Motor_PID,7000,0);
+    PID_init(&motor_[0],PID_DELTA,Motor_PID,7000,0);
+    PID_init(&motor_[1],PID_DELTA,Motor_PID,7000,0);
     PID_init(&tracker_,PID_DELTA,Tracker_PID,40,100);
 }

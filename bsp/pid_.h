@@ -36,5 +36,5 @@ extern void PID_init(pid_type_def *pid, PID_MODE mode, const float PID[3], float
 extern float PID_cal(pid_type_def *pid, float ref, float set);
 extern void PID_clear(pid_type_def *pid);
 void global_pid_init();
-extern pid_type_def motor_,tracker_;
+extern pid_type_def motor_[2],tracker_;
 #endif //HOLTEK_PID__H
