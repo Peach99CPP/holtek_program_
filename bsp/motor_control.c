@@ -6,8 +6,10 @@
 #include "motor_control.h"
 #include "tracker.h"
 #include "pid_.h"
-
+#include "bsp_delay.h"
+#include "retarget.h"
 #define speed_k 0.3
+bool avd_on=false;
 motor_speed motor[2], global_;
 
 void speed_set(int x, int y) {
@@ -15,6 +17,12 @@ void speed_set(int x, int y) {
     global_.vy = y;
 }
 
+int get_avd(void) {
+    if(!avd_on) return 0;
+    if (HAL_GPIO_ReadPin(avd_GPIO_Port, avd_Pin) != GPIO_PIN_SET)
+        return 0;
+    else return 1;
+}
 
 void set_direct(int motor_number, int dir)//前为正 向后为负
 {
@@ -63,11 +71,20 @@ short read_encoder(int motor_num) {
 
 void speed_cal(void) {//left 0 right 1
     motor[0].target = global_.vx - global_.vy * speed_k + get_tracker_num();
-    motor[1].target = (global_.vx + global_.vy * speed_k - get_tracker_num());
-    motor_set_pwm(1, PID_cal(&motor_[0], read_encoder(1), motor[0].target));
+    motor[1].target = -(global_.vx + global_.vy * speed_k - get_tracker_num());
+    if(get_avd()) motor[0].target=0;motor[1].target=0;
+    motor_set_pwm(0, PID_cal(&motor_[0], read_encoder(1), motor[0].target));
     motor_set_pwm(1, PID_cal(&motor_[1], read_encoder(2), motor[1].target));
+    printf("%d,%f",read_encoder(1),motor[0].target);
 }
 
 void motor_stop() {
+    speed_set(0, 0);
+}
+
+void turn(void) {
+    motor[0].target = 30;
+    motor[1].target = 30;
+    delay_ms(10000);
     speed_set(0, 0);
 }

@@ -4,6 +4,8 @@
 
 #ifndef HOLTEK_MOTOR_CONTROL_H
 #define HOLTEK_MOTOR_CONTROL_H
+
+#include <stdbool.h>
 #include "main.h"
 
 
@@ -18,4 +20,7 @@ void motor_set_pwm(int number,int output);
 short raed_encoder(int motor_num);
 void speed_cal(void);
 void motor_stop();
+int get_avd(void);
+void turn(void);
+extern bool avd_on;
 #endif //HOLTEK_MOTOR_CONTROL_H

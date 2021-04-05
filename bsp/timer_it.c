@@ -7,19 +7,19 @@
 #include "timer_it.h"
 #include "motor_control.h"
 
-uint32_t sys_time = 0;
+volatile int sys_time = 0;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim == (&htim6)) {
         sys_time++;
+//        if(get_avd()) {motor[0].target=-30; motor[1].target=-30;}
         speed_cal();
-
-        if (sys_time > pow(2,31)) sys_time = 0;
+        if(sys_time>(2147483640)) sys_time=0;
     }
 
 }
 
-uint32_t *get_sys_ptr() {
+volatile int *get_sys_ptr() {
     return &sys_time;
 }
 void Init_TIMS(void){//对定时器进行初始化

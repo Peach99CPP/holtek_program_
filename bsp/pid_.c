@@ -12,7 +12,6 @@
   }                             \
 }                               \
 
-
 void PID_init(pid_type_def *pid, PID_MODE mode, const float PID[3], float max_out, float max_iout) {
     if (pid == NULL || PID == NULL) {
         return;
@@ -61,7 +60,7 @@ float PID_cal(pid_type_def *pid, float ref, float set) {
         pid->Dbuf_[0] = (pid->error_[0] - 2.0f * pid->error_[1] + pid->error_[2]);
         pid->Dout_ = pid->kd_ * pid->Dbuf_[0];
         pid->out_ += pid->Pout_ + pid->Iout_ + pid->Dout_;
-        LimitMax(pid->out_, pid->max_out_);
+//        LimitMax(pid->out_, pid->max_out_);
     }
     return pid->out_;
 }
@@ -83,8 +82,8 @@ void global_pid_init()
     PID_clear(&motor_[1]);
     PID_clear(&tracker_);
     static const float Tracker_PID[3]={8.0f,0,0};
-    static const float Motor_PID[3]={90,8,0};
+    static const float Motor_PID[3]={30.0f,8,0};
     PID_init(&motor_[0],PID_DELTA,Motor_PID,7000,0);
     PID_init(&motor_[1],PID_DELTA,Motor_PID,7000,0);
-    PID_init(&tracker_,PID_DELTA,Tracker_PID,40,100);
+    PID_init(&tracker_,PID_DELTA,Tracker_PID,40,10);
 }

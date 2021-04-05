@@ -28,8 +28,12 @@
 #include "pid_.h"
 #include <stdlib.h>
 #include <timer_it.h>
+#include <bsp_delay.h>
+#include <motor_control.h>
+#include <retarget.h>
 #include "bsp_uart.h"
 #include"led.h"
+#include "my_led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,23 +103,29 @@ int main(void) {
     MX_USART2_UART_Init();
     MX_USART3_UART_Init();
     /* USER CODE BEGIN 2 */
-    led_control(0,0,0);
+    HAL_TIM_PWM_Start(&htim1,)
+    delay_init();
+    RetargetInit(&huart2);
+    led_control(1, 1, 1);
     Init_UARTS();
     Init_TIMS();
-    UART_transmit(&huart2,"test\n");
+    Lcd_Init(1);
+    Lcd_Init(2);
     global_pid_init();
+    led_control(1, 0, 0);
+    speed_set(30, 0);
+    LCD_ShowString(1, 32, 32, "Test for input", 255);
+    LCD_ShowString(2, 32, 32, "Test for input", 255);
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {//记得改成1
+        UART_global_handler();
         /* USER CODE END WHILE */
 
-        UART_global_handler();
-
-
         /* USER CODE BEGIN 3 */
-        break;//切记删除break!!!!!!
+
     }
     /* USER CODE END 3 */
 }

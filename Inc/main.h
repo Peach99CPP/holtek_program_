@@ -58,12 +58,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define motor2_p_Pin GPIO_PIN_2
+#define motor2_p_GPIO_Port GPIOC
 #define motor1_p_Pin GPIO_PIN_0
 #define motor1_p_GPIO_Port GPIOB
 #define motor1_n_Pin GPIO_PIN_1
 #define motor1_n_GPIO_Port GPIOB
-#define motor2_p_Pin GPIO_PIN_2
-#define motor2_p_GPIO_Port GPIOB
+#define UNUSED_Pin GPIO_PIN_2
+#define UNUSED_GPIO_Port GPIOB
 #define tracker_1_Pin GPIO_PIN_12
 #define tracker_1_GPIO_Port GPIOB
 #define tracker_2_Pin GPIO_PIN_13
@@ -72,14 +74,32 @@ void Error_Handler(void);
 #define tracker_3_GPIO_Port GPIOB
 #define tracker_4_Pin GPIO_PIN_15
 #define tracker_4_GPIO_Port GPIOB
-#define red_Pin GPIO_PIN_10
-#define red_GPIO_Port GPIOA
+#define SDA_1_Pin GPIO_PIN_6
+#define SDA_1_GPIO_Port GPIOC
+#define SDA_2_Pin GPIO_PIN_7
+#define SDA_2_GPIO_Port GPIOC
+#define SCL_1_Pin GPIO_PIN_8
+#define SCL_1_GPIO_Port GPIOC
+#define SCL_2_Pin GPIO_PIN_9
+#define SCL_2_GPIO_Port GPIOC
+#define avd_Pin GPIO_PIN_10
+#define avd_GPIO_Port GPIOA
 #define green_Pin GPIO_PIN_11
 #define green_GPIO_Port GPIOA
 #define blue_Pin GPIO_PIN_12
 #define blue_GPIO_Port GPIOA
+#define red_Pin GPIO_PIN_15
+#define red_GPIO_Port GPIOA
 #define motor2_n_Pin GPIO_PIN_3
 #define motor2_n_GPIO_Port GPIOB
+#define BL_Pin GPIO_PIN_4
+#define BL_GPIO_Port GPIOB
+#define CS_Pin GPIO_PIN_5
+#define CS_GPIO_Port GPIOB
+#define DC_Pin GPIO_PIN_6
+#define DC_GPIO_Port GPIOB
+#define RES_Pin GPIO_PIN_7
+#define RES_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -288,6 +288,21 @@
 		<Unit filename="D:/Clion/stm32/holtek/Src/usart.c">
 			<Option target="holtek.elf"/>
 		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/LCD_Driver.c">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/LCD_Driver.h">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/bmp.h">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/bsp_delay.c">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/bsp_delay.h">
+			<Option target="holtek.elf"/>
+		</Unit>
 		<Unit filename="D:/Clion/stm32/holtek/bsp/bsp_uart.c">
 			<Option target="holtek.elf"/>
 		</Unit>
@@ -304,6 +319,15 @@
 			<Option target="holtek.elf"/>
 		</Unit>
 		<Unit filename="D:/Clion/stm32/holtek/bsp/motor_control.h">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/my_led.c">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/my_led.h">
+			<Option target="holtek.elf"/>
+		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/oledfont.h">
 			<Option target="holtek.elf"/>
 		</Unit>
 		<Unit filename="D:/Clion/stm32/holtek/bsp/pid_.c">

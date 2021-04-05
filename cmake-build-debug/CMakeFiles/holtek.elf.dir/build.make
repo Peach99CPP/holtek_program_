@@ -362,9 +362,35 @@ CMakeFiles/holtek.elf.dir/Src/usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/holtek.elf.dir/Src/usart.c.s"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clion\stm32\holtek\Src\usart.c -o CMakeFiles\holtek.elf.dir\Src\usart.c.s
 
+CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj: CMakeFiles/holtek.elf.dir/flags.make
+CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj: ../bsp/LCD_Driver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\LCD_Driver.c.obj   -c D:\Clion\stm32\holtek\bsp\LCD_Driver.c
+
+CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.i"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Clion\stm32\holtek\bsp\LCD_Driver.c > CMakeFiles\holtek.elf.dir\bsp\LCD_Driver.c.i
+
+CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.s"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clion\stm32\holtek\bsp\LCD_Driver.c -o CMakeFiles\holtek.elf.dir\bsp\LCD_Driver.c.s
+
+CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj: CMakeFiles/holtek.elf.dir/flags.make
+CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj: ../bsp/bsp_delay.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\bsp_delay.c.obj   -c D:\Clion\stm32\holtek\bsp\bsp_delay.c
+
+CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.i"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Clion\stm32\holtek\bsp\bsp_delay.c > CMakeFiles\holtek.elf.dir\bsp\bsp_delay.c.i
+
+CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.s"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clion\stm32\holtek\bsp\bsp_delay.c -o CMakeFiles\holtek.elf.dir\bsp\bsp_delay.c.s
+
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\bsp_uart.c.obj   -c D:\Clion\stm32\holtek\bsp\bsp_uart.c
 
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.i: cmake_force
@@ -377,7 +403,7 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/led.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/holtek.elf.dir/bsp/led.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/holtek.elf.dir/bsp/led.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\led.c.obj   -c D:\Clion\stm32\holtek\bsp\led.c
 
 CMakeFiles/holtek.elf.dir/bsp/led.c.i: cmake_force
@@ -390,7 +416,7 @@ CMakeFiles/holtek.elf.dir/bsp/led.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/motor_control.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\motor_control.c.obj   -c D:\Clion\stm32\holtek\bsp\motor_control.c
 
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.i: cmake_force
@@ -401,9 +427,22 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/holtek.elf.dir/bsp/motor_control.c.s"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clion\stm32\holtek\bsp\motor_control.c -o CMakeFiles\holtek.elf.dir\bsp\motor_control.c.s
 
+CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: CMakeFiles/holtek.elf.dir/flags.make
+CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/my_led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\my_led.c.obj   -c D:\Clion\stm32\holtek\bsp\my_led.c
+
+CMakeFiles/holtek.elf.dir/bsp/my_led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/holtek.elf.dir/bsp/my_led.c.i"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Clion\stm32\holtek\bsp\my_led.c > CMakeFiles\holtek.elf.dir\bsp\my_led.c.i
+
+CMakeFiles/holtek.elf.dir/bsp/my_led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/holtek.elf.dir/bsp/my_led.c.s"
+	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Clion\stm32\holtek\bsp\my_led.c -o CMakeFiles\holtek.elf.dir\bsp\my_led.c.s
+
 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj: ../bsp/pid_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\pid_.c.obj   -c D:\Clion\stm32\holtek\bsp\pid_.c
 
 CMakeFiles/holtek.elf.dir/bsp/pid_.c.i: cmake_force
@@ -416,7 +455,7 @@ CMakeFiles/holtek.elf.dir/bsp/pid_.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../bsp/retarget.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\retarget.c.obj   -c D:\Clion\stm32\holtek\bsp\retarget.c
 
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.i: cmake_force
@@ -429,7 +468,7 @@ CMakeFiles/holtek.elf.dir/bsp/retarget.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/timer_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\timer_it.c.obj   -c D:\Clion\stm32\holtek\bsp\timer_it.c
 
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.i: cmake_force
@@ -442,7 +481,7 @@ CMakeFiles/holtek.elf.dir/bsp/timer_it.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj: ../bsp/tracker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\holtek.elf.dir\bsp\tracker.c.obj   -c D:\Clion\stm32\holtek\bsp\tracker.c
 
 CMakeFiles/holtek.elf.dir/bsp/tracker.c.i: cmake_force
@@ -455,7 +494,7 @@ CMakeFiles/holtek.elf.dir/bsp/tracker.c.s: cmake_force
 
 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/holtek.elf.dir/flags.make
 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj"
 	D:\gcc-arm-none-eabi-10-2020-q4-major-win32\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\holtek.elf.dir\startup\startup_stm32f103xe.s.obj -c D:\Clion\stm32\holtek\startup\startup_stm32f103xe.s
 
 # Object files for target holtek.elf
@@ -482,9 +521,12 @@ holtek_elf_OBJECTS = \
 "CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj" \
 "CMakeFiles/holtek.elf.dir/Src/tim.c.obj" \
 "CMakeFiles/holtek.elf.dir/Src/usart.c.obj" \
+"CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj" \
+"CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/led.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj" \
+"CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj" \
 "CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj" \
@@ -516,9 +558,12 @@ holtek.elf: CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/Src/tim.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+holtek.elf: CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj
+holtek.elf: CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/led.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+holtek.elf: CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
@@ -526,7 +571,7 @@ holtek.elf: CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 holtek.elf: CMakeFiles/holtek.elf.dir/build.make
 holtek.elf: CMakeFiles/holtek.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable holtek.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Clion\stm32\holtek\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable holtek.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\holtek.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Clion/stm32/holtek/cmake-build-debug/holtek.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Clion/stm32/holtek/cmake-build-debug/holtek.bin"

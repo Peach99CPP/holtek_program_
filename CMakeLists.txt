@@ -62,7 +62,6 @@ add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
 target_include_directories(${PROJECT_NAME}.elf
         PUBLIC
         ${PROJECT_SOURCE_DIR}/bsp)
-
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)
 

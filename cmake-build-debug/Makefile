@@ -736,6 +736,60 @@ Src/usart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/Src/usart.c.s
 .PHONY : Src/usart.c.s
 
+bsp/LCD_Driver.obj: bsp/LCD_Driver.c.obj
+
+.PHONY : bsp/LCD_Driver.obj
+
+# target to build an object file
+bsp/LCD_Driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.obj
+.PHONY : bsp/LCD_Driver.c.obj
+
+bsp/LCD_Driver.i: bsp/LCD_Driver.c.i
+
+.PHONY : bsp/LCD_Driver.i
+
+# target to preprocess a source file
+bsp/LCD_Driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.i
+.PHONY : bsp/LCD_Driver.c.i
+
+bsp/LCD_Driver.s: bsp/LCD_Driver.c.s
+
+.PHONY : bsp/LCD_Driver.s
+
+# target to generate assembly for a file
+bsp/LCD_Driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/LCD_Driver.c.s
+.PHONY : bsp/LCD_Driver.c.s
+
+bsp/bsp_delay.obj: bsp/bsp_delay.c.obj
+
+.PHONY : bsp/bsp_delay.obj
+
+# target to build an object file
+bsp/bsp_delay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+.PHONY : bsp/bsp_delay.c.obj
+
+bsp/bsp_delay.i: bsp/bsp_delay.c.i
+
+.PHONY : bsp/bsp_delay.i
+
+# target to preprocess a source file
+bsp/bsp_delay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.i
+.PHONY : bsp/bsp_delay.c.i
+
+bsp/bsp_delay.s: bsp/bsp_delay.c.s
+
+.PHONY : bsp/bsp_delay.s
+
+# target to generate assembly for a file
+bsp/bsp_delay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.s
+.PHONY : bsp/bsp_delay.c.s
+
 bsp/bsp_uart.obj: bsp/bsp_uart.c.obj
 
 .PHONY : bsp/bsp_uart.obj
@@ -816,6 +870,33 @@ bsp/motor_control.s: bsp/motor_control.c.s
 bsp/motor_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/motor_control.c.s
 .PHONY : bsp/motor_control.c.s
+
+bsp/my_led.obj: bsp/my_led.c.obj
+
+.PHONY : bsp/my_led.obj
+
+# target to build an object file
+bsp/my_led.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+.PHONY : bsp/my_led.c.obj
+
+bsp/my_led.i: bsp/my_led.c.i
+
+.PHONY : bsp/my_led.i
+
+# target to preprocess a source file
+bsp/my_led.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/my_led.c.i
+.PHONY : bsp/my_led.c.i
+
+bsp/my_led.s: bsp/my_led.c.s
+
+.PHONY : bsp/my_led.s
+
+# target to generate assembly for a file
+bsp/my_led.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\holtek.elf.dir\build.make CMakeFiles/holtek.elf.dir/bsp/my_led.c.s
+.PHONY : bsp/my_led.c.s
 
 bsp/pid_.obj: bsp/pid_.c.obj
 
@@ -1009,6 +1090,12 @@ help:
 	@echo ... Src/usart.obj
 	@echo ... Src/usart.i
 	@echo ... Src/usart.s
+	@echo ... bsp/LCD_Driver.obj
+	@echo ... bsp/LCD_Driver.i
+	@echo ... bsp/LCD_Driver.s
+	@echo ... bsp/bsp_delay.obj
+	@echo ... bsp/bsp_delay.i
+	@echo ... bsp/bsp_delay.s
 	@echo ... bsp/bsp_uart.obj
 	@echo ... bsp/bsp_uart.i
 	@echo ... bsp/bsp_uart.s
@@ -1018,6 +1105,9 @@ help:
 	@echo ... bsp/motor_control.obj
 	@echo ... bsp/motor_control.i
 	@echo ... bsp/motor_control.s
+	@echo ... bsp/my_led.obj
+	@echo ... bsp/my_led.i
+	@echo ... bsp/my_led.s
 	@echo ... bsp/pid_.obj
 	@echo ... bsp/pid_.i
 	@echo ... bsp/pid_.s
