@@ -102,8 +102,8 @@ int main(void) {
     MX_UART5_Init();
     MX_USART2_UART_Init();
     MX_USART3_UART_Init();
+    MX_TIM4_Init();
     /* USER CODE BEGIN 2 */
-    HAL_TIM_PWM_Start(&htim1,)
     delay_init();
     RetargetInit(&huart2);
     led_control(1, 1, 1);
@@ -113,7 +113,13 @@ int main(void) {
     Lcd_Init(2);
     global_pid_init();
     led_control(1, 0, 0);
-    speed_set(30, 0);
+    delay_ms(1000);
+//    speed_set(30, 0);
+    TIM1->CCR1=3600;
+    TIM1->CCR2=3000;
+    TIM4->CCR3=2000;
+    motor_set_pwm(0, 0);//PID_cal(&motor_[1], read_encoder(2), motor[1].target)bs(PID_cal(&motor_[0], read_encoder(0), motor[0].target))
+    motor_set_pwm(1, 0);
     LCD_ShowString(1, 32, 32, "Test for input", 255);
     LCD_ShowString(2, 32, 32, "Test for input", 255);
     /* USER CODE END 2 */
@@ -121,7 +127,9 @@ int main(void) {
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {//记得改成1
-        UART_global_handler();
+//        UART_global_handler();
+        motor_set_pwm(0, -3000);//俯视图左侧0号电机 对应TIM1_CCR1
+        motor_set_pwm(1,0);//俯视图右侧0号电机 对应TIM1 CCR2
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

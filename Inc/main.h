@@ -60,10 +60,16 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define motor2_p_Pin GPIO_PIN_2
 #define motor2_p_GPIO_Port GPIOC
+//PC2
+#define motor2_n_Pin GPIO_PIN_3
+#define motor2_n_GPIO_Port GPIOB
+//PB3
 #define motor1_p_Pin GPIO_PIN_0
 #define motor1_p_GPIO_Port GPIOB
+//PB0
 #define motor1_n_Pin GPIO_PIN_1
 #define motor1_n_GPIO_Port GPIOB
+//PB1
 #define UNUSED_Pin GPIO_PIN_2
 #define UNUSED_GPIO_Port GPIOB
 #define tracker_1_Pin GPIO_PIN_12
@@ -90,8 +96,7 @@ void Error_Handler(void);
 #define blue_GPIO_Port GPIOA
 #define red_Pin GPIO_PIN_15
 #define red_GPIO_Port GPIOA
-#define motor2_n_Pin GPIO_PIN_3
-#define motor2_n_GPIO_Port GPIOB
+
 #define BL_Pin GPIO_PIN_4
 #define BL_GPIO_Port GPIOB
 #define CS_Pin GPIO_PIN_5

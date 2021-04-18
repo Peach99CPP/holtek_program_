@@ -511,6 +511,7 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj
  ../bsp/motor_control.h
  ../bsp/my_led.h
  ../bsp/pid_.h
+ ../bsp/retarget.h
  ../bsp/timer_it.h
  D:/Clion/stm32/holtek/Src/main.c
 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj

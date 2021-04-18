@@ -510,6 +510,7 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/motor_control.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/my_led.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/pid_.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/retarget.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/timer_it.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Src/main.c
 
