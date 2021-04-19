@@ -115,21 +115,31 @@ int main(void) {
     led_control(1, 0, 0);
     delay_ms(1000);
 //    speed_set(30, 0);
-    TIM1->CCR1=3600;
-    TIM1->CCR2=3000;
-    TIM4->CCR3=2000;
+//    TIM1->CCR1=3600;
+//    TIM1->CCR2=3000;
+//    TIM4->CCR3=2000;
     motor_set_pwm(0, 0);//PID_cal(&motor_[1], read_encoder(2), motor[1].target)bs(PID_cal(&motor_[0], read_encoder(0), motor[0].target))
     motor_set_pwm(1, 0);
     LCD_ShowString(1, 32, 32, "Test for input", 255);
     LCD_ShowString(2, 32, 32, "Test for input", 255);
+    HAL_GPIO_WritePin(motor1_p_GPIO_Port,motor1_p_Pin,GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(motor1_n_GPIO_Port,motor1_n_Pin,GPIO_PIN_SET);
     /* USER CODE END 2 */
-
+    HAL_GPIO_WritePin(motor2_p_GPIO_Port,motor2_p_Pin,GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(motor2_n_GPIO_Port,motor2_n_Pin,GPIO_PIN_RESET);
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {//记得改成1
 //        UART_global_handler();
-        motor_set_pwm(0, -3000);//俯视图左侧0号电机 对应TIM1_CCR1
-        motor_set_pwm(1,0);//俯视图右侧0号电机 对应TIM1 CCR2
+//        motor_set_pwm(0, 4000);//俯视图右侧0号电机 对应TIM1_CCR1
+//        motor_set_pwm(1,0);//俯视图右侧0号电机 对应TIM1 CCR2
+        TIM1->CCR1=3000;
+        printf("%d      %d\r\n",(short)(TIM2->CNT),-(short)(TIM3->CNT));
+        TIM2->CNT=0;
+        TIM3->CNT=0;
+        delay_ms(50);
+//        TIM2->CNT++;
+//        delay_ms(100);
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
