@@ -12,10 +12,15 @@ volatile int sys_time = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim == (&htim6)) {
         sys_time++;
-//        if(get_avd()) {motor[0].target=-30; motor[1].target=-30;}
-        if (sys_time % 50 == 0)
-//            speed_cal();
-        if (sys_time > (2147483640)) sys_time = 0;
+        if (sys_time % 50 == 0) {
+            speed_cal();
+            if (get_avd()) {//差速转弯避障
+                motor[0].target = -30;
+                motor[1].target = 30;
+            }
+        }
+        if (sys_time > (2147483640))
+            sys_time = 0;
     }
 
 }

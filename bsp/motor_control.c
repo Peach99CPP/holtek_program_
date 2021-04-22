@@ -78,13 +78,9 @@ short read_encoder(int motor_num) {
 
 void speed_cal(void) {//left 0 right 1
     motor[0].target = global_.vx - global_.vy * speed_k;//+ get_tracker_num();
-    motor[1].target = 55;
-//    if(get_avd()) motor[0].target=0;motor[1].target=0;//PID_cal(&motor_[0], read_encoder(1), motor[0].target)
-//    printf("%d,%f",read_encoder(1),motor[0].target);
- int read_=read_encoder(1);
-float ou =-PID_cal(&motor_[1],read_,motor[1].target);
-    motor_set_pwm(1, 3000);
-    printf("%d %f\r\n", read_, ou);
+    motor[1].target = global_.vx-global_.vy*speed_k;
+    motor_set_pwm(0,PID_cal(&motor_[0], read_encoder(0), motor[0].target));
+    motor_set_pwm(1,PID_cal(&motor_[1], read_encoder(1), motor[1].target));
 }
 
 void motor_stop() {

@@ -55,6 +55,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 void Global_Init(void);
+void screen_display(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

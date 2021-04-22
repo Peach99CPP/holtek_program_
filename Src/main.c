@@ -104,23 +104,9 @@ int main(void) {
     MX_USART3_UART_Init();
     MX_ADC1_Init();
     /* USER CODE BEGIN 2 */
-
-#define Start_x 26
-#define Start_y 30
-#define delta_y 14
-#define delta_x 28
-    led_control(0, 0, 0);
-    LCD_ShowString(1, Start_x, Start_y, "**********", BLACK);
-    LCD_ShowString(1, Start_x, Start_y + delta_y, "**********", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 2 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 3 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 4 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 5 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 6 * delta_y, "****", BLACK);
-
-
-//    motor_set_pwm(1, 5000);
-//    motor_set_pwm(0, 5000);
+    Global_Init();
+    screen_display();
+    
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -189,6 +175,22 @@ void Global_Init(void)
     LCD_Clear(1, WHITE);
     led_control(0, 0, 0);
     delay_ms(1000);
+}
+void screen_display(void)
+{
+#define Start_x 26
+#define Start_y 30
+#define delta_y 14
+#define delta_x 28
+    led_control(0, 0, 0);
+    LCD_ShowString(1, Start_x, Start_y, "**********", BLACK);
+    LCD_ShowString(1, Start_x, Start_y + delta_y, "**********", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 2 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 3 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 4 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 5 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 6 * delta_y, "****", BLACK);
+
 }
 /* USER CODE END 4 */
 
