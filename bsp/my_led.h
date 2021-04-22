@@ -6,7 +6,7 @@
 #define HOLTEK_MY_LED_H
 #include "main.h"
 #include "bmp.h"
-#define USE_HORIZONTAL 2  //设置横屏或者竖屏显示 0或1为竖屏 2或3为横屏
+#define USE_HORIZONTAL 0  //设置横屏或者竖屏显示 0或1为竖屏 2或3为横屏
 
 #if USE_HORIZONTAL==0||USE_HORIZONTAL==1
 #define LCD_W 128
@@ -16,30 +16,54 @@
 #define LCD_W 160
 #define LCD_H 128
 #endif
-
-#define OLED_BL_ON() HAL_GPIO_WritePin(BL_GPIO_Port,BL_Pin,GPIO_PIN_SET)
-#define OLED_BL_OFF() HAL_GPIO_WritePin(BL_GPIO_Port,BL_Pin,GPIO_PIN_SET)
+/*
+ * 以下宏定义为屏幕A的底层驱动
+ */
+#define A_OLED_BL_ON() HAL_GPIO_WritePin(A_BL_GPIO_Port,A_BL_Pin,GPIO_PIN_SET)
+#define A_OLED_BL_OFF() HAL_GPIO_WritePin(A_BL_GPIO_Port,A_BL_Pin,GPIO_PIN_RESET)
 //
-#define OLED_DC_SET() HAL_GPIO_WritePin(DC_GPIO_Port,DC_Pin,GPIO_PIN_SET)
-#define OLED_DC_RESET() HAL_GPIO_WritePin(DC_GPIO_Port,DC_Pin,GPIO_PIN_RESET)
+#define A_OLED_DC_SET() HAL_GPIO_WritePin(A_DC_GPIO_Port,A_DC_Pin,GPIO_PIN_SET)
+#define A_OLED_DC_RESET() HAL_GPIO_WritePin(A_DC_GPIO_Port,A_DC_Pin,GPIO_PIN_RESET)
 
 //
-#define OLED_RES_SET() HAL_GPIO_WritePin(RES_GPIO_Port,RES_Pin,GPIO_PIN_SET)
-#define OLED_RES_RESET() HAL_GPIO_WritePin(RES_GPIO_Port,RES_Pin,GPIO_PIN_RESET)
+#define A_OLED_RES_SET() HAL_GPIO_WritePin(A_RES_GPIO_Port,A_RES_Pin,GPIO_PIN_SET)
+#define A_OLED_RES_RESET() HAL_GPIO_WritePin(A_RES_GPIO_Port,A_RES_Pin,GPIO_PIN_RESET)
 //
-#define OLED_CS_SET() HAL_GPIO_WritePin(CS_GPIO_Port,CS_Pin,GPIO_PIN_SET)
-#define OLED_CS_RESET() HAL_GPIO_WritePin(CS_GPIO_Port,CS_Pin,GPIO_PIN_RESET)
+#define A_OLED_CS_SET() HAL_GPIO_WritePin(A_CS_GPIO_Port,A_CS_Pin,GPIO_PIN_SET)
+#define A_OLED_CS_RESET() HAL_GPIO_WritePin(A_CS_GPIO_Port,A_CS_Pin,GPIO_PIN_RESET)
+
+#define A_OLED_SDA_SET() HAL_GPIO_WritePin(A_SDA_GPIO_Port,A_SDA_Pin,GPIO_PIN_SET)
+#define A_OLED_SDA_RESET() HAL_GPIO_WritePin(A_SDA_GPIO_Port,A_SDA_Pin,GPIO_PIN_RESET)
+
+#define  A_OLED_SCLK_SET() HAL_GPIO_WritePin(A_SCL_GPIO_Port,A_SCL_Pin,GPIO_PIN_SET)
+#define  A_OLED_SCLK_RESET() HAL_GPIO_WritePin(A_SCL_GPIO_Port,A_SCL_Pin,GPIO_PIN_RESET)
+
 //
-#define  OLED_SCLK_1_SET() HAL_GPIO_WritePin(SCL_1_GPIO_Port,SCL_1_Pin,GPIO_PIN_SET)
-#define OLED_SCLK_1_RESET() HAL_GPIO_WritePin(SCL_1_GPIO_Port,SCL_1_Pin,GPIO_PIN_RESET)
-#define OLED_SCLK_2_SET() HAL_GPIO_WritePin(SCL_2_GPIO_Port,SCL_2_Pin,GPIO_PIN_SET)
-#define OLED_SCLK_2_RESET() HAL_GPIO_WritePin(SCL_2_GPIO_Port,SCL_2_Pin,GPIO_PIN_RESET)
+/*
+ * 以下为屏幕B的底层 驱动
+ */
+#define B_OLED_BL_ON() HAL_GPIO_WritePin(B_BL_GPIO_Port,B_BL_Pin,GPIO_PIN_SET)
+#define B_OLED_BL_OFF() HAL_GPIO_WritePin(B_BL_GPIO_Port,B_BL_Pin,GPIO_PIN_RESET)
+//
+#define B_OLED_DC_SET() HAL_GPIO_WritePin(B_DC_GPIO_Port,B_DC_Pin,GPIO_PIN_SET)
+#define B_OLED_DC_RESET() HAL_GPIO_WritePin(B_DC_GPIO_Port,B_DC_Pin,GPIO_PIN_RESET)
 
-#define OLED_SDA_1_SET() HAL_GPIO_WritePin(SDA_1_GPIO_Port,SDA_1_Pin,GPIO_PIN_SET)
-#define OLED_SDA_1_RESET() HAL_GPIO_WritePin(SDA_1_GPIO_Port,SDA_1_Pin,GPIO_PIN_RESET)
+//
+#define B_OLED_RES_SET() HAL_GPIO_WritePin(B_RES_GPIO_Port,B_RES_Pin,GPIO_PIN_SET)
+#define B_OLED_RES_RESET() HAL_GPIO_WritePin(B_RES_GPIO_Port,B_RES_Pin,GPIO_PIN_RESET)
+//
+#define B_OLED_CS_SET() HAL_GPIO_WritePin(B_CS_GPIO_Port,B_CS_Pin,GPIO_PIN_SET)
+#define B_OLED_CS_RESET() HAL_GPIO_WritePin(B_CS_GPIO_Port,B_CS_Pin,GPIO_PIN_RESET)
 
-#define OLED_SDA_2_SET() HAL_GPIO_WritePin(SDA_2_GPIO_Port,SDA_2_Pin,GPIO_PIN_SET)
-#define OLED_SDA_2_RESET() HAL_GPIO_WritePin(SDA_2_GPIO_Port,SDA_2_Pin,GPIO_PIN_RESET)
+#define B_OLED_SCLK_SET() HAL_GPIO_WritePin(B_SCL_GPIO_Port,B_SCL_Pin,GPIO_PIN_SET)
+#define B_OLED_SCLK_RESET() HAL_GPIO_WritePin(B_SCL_GPIO_Port,B_SCL_Pin,GPIO_PIN_RESET)
+
+
+#define B_OLED_SDA_SET() HAL_GPIO_WritePin(B_SDA_GPIO_Port,B_SDA_Pin,GPIO_PIN_SET)
+#define B_OLED_SDA_RESET() HAL_GPIO_WritePin(B_SDA_GPIO_Port,B_SDA_Pin,GPIO_PIN_RESET)
+/*/
+ * 通用命令
+ */
 #define OLED_CMD  0	//写命令
 #define OLED_DATA 1	//写数据
 //

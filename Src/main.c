@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -99,47 +100,32 @@ int main(void) {
     MX_TIM3_Init();
     MX_TIM6_Init();
     MX_UART4_Init();
-    MX_UART5_Init();
     MX_USART2_UART_Init();
     MX_USART3_UART_Init();
-    MX_TIM4_Init();
+    MX_ADC1_Init();
     /* USER CODE BEGIN 2 */
-    delay_init();
-    RetargetInit(&huart2);
-    led_control(1, 1, 1);
-    Init_UARTS();
-    Init_TIMS();
-    Lcd_Init(1);
-    Lcd_Init(2);
-    global_pid_init();
-    led_control(1, 0, 0);
-    delay_ms(1000);
-//    speed_set(30, 0);
-//    TIM1->CCR1=3600;
-//    TIM1->CCR2=3000;
-//    TIM4->CCR3=2000;
-    motor_set_pwm(0, 0);//PID_cal(&motor_[1], read_encoder(2), motor[1].target)bs(PID_cal(&motor_[0], read_encoder(0), motor[0].target))
-    motor_set_pwm(1, 0);
-    LCD_ShowString(1, 32, 32, "Test for input", 255);
-    LCD_ShowString(2, 32, 32, "Test for input", 255);
-    HAL_GPIO_WritePin(motor1_p_GPIO_Port,motor1_p_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(motor1_n_GPIO_Port,motor1_n_Pin,GPIO_PIN_SET);
+
+#define Start_x 26
+#define Start_y 30
+#define delta_y 14
+#define delta_x 28
+    led_control(0, 0, 0);
+    LCD_ShowString(1, Start_x, Start_y, "**********", BLACK);
+    LCD_ShowString(1, Start_x, Start_y + delta_y, "**********", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 2 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 3 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 4 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 5 * delta_y, "****", BLACK);
+    LCD_ShowString(1, Start_x + delta_x, Start_y + 6 * delta_y, "****", BLACK);
+
+
+//    motor_set_pwm(1, 5000);
+//    motor_set_pwm(0, 5000);
     /* USER CODE END 2 */
-    HAL_GPIO_WritePin(motor2_p_GPIO_Port,motor2_p_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(motor2_n_GPIO_Port,motor2_n_Pin,GPIO_PIN_RESET);
+
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {//记得改成1
-//        UART_global_handler();
-//        motor_set_pwm(0, 4000);//俯视图右侧0号电机 对应TIM1_CCR1
-//        motor_set_pwm(1,0);//俯视图右侧0号电机 对应TIM1 CCR2
-        TIM1->CCR1=3000;
-        printf("%d      %d\r\n",(short)(TIM2->CNT),-(short)(TIM3->CNT));
-        TIM2->CNT=0;
-        TIM3->CNT=0;
-        delay_ms(50);
-//        TIM2->CNT++;
-//        delay_ms(100);
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
@@ -155,6 +141,7 @@ int main(void) {
 void SystemClock_Config(void) {
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
     RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
     /** Initializes the RCC Oscillators according to the specified parameters
     * in the RCC_OscInitTypeDef structure.
@@ -181,10 +168,28 @@ void SystemClock_Config(void) {
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
         Error_Handler();
     }
+    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+    PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK) {
+        Error_Handler();
+    }
 }
 
 /* USER CODE BEGIN 4 */
-
+void Global_Init(void)
+{
+    delay_init();
+    RetargetInit(&huart2);//重定向串口2
+    led_control(1, 1, 1);//白光
+    Init_UARTS();
+    Init_TIMS();
+    Lcd_Init(1);
+    Lcd_Init(2);
+    global_pid_init();
+    LCD_Clear(1, WHITE);
+    led_control(0, 0, 0);
+    delay_ms(1000);
+}
 /* USER CODE END 4 */
 
 /**

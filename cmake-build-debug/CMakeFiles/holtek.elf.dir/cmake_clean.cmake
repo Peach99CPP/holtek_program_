@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+  "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+  "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
@@ -13,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
   "CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+  "CMakeFiles/holtek.elf.dir/Src/adc.c.obj"
   "CMakeFiles/holtek.elf.dir/Src/gpio.c.obj"
   "CMakeFiles/holtek.elf.dir/Src/main.c.obj"
   "CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj"

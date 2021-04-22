@@ -54,24 +54,30 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void Global_Init(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define B_CS_Pin GPIO_PIN_13
+#define B_CS_GPIO_Port GPIOC
+#define B_DC_Pin GPIO_PIN_14
+#define B_DC_GPIO_Port GPIOC
+#define B_RES_Pin GPIO_PIN_15
+#define B_RES_GPIO_Port GPIOC
 #define motor2_p_Pin GPIO_PIN_2
 #define motor2_p_GPIO_Port GPIOC
-//PC2
-#define motor2_n_Pin GPIO_PIN_3
-#define motor2_n_GPIO_Port GPIOB
-//PB3
+#define openmv_transmit_Pin GPIO_PIN_2
+#define openmv_transmit_GPIO_Port GPIOA
+#define openmv_receive_Pin GPIO_PIN_3
+#define openmv_receive_GPIO_Port GPIOA
+#define LIght_ADC_Pin GPIO_PIN_4
+#define LIght_ADC_GPIO_Port GPIOA
 #define motor1_p_Pin GPIO_PIN_0
 #define motor1_p_GPIO_Port GPIOB
-//PB0
 #define motor1_n_Pin GPIO_PIN_1
 #define motor1_n_GPIO_Port GPIOB
-//PB1
-#define UNUSED_Pin GPIO_PIN_2
-#define UNUSED_GPIO_Port GPIOB
+#define voice_receive_Pin GPIO_PIN_11
+#define voice_receive_GPIO_Port GPIOB
 #define tracker_1_Pin GPIO_PIN_12
 #define tracker_1_GPIO_Port GPIOB
 #define tracker_2_Pin GPIO_PIN_13
@@ -80,14 +86,14 @@ void Error_Handler(void);
 #define tracker_3_GPIO_Port GPIOB
 #define tracker_4_Pin GPIO_PIN_15
 #define tracker_4_GPIO_Port GPIOB
-#define SDA_1_Pin GPIO_PIN_6
-#define SDA_1_GPIO_Port GPIOC
-#define SDA_2_Pin GPIO_PIN_7
-#define SDA_2_GPIO_Port GPIOC
-#define SCL_1_Pin GPIO_PIN_8
-#define SCL_1_GPIO_Port GPIOC
-#define SCL_2_Pin GPIO_PIN_9
-#define SCL_2_GPIO_Port GPIOC
+#define A_SDA_Pin GPIO_PIN_6
+#define A_SDA_GPIO_Port GPIOC
+#define B_SDA_Pin GPIO_PIN_7
+#define B_SDA_GPIO_Port GPIOC
+#define A_SCL_Pin GPIO_PIN_8
+#define A_SCL_GPIO_Port GPIOC
+#define B_SCL_Pin GPIO_PIN_9
+#define B_SCL_GPIO_Port GPIOC
 #define avd_Pin GPIO_PIN_10
 #define avd_GPIO_Port GPIOA
 #define green_Pin GPIO_PIN_11
@@ -96,15 +102,22 @@ void Error_Handler(void);
 #define blue_GPIO_Port GPIOA
 #define red_Pin GPIO_PIN_15
 #define red_GPIO_Port GPIOA
-
-#define BL_Pin GPIO_PIN_4
-#define BL_GPIO_Port GPIOB
-#define CS_Pin GPIO_PIN_5
-#define CS_GPIO_Port GPIOB
-#define DC_Pin GPIO_PIN_6
-#define DC_GPIO_Port GPIOB
-#define RES_Pin GPIO_PIN_7
-#define RES_GPIO_Port GPIOB
+#define holtek_transmit_Pin GPIO_PIN_10
+#define holtek_transmit_GPIO_Port GPIOC
+#define holtek_receive_Pin GPIO_PIN_11
+#define holtek_receive_GPIO_Port GPIOC
+#define B_BL_Pin GPIO_PIN_12
+#define B_BL_GPIO_Port GPIOC
+#define motor2_n_Pin GPIO_PIN_3
+#define motor2_n_GPIO_Port GPIOB
+#define A_BL_Pin GPIO_PIN_4
+#define A_BL_GPIO_Port GPIOB
+#define A_CS_Pin GPIO_PIN_5
+#define A_CS_GPIO_Port GPIOB
+#define A_DC_Pin GPIO_PIN_6
+#define A_DC_GPIO_Port GPIOB
+#define A_RES_Pin GPIO_PIN_7
+#define A_RES_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

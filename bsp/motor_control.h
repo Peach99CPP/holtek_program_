@@ -10,8 +10,8 @@
 
 
 typedef struct{
-    double vx,vy;
-    double target;
+    int vx,vy;
+    float target;
 }motor_speed;
 void speed_set(int x,int y);
 void set_direct(int motor_number,int dir);
@@ -23,4 +23,5 @@ void motor_stop();
 int get_avd(void);
 void turn(void);
 extern bool avd_on;
+void speed_run(int speed);
 #endif //HOLTEK_MOTOR_CONTROL_H

@@ -6,7 +6,9 @@
 #include "timer_it.h"
 #include "bsp_delay.h"
 #include "oledfont.h"
-u16 BACK_COLOR;
+
+u16 BACK_COLOR = WHITE;
+
 /******************************************************************************
       函数说明：LCD串行数据写入函数
       入口数据：dat  要写入的串行数据
@@ -14,32 +16,32 @@ u16 BACK_COLOR;
 ******************************************************************************/
 void LCD_Writ_Bus(int id, u8 dat) {
     u8 i;
-    OLED_CS_RESET();
     if (id == 1) {
+        A_OLED_CS_SET();
         for (i = 0; i < 8; i++
                 ) {
-            OLED_SCLK_1_RESET();//CLK
+            A_OLED_SCLK_RESET();
             if (dat & 0x80)
-                OLED_SDA_1_SET();
+                A_OLED_SDA_SET();
             else
-                OLED_SDA_1_RESET();
-            OLED_SCLK_1_SET();
+                A_OLED_SDA_RESET();
+            A_OLED_SCLK_SET();
             dat <<= 1;
         }
-        OLED_CS_SET();
-    }
-    else if (id == 2) {
+        A_OLED_CS_RESET();
+    } else if (id == 2) {
+        B_OLED_CS_SET();
         for (i = 0; i < 8; i++
                 ) {
-            OLED_SCLK_1_RESET();//CLK
+            B_OLED_SCLK_RESET();
             if (dat & 0x80)
-                OLED_SDA_1_SET();
+                B_OLED_SDA_SET();
             else
-                OLED_SDA_1_RESET();
-            OLED_SCLK_1_SET();
+                B_OLED_SDA_RESET();
+            B_OLED_SCLK_SET();
             dat <<= 1;
         }
-        OLED_CS_SET();
+        B_OLED_CS_RESET();
     }
 }
 
@@ -50,7 +52,10 @@ void LCD_Writ_Bus(int id, u8 dat) {
       返回值：  无
 ******************************************************************************/
 void LCD_WR_DATA8(int id, u8 dat) {
-    OLED_DC_SET();//写数据
+    if (id == 1)
+        A_OLED_DC_SET();
+    else
+        B_OLED_DC_SET();
     LCD_Writ_Bus(id, dat);
 }
 
@@ -61,7 +66,10 @@ void LCD_WR_DATA8(int id, u8 dat) {
       返回值：  无
 ******************************************************************************/
 void LCD_WR_DATA(int id, u16 dat) {
-    OLED_DC_SET();//写数据
+    if (id == 1)
+        A_OLED_DC_SET();
+    else
+        B_OLED_DC_SET();
     LCD_Writ_Bus(id, dat >> 8);
     LCD_Writ_Bus(id, dat);
 }
@@ -73,7 +81,10 @@ void LCD_WR_DATA(int id, u16 dat) {
       返回值：  无
 ******************************************************************************/
 void LCD_WR_REG(int id, u8 dat) {
-    OLED_DC_RESET();//写命令
+    if (id == 1)
+        A_OLED_DC_RESET();
+    else
+        B_OLED_DC_RESET();
     LCD_Writ_Bus(id, dat);
 }
 
@@ -93,8 +104,7 @@ void LCD_Address_Set(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
         LCD_WR_DATA(id, y1 + 1);
         LCD_WR_DATA(id, y2 + 1);
         LCD_WR_REG(id, 0x2c);//储存器写
-    }
-    else if (USE_HORIZONTAL == 1) {
+    } else if (USE_HORIZONTAL == 1) {
         LCD_WR_REG(id, 0x2a);//列地址设置
         LCD_WR_DATA(id, x1 + 2);
         LCD_WR_DATA(id, x2 + 2);
@@ -102,8 +112,7 @@ void LCD_Address_Set(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
         LCD_WR_DATA(id, y1 + 1);
         LCD_WR_DATA(id, y2 + 1);
         LCD_WR_REG(id, 0x2c);//储存器写
-    }
-    else if (USE_HORIZONTAL == 2) {
+    } else if (USE_HORIZONTAL == 2) {
         LCD_WR_REG(id, 0x2a);//列地址设置
         LCD_WR_DATA(id, x1 + 1);
         LCD_WR_DATA(id, x2 + 1);
@@ -111,8 +120,7 @@ void LCD_Address_Set(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
         LCD_WR_DATA(id, y1 + 2);
         LCD_WR_DATA(id, y2 + 2);
         LCD_WR_REG(id, 0x2c);//储存器写
-    }
-    else {
+    } else {
         LCD_WR_REG(id, 0x2a);//列地址设置
         LCD_WR_DATA(id, x1 + 1);
         LCD_WR_DATA(id, x2 + 1);
@@ -130,11 +138,19 @@ void LCD_Address_Set(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
       返回值：  无
 ******************************************************************************/
 void Lcd_Init(int id) {
-    OLED_RES_RESET();
-    delay_ms(20);
-    OLED_RES_SET();
-    delay_ms(20);
-    OLED_BL_ON();
+    if (id == 1) {
+        A_OLED_RES_RESET();
+        delay_ms(20);
+        A_OLED_RES_SET();
+        delay_ms(20);
+        A_OLED_BL_ON();
+    } else if (id == 2) {
+        B_OLED_RES_RESET();
+        delay_ms(20);
+        B_OLED_RES_SET();
+        delay_ms(20);
+        B_OLED_BL_ON();
+    }
 
 //************* Start Initial Sequence **********//
     LCD_WR_REG(id, 0x11); //Sleep out
@@ -178,10 +194,14 @@ void Lcd_Init(int id) {
     LCD_WR_REG(id, 0xC5); //VCOM
     LCD_WR_DATA8(id, 0x1A);
     LCD_WR_REG(id, 0x36); //MX, MY, RGB mode
-    if (USE_HORIZONTAL == 0)LCD_WR_DATA8(id, 0x00);
-    else if (USE_HORIZONTAL == 1)LCD_WR_DATA8(id, 0xC0);
-    else if (USE_HORIZONTAL == 2)LCD_WR_DATA8(id, 0x70);
-    else LCD_WR_DATA8(id, 0xA0);
+    if (USE_HORIZONTAL == 0)
+        LCD_WR_DATA8(id, 0x00);
+    else if (USE_HORIZONTAL == 1)
+        LCD_WR_DATA8(id, 0xC0);
+    else if (USE_HORIZONTAL == 2)
+        LCD_WR_DATA8(id, 0x70);
+    else
+        LCD_WR_DATA8(id, 0xA0);
 //------------------------------------ST7735S Gamma Sequence---------------------------------// 
     LCD_WR_REG(id, 0xE0);
     LCD_WR_DATA8(id, 0x04);
@@ -252,8 +272,12 @@ void LCD_Clear(int id, u16 Color) {
 void LCD_ShowChinese(int id, u16 x, u16 y, u8 index, u8 size, u16 color) {  //字体已经写死了
     u8 i, j;
     u8 *temp, size1;//指针
-    if (size == 16) { temp = Hzk16; }//选择字号
-    if (size == 32) { temp = Hzk32; }
+    if (size == 16) {
+        temp = Hzk16;
+    }//选择字号
+    if (size == 32) {
+        temp = Hzk32;
+    }
     LCD_Address_Set(id, x, y, x + size - 1, y + size - 1); //设置一个汉字的区域
     size1 = size * size / 8;//一个汉字所占的字节
     temp += index * size1;//写入的起始位置，从数组哪个位置开始读，以确是哪一个字
@@ -264,8 +288,7 @@ void LCD_ShowChinese(int id, u16 x, u16 y, u8 index, u8 size, u16 color) {  //�
             if ((*temp & (1 << i)) != 0)//从数据的低位开始读
             {
                 LCD_WR_DATA(id, color);//点亮
-            }
-            else {
+            } else {
                 LCD_WR_DATA(id, BACK_COLOR);//不点亮
             }
         }
@@ -281,7 +304,7 @@ void LCD_ShowChinese(int id, u16 x, u16 y, u8 index, u8 size, u16 color) {  //�
 void LCD_showTest(int id, u16 x, u16 y, u8 index, u16 color) {
     u8 i, j;
     u8 *temp, size1;//指针
-    temp = My_num;
+    temp = My_num;//指定写入的
     LCD_Address_Set(id, x, y, x + 32 - 1, y + 32 - 1); //设置一个汉字的区域
     size1 = 32 * 32 / 8;
     temp += index * size1;//得到起始位置
@@ -292,8 +315,7 @@ void LCD_showTest(int id, u16 x, u16 y, u8 index, u16 color) {
             if ((*temp & (1 << i)) != 0)//从数据的低位开始读
             {
                 LCD_WR_DATA(id, color);//点亮
-            }
-            else {
+            } else {
                 LCD_WR_DATA(id, BACK_COLOR);//不点亮
             }
         }
@@ -387,7 +409,8 @@ void LCD_Fill(int id, u16 xsta, u16 ysta, u16 xend, u16 yend, u16 color) {
     LCD_Address_Set(id, xsta, ysta, xend, yend);      //设置光标位置
     for (i = ysta; i <= yend; i++
             ) {
-        for (j = xsta; j <= xend; j++)LCD_WR_DATA(id, color);//设置光标位置
+        for (j = xsta; j <= xend; j++)
+            LCD_WR_DATA(id, color);//设置光标位置
     }
 }
 
@@ -406,20 +429,26 @@ void LCD_DrawLine(int id, u16 x1, u16 y1, u16 x2, u16 y2, u16 color) {
     delta_y = y2 - y1;
     uRow = x1;//画线起点坐标
     uCol = y1;
-    if (delta_x > 0)incx = 1; //设置单步方向
-    else if (delta_x == 0)incx = 0;//垂直线
+    if (delta_x > 0)
+        incx = 1; //设置单步方向
+    else if (delta_x == 0)
+        incx = 0;//垂直线
     else {
         incx = -1;
         delta_x = -delta_x;
     }
-    if (delta_y > 0)incy = 1;
-    else if (delta_y == 0)incy = 0;//水平线
+    if (delta_y > 0)
+        incy = 1;
+    else if (delta_y == 0)
+        incy = 0;//水平线
     else {
         incy = -1;
         delta_y = -delta_x;
     }
-    if (delta_x > delta_y)distance = delta_x; //选取基本增量坐标轴
-    else distance = delta_y;
+    if (delta_x > delta_y)
+        distance = delta_x; //选取基本增量坐标轴
+    else
+        distance = delta_y;
     for (t = 0; t < distance + 1; t++
             ) {
         LCD_DrawPoint(id, uRow, uCol, color);//画点
@@ -491,7 +520,8 @@ void LCD_ShowChar(int id, u16 x, u16 y, u8 num, u8 mode, u16 color) {
     u8 temp;
     u8 pos, t;
     u16 x0 = x;
-    if (x > LCD_W - 16 || y > LCD_H - 16)return;        //设置窗口
+    if (x > LCD_W - 16 || y > LCD_H - 16)
+        return;        //设置窗口
     num = num - ' ';//得到偏移后的值
     LCD_Address_Set(id, x, y, x + 8 - 1, y + 16 - 1);      //设置光标位置
     if (!mode) //非叠加方式
@@ -501,23 +531,25 @@ void LCD_ShowChar(int id, u16 x, u16 y, u8 num, u8 mode, u16 color) {
             temp = asc2_1608[(u16) num * 16 + pos];         //调用1608字体
             for (t = 0; t < 8; t++
                     ) {
-                if (temp & 0x01)LCD_WR_DATA(id, color);
-                else LCD_WR_DATA(id, BACK_COLOR);
+                if (temp & 0x01)
+                    LCD_WR_DATA(id, color);
+                else
+                    LCD_WR_DATA(id, BACK_COLOR);
                 temp >>= 1;
                 x++;
             }
             x = x0;
             y++;
         }
-    }
-    else//叠加方式
+    } else//叠加方式
     {
         for (pos = 0; pos < 16; pos++
                 ) {
             temp = asc2_1608[(u16) num * 16 + pos];         //调用1608字体
             for (t = 0; t < 8; t++
                     ) {
-                if (temp & 0x01)LCD_DrawPoint(id, x + t, y + pos, color);//画一个点
+                if (temp & 0x01)
+                    LCD_DrawPoint(id, x + t, y + pos, color);//画一个点
                 temp >>= 1;
             }
         }
@@ -555,7 +587,8 @@ void LCD_ShowString(int id, u16 x, u16 y, const u8 *p, u16 color) {
 ******************************************************************************/
 u32 mypow(int id, u8 m, u8 n) {
     u32 result = 1;
-    while (n--)result *= m;
+    while (n--)
+        result *= m;
     return result;
 }
 
@@ -577,8 +610,8 @@ void LCD_ShowNum(int id, u16 x, u16 y, u16 num, u8 len, u16 color) {
             if (temp == 0) {
                 LCD_ShowChar(id, x + 8 * t, y, ' ', 0, color);
                 continue;
-            }
-            else enshow = 1;
+            } else
+                enshow = 1;
 
         }
         LCD_ShowChar(id, x + 8 * t, y, temp + 48, 0, color);
@@ -621,8 +654,8 @@ void LCD_ShowPicture(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
     LCD_Address_Set(id, x1, y1, x2, y2);
     for (i = 0; i < 1600; i++
             ) {
-        LCD_WR_DATA8(id, image[i * 2 + 1]);
-        LCD_WR_DATA8(id, image[i * 2]);
+        LCD_WR_DATA8(id, gImage_scren_code_img[i * 2 + 1]);
+        LCD_WR_DATA8(id, gImage_scren_code_img[i * 2]);
     }
 }
 
