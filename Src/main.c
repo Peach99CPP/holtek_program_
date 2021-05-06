@@ -32,6 +32,7 @@
 #include <bsp_delay.h>
 #include <motor_control.h>
 #include <retarget.h>
+#include <oledfont.h>
 #include "bsp_uart.h"
 #include"led.h"
 #include "my_led.h"
@@ -105,18 +106,23 @@ int main(void) {
     MX_ADC1_Init();
     /* USER CODE BEGIN 2 */
     Global_Init();
-    screen_display();
-    
+//    screen_display();
+//    LCD_BigNum(1, 32, 32, 1, RED);
+#define start_x 16
+    LCD_ShowMyChinese(1,0,16,0,holtek,32,32,BROWN);
+    LCD_ShowMyChinese(1,1,start_x+32,0,holtek,32,32,BRRED);
+    LCD_ShowMyChinese(1,2,start_x+32+32,0,holtek,32,32,GRAY);
+    LCD_ShowMyPicture(1,0,32,gImage_face_code,104,64);
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    while (1) {//记得改成1
+    while (1) {
         /* USER CODE END WHILE */
-        LCD_Clear(1,WHITE);
-        delay_ms(300);
-        LCD_Clear(1,BLACK);
-        delay_ms(300);
+//        LCD_Clear(1,WHITE);
+//        delay_ms(300);
+//        LCD_Clear(1,BLACK);
+//        delay_ms(300);
         /* USER CODE BEGIN 3 */
 
     }

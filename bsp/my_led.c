@@ -659,5 +659,36 @@ void LCD_ShowPicture(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
         LCD_WR_DATA8(id, gImage_scren_code_img[i * 2]);
     }
 }
+void LCD_ShowMyChinese(int id,u8 index,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size,u16 color)
+{
+    if(ptr==NULL ) return ;
+    LCD_Address_Set(id,x,y,x+x_size-1,y+y_size-1);
+    u16 i,bytes_num,j;
+    bytes_num=x_size*y_size/8;
+    ptr+=index*bytes_num;
+    for(i=0;i<bytes_num;++i)
+    {
+        for (j = 0; j < 8; j++
+                ) {
+            if ((*ptr & (1 << j)) != 0)//从数据的低位开始读
+            {
+                LCD_WR_DATA(id, color);//点亮
+            } else {
+                LCD_WR_DATA(id, BACK_COLOR);//不点亮
+            }
+        }
+        ptr++;
+    }
+}
+void LCD_ShowMyPicture(int id,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size)
+{
 
-
+    LCD_Address_Set(1,x,y,x+x_size-1,y+y_size-1);
+    u16 bits_num=x_size*y_size;
+    u16 i;
+    for(i=0;i<bits_num;++i)
+    {
+        LCD_WR_DATA8(id, ptr[i * 2 + 1]);
+        LCD_WR_DATA8(id, ptr[i * 2]);
+    }
+}
