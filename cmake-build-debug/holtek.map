@@ -596,12 +596,8 @@ Discarded input sections
                 0x00000000        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Base_DeInit
                 0x00000000       0x5e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.HAL_TIM_Base_Start
-                0x00000000       0x6c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Base_Stop
                 0x00000000       0x28 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.HAL_TIM_Base_Start_IT
-                0x00000000       0x78 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Base_Stop_IT
                 0x00000000       0x32 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Base_Start_DMA
@@ -724,8 +720,6 @@ Discarded input sections
                 0x00000000       0x52 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_SlaveConfigSynchro_IT
                 0x00000000       0x52 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.TIM_CCxChannelCmd
-                0x00000000       0x1e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Start
                 0x00000000       0xf4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Stop
@@ -738,8 +732,6 @@ Discarded input sections
                 0x00000000      0x254 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OC_Stop_DMA
                 0x00000000       0xec CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.HAL_TIM_PWM_Start
-                0x00000000       0xf4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Stop
                 0x00000000       0x8c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_PWM_Start_IT
@@ -770,8 +762,6 @@ Discarded input sections
                 0x00000000       0x98 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_OnePulse_Stop_IT
                 0x00000000       0x94 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .text.HAL_TIM_Encoder_Start
-                0x00000000       0xcc CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_Stop
                 0x00000000       0xc4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.HAL_TIM_Encoder_Start_IT
@@ -870,8 +860,6 @@ Discarded input sections
                 0x00000000       0x1c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_Transmit_IT
                 0x00000000       0x60 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .text.UART_WaitOnFlagUntilTimeout
-                0x00000000       0x6c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_MspInit
                 0x00000000        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_HalfDuplex_Init
@@ -884,10 +872,6 @@ Discarded input sections
                 0x00000000        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_DeInit
                 0x00000000       0x30 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .text.HAL_UART_Transmit
-                0x00000000       0xd8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .text.HAL_UART_Receive
-                0x00000000       0xe2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Transmit_IT
                 0x00000000       0x4e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Receive_IT
@@ -981,8 +965,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/main.c.obj
- .text.Global_Init
-                0x00000000       0x50 CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
@@ -999,7 +981,6 @@ Discarded input sections
  .text._exit    0x00000000        0xc CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._read    0x00000000       0x20 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._write   0x00000000       0x1c CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .text._sbrk    0x00000000       0x3c CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._open    0x00000000        0xa CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._wait    0x00000000       0x10 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._unlink  0x00000000       0x10 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
@@ -1009,21 +990,7 @@ Discarded input sections
  .text._fork    0x00000000       0x10 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text._execve  0x00000000       0x10 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .bss.__env     0x00000000        0x4 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .bss.heap_end.0
-                0x00000000        0x4 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .data.environ  0x00000000        0x4 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_info    0x00000000      0x750 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_abbrev  0x00000000      0x1da CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_loc     0x00000000      0x3a2 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_aranges
-                0x00000000       0x90 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_ranges  0x00000000       0x80 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_line    0x00000000      0x42b CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_str     0x00000000      0x422 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .comment       0x00000000       0x4e CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .debug_frame   0x00000000      0x168 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
- .ARM.attributes
-                0x00000000       0x2d CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
@@ -1056,31 +1023,11 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .text.delay_init
-                0x00000000       0x34 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .text.delay_us
                 0x00000000       0x40 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .text.delay_ms
-                0x00000000       0x3c CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .bss.fac_ms    0x00000000        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .bss.fac_us    0x00000000        0x1 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_info    0x00000000      0x275 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_abbrev  0x00000000      0x109 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_loc     0x00000000      0x244 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_aranges
-                0x00000000       0x30 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_ranges  0x00000000       0x20 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_line    0x00000000      0x2f5 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_str     0x00000000      0x250 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .comment       0x00000000       0x4e CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .debug_frame   0x00000000       0x58 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
- .ARM.attributes
-                0x00000000       0x2d CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .text.Init_UARTS
-                0x00000000       0x34 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .rodata.UART_transmit.str1.4
                 0x00000000        0x3 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .text.UART_transmit
@@ -1098,23 +1045,39 @@ Discarded input sections
  .text.speed_set
                 0x00000000        0xc CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .text.get_avd  0x00000000       0x2c CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .text.set_direct
+                0x00000000       0x78 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .text.motor_set_pwm
+                0x00000000       0x54 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .text.read_encoder
                 0x00000000       0x2c CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .rodata.speed_cal.str1.4
                 0x00000000        0x8 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .text.speed_cal
                 0x00000000       0x8c CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .text.motor_stop
+                0x00000000       0x14 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .text.turn     0x00000000       0x24 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .text.speed_run
+                0x00000000       0x16 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .bss.avd_on    0x00000000        0x1 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .bss.global_   0x00000000        0xc CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .bss.motor     0x00000000       0x18 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_info    0x00000000      0x8df CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_abbrev  0x00000000      0x205 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_loc     0x00000000      0x35c CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_aranges
+                0x00000000       0x60 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_ranges  0x00000000       0x50 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_line    0x00000000      0x4ac CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_str     0x00000000      0x40b CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .comment       0x00000000       0x4e CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .debug_frame   0x00000000       0xdc CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+ .ARM.attributes
+                0x00000000       0x2d CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .text.LCD_WR_DATA8
-                0x00000000       0x34 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .text.Lcd_Init
-                0x00000000      0x2d4 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .text.LCD_ShowChinese
                 0x00000000       0x88 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .text.LCD_showTest
@@ -1147,62 +1110,16 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .text.PID_init
-                0x00000000       0x30 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .text.PID_cal  0x00000000      0x14e CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .text.PID_clear
-                0x00000000       0x20 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .text.global_pid_init
-                0x00000000       0x7c CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .bss.motor_    0x00000000       0x90 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .bss.tracker_  0x00000000       0x48 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .rodata.Motor_PID.1
-                0x00000000        0xc CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .rodata.Tracker_PID.0
-                0x00000000        0xc CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_info    0x00000000      0x4d2 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_abbrev  0x00000000      0x1b5 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_loc     0x00000000      0x141 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_aranges
-                0x00000000       0x38 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_ranges  0x00000000       0x28 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_line    0x00000000      0x299 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_str     0x00000000      0x2c2 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .comment       0x00000000       0x4e CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .debug_frame   0x00000000       0x88 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
- .ARM.attributes
-                0x00000000       0x2d CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text.RetargetInit
-                0x00000000       0x20 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .text._isatty  0x00000000       0x16 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text._write   0x00000000       0x34 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text._close   0x00000000       0x18 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text._lseek   0x00000000       0x10 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text._read    0x00000000       0x30 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .text._fstat   0x00000000       0x1a CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .bss.gHuart    0x00000000        0x4 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_info    0x00000000     0x1289 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_abbrev  0x00000000      0x2b4 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_loc     0x00000000      0x389 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_aranges
-                0x00000000       0x50 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_ranges  0x00000000       0x40 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_line    0x00000000      0x4ea CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_str     0x00000000      0xb0d CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .comment       0x00000000       0x4e CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .debug_frame   0x00000000       0xb8 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
- .ARM.attributes
-                0x00000000       0x2d CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
  .text.get_sys_ptr
                 0x00000000        0x8 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .text.Init_TIMS
-                0x00000000       0x54 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
  .text          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj
  .data          0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj
  .bss           0x00000000        0x0 CMakeFiles/holtek.elf.dir/bsp/tracker.c.obj
@@ -1273,10 +1190,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
- .text.__errno  0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
- .debug_frame   0x00000000       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-exit.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-exit.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-exit.o)
@@ -1287,8 +1200,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
- .data._impure_ptr
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
@@ -1307,10 +1218,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
- .text.setvbuf  0x00000000      0x1b0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
- .debug_frame   0x00000000       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
@@ -1358,19 +1265,10 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
- .text.__sflush_r
-                0x00000000      0x124 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
- .text._fflush_r
-                0x00000000       0x5c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
  .text.fflush   0x00000000       0x74 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
- .debug_frame   0x00000000       0x70 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .text._cleanup_r
-                0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__fp_lock
                 0x00000000       0x1c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__fp_unlock
@@ -1379,12 +1277,7 @@ Discarded input sections
                 0x00000000       0x30 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text._cleanup
                 0x00000000       0x14 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .text.__sinit  0x00000000      0x10c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__sfp    0x00000000       0xc8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .text.__sfp_lock_acquire
-                0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .text.__sfp_lock_release
-                0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__sinit_lock_acquire
                 0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__sinit_lock_release
@@ -1393,30 +1286,16 @@ Discarded input sections
                 0x00000000       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text.__fp_unlock_all
                 0x00000000       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .debug_frame   0x00000000      0x154 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
- .text._malloc_trim_r
-                0x00000000       0xa0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
- .text._free_r  0x00000000      0x200 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
- .debug_frame   0x00000000       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
  .text._fwalk   0x00000000       0x40 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
- .text._fwalk_reent
-                0x00000000       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
- .debug_frame   0x00000000       0x54 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
@@ -1434,11 +1313,7 @@ Discarded input sections
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .text.__retarget_lock_init
                 0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .text.__retarget_lock_init_recursive
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .text.__retarget_lock_close
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .text.__retarget_lock_close_recursive
                 0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .text.__retarget_lock_acquire
                 0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
@@ -1456,12 +1331,6 @@ Discarded input sections
                 0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .bss.__lock___env_recursive_mutex
                 0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .bss.__lock___malloc_recursive_mutex
-                0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .bss.__lock___sfp_recursive_mutex
-                0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .bss.__lock___sinit_recursive_mutex
-                0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .bss.__lock___tz_mutex
                 0x00000000        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
@@ -1469,41 +1338,13 @@ Discarded input sections
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
  .text.__smakebuf_r
                 0x00000000       0xe0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
- .text.__swhatbuf_r
-                0x00000000       0x60 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
- .debug_frame   0x00000000       0x70 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
- .text.malloc   0x00000000       0x10 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
  .text.free     0x00000000       0x10 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
- .debug_frame   0x00000000       0x30 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .text._malloc_r
-                0x00000000      0x558 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .bss.__malloc_current_mallinfo
-                0x00000000       0x28 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .bss.__malloc_max_sbrked_mem
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .bss.__malloc_max_total_mem
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .bss.__malloc_top_pad
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .data.__malloc_av_
-                0x00000000      0x408 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .data.__malloc_sbrk_base
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .data.__malloc_trim_threshold
-                0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x00000000       0x4c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
@@ -1519,13 +1360,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
- .text.__malloc_lock
-                0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
- .text.__malloc_unlock
-                0x00000000        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
- .debug_frame   0x00000000       0x30 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
@@ -1579,24 +1413,11 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x00000000       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .text.__sread  0x00000000       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
  .text.__seofread
                 0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .text.__swrite
-                0x00000000       0x40 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .text.__sseek  0x00000000       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .text.__sclose
-                0x00000000        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .debug_frame   0x00000000       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
@@ -1636,11 +1457,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
- .text._write_r
-                0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
@@ -1667,20 +1483,10 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
- .text._close_r
-                0x00000000       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
- .text._fclose_r
-                0x00000000       0xcc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
  .text.fclose   0x00000000       0x10 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
- .debug_frame   0x00000000       0x3c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
@@ -1705,11 +1511,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
- .text._fstat_r
-                0x00000000       0x28 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
@@ -1749,11 +1550,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
- .text._lseek_r
-                0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
@@ -1774,10 +1570,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
- .text._read_r  0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
- .debug_frame   0x00000000       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
  .text          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
@@ -1793,10 +1585,6 @@ Discarded input sections
                 0x00000000       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
  .text._reclaim_reent
                 0x00000000       0x90 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
- .bss.errno     0x00000000        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
- .debug_frame   0x00000000       0x64 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
- .ARM.attributes
-                0x00000000       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
  .text          0x00000000      0x1bc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strcmp.o)
  .data          0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strcmp.o)
  .bss           0x00000000        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strcmp.o)
@@ -1994,7 +1782,7 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                 0x08000000                g_pfnVectors
                 0x080001e4                . = ALIGN (0x4)
 
-.text           0x080001e4     0x2ad0
+.text           0x080001e4     0x4458
                 0x080001e4                . = ALIGN (0x4)
  *(.text)
  .text          0x080001e4       0x40 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
@@ -2086,395 +1874,534 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
                 0x0800126c       0x26 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .text.TIM_ITRx_SetConfig
                 0x08001292       0x10 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ *fill*         0x080012a2        0x2 
+ .text.HAL_TIM_Base_Start
+                0x080012a4       0x6c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080012a4                HAL_TIM_Base_Start
+ .text.HAL_TIM_Base_Start_IT
+                0x08001310       0x78 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001310                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_PWM_MspInit
-                0x080012a2        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012a2                HAL_TIM_PWM_MspInit
+                0x08001388        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001388                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x080012a4        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012a4                HAL_TIM_OC_DelayElapsedCallback
+                0x0800138a        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800138a                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x080012a6        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012a6                HAL_TIM_IC_CaptureCallback
+                0x0800138c        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800138c                HAL_TIM_IC_CaptureCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x080012a8        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012a8                HAL_TIM_PWM_PulseFinishedCallback
+                0x0800138e        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800138e                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x080012aa        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012aa                HAL_TIM_TriggerCallback
+                0x08001390        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001390                HAL_TIM_TriggerCallback
  .text.HAL_TIM_IRQHandler
-                0x080012ac      0x17a CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080012ac                HAL_TIM_IRQHandler
- *fill*         0x08001426        0x2 
+                0x08001392      0x17a CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001392                HAL_TIM_IRQHandler
  .text.TIM_Base_SetConfig
-                0x08001428       0x98 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001428                TIM_Base_SetConfig
+                0x0800150c       0x98 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800150c                TIM_Base_SetConfig
  .text.HAL_TIM_Base_Init
-                0x080014c0       0x58 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x080014c0                HAL_TIM_Base_Init
+                0x080015a4       0x58 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080015a4                HAL_TIM_Base_Init
  .text.HAL_TIM_PWM_Init
-                0x08001518       0x58 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001518                HAL_TIM_PWM_Init
+                0x080015fc       0x58 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x080015fc                HAL_TIM_PWM_Init
  .text.HAL_TIM_Encoder_Init
-                0x08001570       0xb8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001570                HAL_TIM_Encoder_Init
+                0x08001654       0xb8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001654                HAL_TIM_Encoder_Init
  .text.TIM_OC2_SetConfig
-                0x08001628       0x70 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001628                TIM_OC2_SetConfig
+                0x0800170c       0x70 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800170c                TIM_OC2_SetConfig
  .text.HAL_TIM_PWM_ConfigChannel
-                0x08001698       0xd0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001698                HAL_TIM_PWM_ConfigChannel
+                0x0800177c       0xd0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800177c                HAL_TIM_PWM_ConfigChannel
  .text.TIM_ETR_SetConfig
-                0x08001768       0x18 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001768                TIM_ETR_SetConfig
+                0x0800184c       0x18 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800184c                TIM_ETR_SetConfig
  .text.HAL_TIM_ConfigClockSource
-                0x08001780       0xda CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                0x08001780                HAL_TIM_ConfigClockSource
- *fill*         0x0800185a        0x2 
+                0x08001864       0xda CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001864                HAL_TIM_ConfigClockSource
+ .text.TIM_CCxChannelCmd
+                0x0800193e       0x1e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800193e                TIM_CCxChannelCmd
+ .text.HAL_TIM_PWM_Start
+                0x0800195c       0xf4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x0800195c                HAL_TIM_PWM_Start
+ .text.HAL_TIM_Encoder_Start
+                0x08001a50       0xcc CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x08001a50                HAL_TIM_Encoder_Start
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x0800185c       0x7c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x0800185c                HAL_TIMEx_MasterConfigSynchronization
+                0x08001b1c       0x7c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08001b1c                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_ConfigBreakDeadTime
-                0x080018d8       0x52 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x080018d8                HAL_TIMEx_ConfigBreakDeadTime
+                0x08001b98       0x52 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08001b98                HAL_TIMEx_ConfigBreakDeadTime
  .text.HAL_TIMEx_CommutCallback
-                0x0800192a        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x0800192a                HAL_TIMEx_CommutCallback
+                0x08001bea        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08001bea                HAL_TIMEx_CommutCallback
  .text.HAL_TIMEx_BreakCallback
-                0x0800192c        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                0x0800192c                HAL_TIMEx_BreakCallback
- *fill*         0x0800192e        0x2 
+                0x08001bec        0x2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x08001bec                HAL_TIMEx_BreakCallback
+ *fill*         0x08001bee        0x2 
  .text.UART_SetConfig
-                0x08001930       0x94 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08001bf0       0x94 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .text.UART_WaitOnFlagUntilTimeout
+                0x08001c84       0x6c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x080019c4       0x5e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x080019c4                HAL_UART_Init
- *fill*         0x08001a22        0x2 
+                0x08001cf0       0x5e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08001cf0                HAL_UART_Init
+ .text.HAL_UART_Transmit
+                0x08001d4e       0xd8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08001d4e                HAL_UART_Transmit
+ .text.HAL_UART_Receive
+                0x08001e26       0xe2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08001e26                HAL_UART_Receive
  .text.MX_ADC1_Init
-                0x08001a24       0x5c CMakeFiles/holtek.elf.dir/Src/adc.c.obj
-                0x08001a24                MX_ADC1_Init
+                0x08001f08       0x5c CMakeFiles/holtek.elf.dir/Src/adc.c.obj
+                0x08001f08                MX_ADC1_Init
  .text.HAL_ADC_MspInit
-                0x08001a80       0x70 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
-                0x08001a80                HAL_ADC_MspInit
+                0x08001f64       0x70 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
+                0x08001f64                HAL_ADC_MspInit
  .text.MX_GPIO_Init
-                0x08001af0       0xf8 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
-                0x08001af0                MX_GPIO_Init
+                0x08001fd4       0xf8 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
+                0x08001fd4                MX_GPIO_Init
  .text.SystemClock_Config
-                0x08001be8       0x6e CMakeFiles/holtek.elf.dir/Src/main.c.obj
-                0x08001be8                SystemClock_Config
- *fill*         0x08001c56        0x2 
- .text.main     0x08001c58       0xcc CMakeFiles/holtek.elf.dir/Src/main.c.obj
-                0x08001c58                main
+                0x080020cc       0x6e CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x080020cc                SystemClock_Config
+ *fill*         0x0800213a        0x2 
+ .text.Global_Init
+                0x0800213c       0x50 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x0800213c                Global_Init
+ .text.screen_display
+                0x0800218c       0x84 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x0800218c                screen_display
+ .text.main     0x08002210       0x38 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x08002210                main
  .text.Error_Handler
-                0x08001d24        0x2 CMakeFiles/holtek.elf.dir/Src/main.c.obj
-                0x08001d24                Error_Handler
- *fill*         0x08001d26        0x2 
+                0x08002248        0x2 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x08002248                Error_Handler
+ *fill*         0x0800224a        0x2 
  .text.HAL_MspInit
-                0x08001d28       0x44 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
-                0x08001d28                HAL_MspInit
+                0x0800224c       0x44 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x0800224c                HAL_MspInit
  .text.NMI_Handler
-                0x08001d6c        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d6c                NMI_Handler
+                0x08002290        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002290                NMI_Handler
  .text.HardFault_Handler
-                0x08001d6e        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d6e                HardFault_Handler
+                0x08002292        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002292                HardFault_Handler
  .text.MemManage_Handler
-                0x08001d70        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d70                MemManage_Handler
+                0x08002294        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002294                MemManage_Handler
  .text.BusFault_Handler
-                0x08001d72        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d72                BusFault_Handler
+                0x08002296        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002296                BusFault_Handler
  .text.UsageFault_Handler
-                0x08001d74        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d74                UsageFault_Handler
+                0x08002298        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002298                UsageFault_Handler
  .text.SVC_Handler
-                0x08001d76        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d76                SVC_Handler
+                0x0800229a        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x0800229a                SVC_Handler
  .text.DebugMon_Handler
-                0x08001d78        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d78                DebugMon_Handler
+                0x0800229c        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x0800229c                DebugMon_Handler
  .text.PendSV_Handler
-                0x08001d7a        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d7a                PendSV_Handler
+                0x0800229e        0x2 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x0800229e                PendSV_Handler
  .text.SysTick_Handler
-                0x08001d7c        0x8 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d7c                SysTick_Handler
+                0x080022a0        0x8 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022a0                SysTick_Handler
  .text.ADC1_2_IRQHandler
-                0x08001d84       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d84                ADC1_2_IRQHandler
+                0x080022a8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022a8                ADC1_2_IRQHandler
  .text.TIM1_BRK_IRQHandler
-                0x08001d94       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001d94                TIM1_BRK_IRQHandler
+                0x080022b8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022b8                TIM1_BRK_IRQHandler
  .text.TIM1_UP_IRQHandler
-                0x08001da4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001da4                TIM1_UP_IRQHandler
+                0x080022c8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022c8                TIM1_UP_IRQHandler
  .text.TIM1_TRG_COM_IRQHandler
-                0x08001db4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001db4                TIM1_TRG_COM_IRQHandler
+                0x080022d8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022d8                TIM1_TRG_COM_IRQHandler
  .text.TIM1_CC_IRQHandler
-                0x08001dc4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001dc4                TIM1_CC_IRQHandler
+                0x080022e8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022e8                TIM1_CC_IRQHandler
  .text.TIM2_IRQHandler
-                0x08001dd4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001dd4                TIM2_IRQHandler
+                0x080022f8       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x080022f8                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x08001de4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001de4                TIM3_IRQHandler
+                0x08002308       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002308                TIM3_IRQHandler
  .text.TIM6_IRQHandler
-                0x08001df4       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08001df4                TIM6_IRQHandler
+                0x08002318       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08002318                TIM6_IRQHandler
+ .text._sbrk    0x08002328       0x3c CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+                0x08002328                _sbrk
  .text.SystemInit
-                0x08001e04        0x2 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08001e04                SystemInit
- *fill*         0x08001e06        0x2 
+                0x08002364        0x2 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+                0x08002364                SystemInit
+ *fill*         0x08002366        0x2 
  .text.MX_TIM2_Init
-                0x08001e08       0x64 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08001e08                MX_TIM2_Init
+                0x08002368       0x64 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x08002368                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x08001e6c       0x64 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08001e6c                MX_TIM3_Init
+                0x080023cc       0x64 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x080023cc                MX_TIM3_Init
  .text.MX_TIM6_Init
-                0x08001ed0       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08001ed0                MX_TIM6_Init
+                0x08002430       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x08002430                MX_TIM6_Init
  .text.HAL_TIM_Base_MspInit
-                0x08001f20       0xa0 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08001f20                HAL_TIM_Base_MspInit
+                0x08002480       0xa0 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x08002480                HAL_TIM_Base_MspInit
  .text.HAL_TIM_Encoder_MspInit
-                0x08001fc0       0xb8 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08001fc0                HAL_TIM_Encoder_MspInit
+                0x08002520       0xb8 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x08002520                HAL_TIM_Encoder_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08002078       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x08002078                HAL_TIM_MspPostInit
+                0x080025d8       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x080025d8                HAL_TIM_MspPostInit
  .text.MX_TIM1_Init
-                0x080020c8       0xfc CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x080020c8                MX_TIM1_Init
+                0x08002628       0xfc CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x08002628                MX_TIM1_Init
  .text.MX_UART4_Init
-                0x080021c4       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x080021c4                MX_UART4_Init
+                0x08002724       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x08002724                MX_UART4_Init
  .text.MX_USART2_UART_Init
-                0x080021f8       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x080021f8                MX_USART2_UART_Init
+                0x08002758       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x08002758                MX_USART2_UART_Init
  .text.MX_USART3_UART_Init
-                0x0800222c       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x0800222c                MX_USART3_UART_Init
+                0x0800278c       0x34 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x0800278c                MX_USART3_UART_Init
  .text.HAL_UART_MspInit
-                0x08002260      0x16c CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x08002260                HAL_UART_MspInit
+                0x080027c0      0x16c CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x080027c0                HAL_UART_MspInit
+ .text.delay_init
+                0x0800292c       0x34 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+                0x0800292c                delay_init
+ .text.delay_ms
+                0x08002960       0x3c CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+                0x08002960                delay_ms
+ .text.Init_UARTS
+                0x0800299c       0x34 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x0800299c                Init_UARTS
  .text.USART2_IRQHandler
-                0x080023cc       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x080023cc                USART2_IRQHandler
+                0x080029d0       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x080029d0                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x08002454       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x08002454                USART3_IRQHandler
+                0x08002a58       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x08002a58                USART3_IRQHandler
  .text.UART4_IRQHandler
-                0x080024dc       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x080024dc                UART4_IRQHandler
+                0x08002ae0       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x08002ae0                UART4_IRQHandler
  .text.UART5_IRQHandler
-                0x08002564       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x08002564                UART5_IRQHandler
+                0x08002b68       0x88 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x08002b68                UART5_IRQHandler
  .text.led_control
-                0x080025ec       0x60 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
-                0x080025ec                led_control
- .text.set_direct
-                0x0800264c       0x78 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
-                0x0800264c                set_direct
- .text.motor_set_pwm
-                0x080026c4       0x54 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
-                0x080026c4                motor_set_pwm
- .text.motor_stop
-                0x08002718       0x14 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
-                0x08002718                motor_stop
- .text.speed_run
-                0x0800272c       0x16 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
-                0x0800272c                speed_run
- *fill*         0x08002742        0x2 
+                0x08002bf0       0x60 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+                0x08002bf0                led_control
  .text.LCD_Writ_Bus
-                0x08002744       0xd0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002744                LCD_Writ_Bus
+                0x08002c50       0xd0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002c50                LCD_Writ_Bus
+ .text.LCD_WR_DATA8
+                0x08002d20       0x34 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002d20                LCD_WR_DATA8
  .text.LCD_WR_DATA
-                0x08002814       0x40 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002814                LCD_WR_DATA
+                0x08002d54       0x44 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002d54                LCD_WR_DATA
  .text.LCD_WR_REG
-                0x08002854       0x34 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002854                LCD_WR_REG
+                0x08002d98       0x34 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002d98                LCD_WR_REG
  .text.LCD_Address_Set
-                0x08002888       0x44 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002888                LCD_Address_Set
+                0x08002dcc       0x44 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002dcc                LCD_Address_Set
+ .text.Lcd_Init
+                0x08002e10      0x2d4 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08002e10                Lcd_Init
  .text.LCD_Clear
-                0x080028cc       0x36 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x080028cc                LCD_Clear
+                0x080030e4       0x36 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x080030e4                LCD_Clear
  .text.LCD_DrawPoint
-                0x08002902       0x1c CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002902                LCD_DrawPoint
- *fill*         0x0800291e        0x2 
+                0x0800311a       0x1c CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x0800311a                LCD_DrawPoint
+ *fill*         0x08003136        0x2 
  .text.LCD_ShowChar
-                0x08002920       0xc4 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002920                LCD_ShowChar
+                0x08003138       0xc4 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x08003138                LCD_ShowChar
  .text.LCD_ShowString
-                0x080029e4       0x54 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x080029e4                LCD_ShowString
+                0x080031fc       0x54 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x080031fc                LCD_ShowString
+ .text.PID_init
+                0x08003250       0x30 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                0x08003250                PID_init
+ .text.PID_clear
+                0x08003280       0x20 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                0x08003280                PID_clear
+ .text.global_pid_init
+                0x080032a0       0x7c CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                0x080032a0                global_pid_init
+ .text.RetargetInit
+                0x0800331c       0x20 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x0800331c                RetargetInit
+ .text._write   0x0800333c       0x34 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x0800333c                _write
+ .text._close   0x08003370       0x18 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x08003370                _close
+ .text._lseek   0x08003388       0x10 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x08003388                _lseek
+ .text._read    0x08003398       0x30 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x08003398                _read
+ .text._fstat   0x080033c8       0x1a CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x080033c8                _fstat
+ *fill*         0x080033e2        0x2 
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08002a38       0x4c CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
-                0x08002a38                HAL_TIM_PeriodElapsedCallback
+                0x080033e4       0x4c CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+                0x080033e4                HAL_TIM_PeriodElapsedCallback
+ .text.Init_TIMS
+                0x08003430       0x54 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+                0x08003430                Init_TIMS
  .text.Reset_Handler
-                0x08002a84       0x48 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x08002a84                Reset_Handler
+                0x08003484       0x48 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x08003484                Reset_Handler
  .text.Default_Handler
-                0x08002acc        0x2 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x08002acc                RTC_Alarm_IRQHandler
-                0x08002acc                EXTI2_IRQHandler
-                0x08002acc                TIM8_TRG_COM_IRQHandler
-                0x08002acc                TIM8_CC_IRQHandler
-                0x08002acc                PVD_IRQHandler
-                0x08002acc                SDIO_IRQHandler
-                0x08002acc                EXTI3_IRQHandler
-                0x08002acc                EXTI0_IRQHandler
-                0x08002acc                I2C2_EV_IRQHandler
-                0x08002acc                SPI1_IRQHandler
-                0x08002acc                TAMPER_IRQHandler
-                0x08002acc                TIM8_UP_IRQHandler
-                0x08002acc                DMA2_Channel2_IRQHandler
-                0x08002acc                DMA1_Channel4_IRQHandler
-                0x08002acc                RTC_IRQHandler
-                0x08002acc                DMA1_Channel7_IRQHandler
-                0x08002acc                CAN1_RX1_IRQHandler
-                0x08002acc                ADC3_IRQHandler
-                0x08002acc                TIM4_IRQHandler
-                0x08002acc                DMA2_Channel1_IRQHandler
-                0x08002acc                I2C1_EV_IRQHandler
-                0x08002acc                DMA1_Channel6_IRQHandler
-                0x08002acc                RCC_IRQHandler
-                0x08002acc                DMA1_Channel1_IRQHandler
-                0x08002acc                Default_Handler
-                0x08002acc                EXTI15_10_IRQHandler
-                0x08002acc                TIM7_IRQHandler
-                0x08002acc                TIM5_IRQHandler
-                0x08002acc                EXTI9_5_IRQHandler
-                0x08002acc                SPI2_IRQHandler
-                0x08002acc                DMA1_Channel5_IRQHandler
-                0x08002acc                EXTI4_IRQHandler
-                0x08002acc                USB_LP_CAN1_RX0_IRQHandler
-                0x08002acc                USB_HP_CAN1_TX_IRQHandler
-                0x08002acc                DMA1_Channel3_IRQHandler
-                0x08002acc                FSMC_IRQHandler
-                0x08002acc                WWDG_IRQHandler
-                0x08002acc                EXTI1_IRQHandler
-                0x08002acc                DMA2_Channel4_5_IRQHandler
-                0x08002acc                I2C2_ER_IRQHandler
-                0x08002acc                DMA1_Channel2_IRQHandler
-                0x08002acc                TIM8_BRK_IRQHandler
-                0x08002acc                CAN1_SCE_IRQHandler
-                0x08002acc                FLASH_IRQHandler
-                0x08002acc                USART1_IRQHandler
-                0x08002acc                SPI3_IRQHandler
-                0x08002acc                I2C1_ER_IRQHandler
-                0x08002acc                USBWakeUp_IRQHandler
-                0x08002acc                DMA2_Channel3_IRQHandler
- *fill*         0x08002ace        0x2 
+                0x080034cc        0x2 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x080034cc                RTC_Alarm_IRQHandler
+                0x080034cc                EXTI2_IRQHandler
+                0x080034cc                TIM8_TRG_COM_IRQHandler
+                0x080034cc                TIM8_CC_IRQHandler
+                0x080034cc                PVD_IRQHandler
+                0x080034cc                SDIO_IRQHandler
+                0x080034cc                EXTI3_IRQHandler
+                0x080034cc                EXTI0_IRQHandler
+                0x080034cc                I2C2_EV_IRQHandler
+                0x080034cc                SPI1_IRQHandler
+                0x080034cc                TAMPER_IRQHandler
+                0x080034cc                TIM8_UP_IRQHandler
+                0x080034cc                DMA2_Channel2_IRQHandler
+                0x080034cc                DMA1_Channel4_IRQHandler
+                0x080034cc                RTC_IRQHandler
+                0x080034cc                DMA1_Channel7_IRQHandler
+                0x080034cc                CAN1_RX1_IRQHandler
+                0x080034cc                ADC3_IRQHandler
+                0x080034cc                TIM4_IRQHandler
+                0x080034cc                DMA2_Channel1_IRQHandler
+                0x080034cc                I2C1_EV_IRQHandler
+                0x080034cc                DMA1_Channel6_IRQHandler
+                0x080034cc                RCC_IRQHandler
+                0x080034cc                DMA1_Channel1_IRQHandler
+                0x080034cc                Default_Handler
+                0x080034cc                EXTI15_10_IRQHandler
+                0x080034cc                TIM7_IRQHandler
+                0x080034cc                TIM5_IRQHandler
+                0x080034cc                EXTI9_5_IRQHandler
+                0x080034cc                SPI2_IRQHandler
+                0x080034cc                DMA1_Channel5_IRQHandler
+                0x080034cc                EXTI4_IRQHandler
+                0x080034cc                USB_LP_CAN1_RX0_IRQHandler
+                0x080034cc                USB_HP_CAN1_TX_IRQHandler
+                0x080034cc                DMA1_Channel3_IRQHandler
+                0x080034cc                FSMC_IRQHandler
+                0x080034cc                WWDG_IRQHandler
+                0x080034cc                EXTI1_IRQHandler
+                0x080034cc                DMA2_Channel4_5_IRQHandler
+                0x080034cc                I2C2_ER_IRQHandler
+                0x080034cc                DMA1_Channel2_IRQHandler
+                0x080034cc                TIM8_BRK_IRQHandler
+                0x080034cc                CAN1_SCE_IRQHandler
+                0x080034cc                FLASH_IRQHandler
+                0x080034cc                USART1_IRQHandler
+                0x080034cc                SPI3_IRQHandler
+                0x080034cc                I2C1_ER_IRQHandler
+                0x080034cc                USBWakeUp_IRQHandler
+                0x080034cc                DMA2_Channel3_IRQHandler
+ *fill*         0x080034ce        0x2 
+ .text.__errno  0x080034d0        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
+                0x080034d0                __errno
  .text.__libc_init_array
-                0x08002ad0       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
-                0x08002ad0                __libc_init_array
- .text.memset   0x08002b18       0xa4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
-                0x08002b18                memset
+                0x080034dc       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+                0x080034dc                __libc_init_array
+ .text.memset   0x08003524       0xa4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+                0x08003524                memset
+ .text.setvbuf  0x080035c8      0x1b0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
+                0x080035c8                setvbuf
  .text.startup.register_fini
-                0x08002bbc       0x14 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08002bd0        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
-                0x08002bd0                atexit
+                0x08003778       0x14 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0800378c        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+                0x0800378c                atexit
+ .text.__sflush_r
+                0x08003798      0x124 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x08003798                __sflush_r
+ .text._fflush_r
+                0x080038bc       0x5c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x080038bc                _fflush_r
+ .text._cleanup_r
+                0x08003918        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08003918                _cleanup_r
+ .text.__sinit  0x08003924      0x10c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08003924                __sinit
+ .text.__sfp_lock_acquire
+                0x08003a30        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08003a30                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x08003a3c        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08003a3c                __sfp_lock_release
  .text.__libc_fini_array
-                0x08002bdc       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
-                0x08002bdc                __libc_fini_array
+                0x08003a48       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+                0x08003a48                __libc_fini_array
+ .text._malloc_trim_r
+                0x08003a74       0xa0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08003a74                _malloc_trim_r
+ .text._free_r  0x08003b14      0x200 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08003b14                _free_r
+ .text._fwalk_reent
+                0x08003d14       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+                0x08003d14                _fwalk_reent
+ .text.__retarget_lock_init_recursive
+                0x08003d5c        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08003d5c                __retarget_lock_init_recursive
+ .text.__retarget_lock_close_recursive
+                0x08003d60        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08003d60                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x08002c08        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08002c08                __retarget_lock_acquire_recursive
+                0x08003d64        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08003d64                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08002c0c        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x08002c0c                __retarget_lock_release_recursive
+                0x08003d68        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x08003d68                __retarget_lock_release_recursive
+ .text.__swhatbuf_r
+                0x08003d6c       0x60 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+                0x08003d6c                __swhatbuf_r
+ .text.malloc   0x08003dcc       0x10 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+                0x08003dcc                malloc
+ .text._malloc_r
+                0x08003ddc      0x558 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x08003ddc                _malloc_r
+ .text.__malloc_lock
+                0x08004334        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x08004334                __malloc_lock
+ .text.__malloc_unlock
+                0x08004340        0xc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x08004340                __malloc_unlock
+ .text._sbrk_r  0x0800434c       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+                0x0800434c                _sbrk_r
+ .text.__sread  0x08004370       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08004370                __sread
+ .text.__swrite
+                0x08004394       0x40 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x08004394                __swrite
+ .text.__sseek  0x080043d4       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x080043d4                __sseek
+ .text.__sclose
+                0x080043f4        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x080043f4                __sclose
+ .text._write_r
+                0x080043fc       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+                0x080043fc                _write_r
  .text.__register_exitproc
-                0x08002c10       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08002c10                __register_exitproc
+                0x08004428       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08004428                __register_exitproc
+ .text._close_r
+                0x080044b4       0x24 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+                0x080044b4                _close_r
+ .text._fclose_r
+                0x080044d8       0xcc d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+                0x080044d8                _fclose_r
+ .text._fstat_r
+                0x080045a4       0x28 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+                0x080045a4                _fstat_r
+ .text._lseek_r
+                0x080045cc       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+                0x080045cc                _lseek_r
+ .text._read_r  0x080045f8       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+                0x080045f8                _read_r
  *(.glue_7)
- .glue_7        0x08002c9c        0x0 linker stubs
+ .glue_7        0x08004624        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08002c9c        0x0 linker stubs
+ .glue_7t       0x08004624        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08002c9c        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x08004624        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08002c9c        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crti.o
-                0x08002c9c                _init
- .init          0x08002ca0        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
+ .init          0x08004624        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crti.o
+                0x08004624                _init
+ .init          0x08004628        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08002ca8        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crti.o
-                0x08002ca8                _fini
- .fini          0x08002cac        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
-                0x08002cb4                . = ALIGN (0x4)
-                0x08002cb4                _etext = .
+ .fini          0x08004630        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crti.o
+                0x08004630                _fini
+ .fini          0x08004634        0x8 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
+                0x0800463c                . = ALIGN (0x4)
+                0x0800463c                _etext = .
 
-.vfp11_veneer   0x08002cb4        0x0
- .vfp11_veneer  0x08002cb4        0x0 linker stubs
+.vfp11_veneer   0x0800463c        0x0
+ .vfp11_veneer  0x0800463c        0x0 linker stubs
 
-.v4_bx          0x08002cb4        0x0
- .v4_bx         0x08002cb4        0x0 linker stubs
+.v4_bx          0x0800463c        0x0
+ .v4_bx         0x0800463c        0x0 linker stubs
 
-.iplt           0x08002cb4        0x0
- .iplt          0x08002cb4        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800463c        0x0
+ .iplt          0x0800463c        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x08002cb4      0x634
-                0x08002cb4                . = ALIGN (0x4)
+.rodata         0x0800463c      0x64c
+                0x0800463c                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.HAL_RCC_GetSysClockFreq.str1.4
-                0x08002cb4       0x11 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x08002cc5        0x3 
- .rodata.main.str1.4
-                0x08002cc8       0x11 CMakeFiles/holtek.elf.dir/Src/main.c.obj
- *fill*         0x08002cd9        0x3 
+                0x0800463c       0x11 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800464d        0x3 
+ .rodata.screen_display.str1.4
+                0x08004650       0x11 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+ *fill*         0x08004661        0x3 
  .rodata.AHBPrescTable
-                0x08002cdc       0x10 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08002cdc                AHBPrescTable
+                0x08004664       0x10 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+                0x08004664                AHBPrescTable
  .rodata.APBPrescTable
-                0x08002cec        0x8 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08002cec                APBPrescTable
+                0x08004674        0x8 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+                0x08004674                APBPrescTable
  .rodata.asc2_1608
-                0x08002cf4      0x5f0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
-                0x08002cf4                asc2_1608
+                0x0800467c      0x5f0 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x0800467c                asc2_1608
+ .rodata.Motor_PID.1
+                0x08004c6c        0xc CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .rodata.Tracker_PID.0
+                0x08004c78        0xc CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .rodata._global_impure_ptr
-                0x080032e4        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
-                0x080032e4                _global_impure_ptr
-                0x080032e8                . = ALIGN (0x4)
+                0x08004c84        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x08004c84                _global_impure_ptr
+                0x08004c88                . = ALIGN (0x4)
 
-.rel.dyn        0x080032e8        0x0
- .rel.iplt      0x080032e8        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x08004c88        0x0
+ .rel.iplt      0x08004c88        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x080032e8        0x0
-                0x080032e8                __exidx_start = .
+.ARM            0x08004c88        0x0
+                0x08004c88                __exidx_start = .
  *(.ARM.exidx*)
-                0x080032e8                __exidx_end = .
+                0x08004c88                __exidx_end = .
 
-.preinit_array  0x080032e8        0x0
-                0x080032e8                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004c88        0x0
+                0x08004c88                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080032e8                PROVIDE (__preinit_array_end = .)
+                0x08004c88                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x080032e8        0x8
-                0x080032e8                PROVIDE (__init_array_start = .)
+.init_array     0x08004c88        0x8
+                0x08004c88                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080032e8        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08004c88        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080032ec        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
-                0x080032f0                PROVIDE (__init_array_end = .)
+ .init_array    0x08004c8c        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+                0x08004c90                PROVIDE (__init_array_end = .)
 
-.fini_array     0x080032f0        0x4
-                0x080032f0                PROVIDE (__fini_array_start = .)
+.fini_array     0x08004c90        0x4
+                0x08004c90                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080032f0        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
-                0x080032f4                PROVIDE (__fini_array_end = .)
-                0x080032f4                _sidata = LOADADDR (.data)
+ .fini_array    0x08004c90        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+                0x08004c94                PROVIDE (__fini_array_end = .)
+                0x08004c94                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x43c load address 0x080032f4
+.data           0x20000000      0x854 load address 0x08004c94
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2492,108 +2419,157 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .data.BACK_COLOR
                 0x2000000c        0x4 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
                 0x2000000c                BACK_COLOR
+ .data._impure_ptr
+                0x20000010        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x20000010                _impure_ptr
+ *fill*         0x20000014        0x4 
  .data.impure_data
-                0x20000010      0x428 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x20000018      0x428 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
  .data.__atexit_recursive_mutex
-                0x20000438        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
-                0x20000438                __atexit_recursive_mutex
-                0x2000043c                . = ALIGN (0x4)
-                0x2000043c                _edata = .
+                0x20000440        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x20000440                __atexit_recursive_mutex
+ .data.__malloc_av_
+                0x20000444      0x408 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000444                __malloc_av_
+ .data.__malloc_sbrk_base
+                0x2000084c        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x2000084c                __malloc_sbrk_base
+ .data.__malloc_trim_threshold
+                0x20000850        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000850                __malloc_trim_threshold
+                0x20000854                . = ALIGN (0x4)
+                0x20000854                _edata = .
 
-.igot.plt       0x2000043c        0x0 load address 0x08003730
- .igot.plt      0x2000043c        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
-                0x2000043c                . = ALIGN (0x4)
+.igot.plt       0x20000854        0x0 load address 0x080054e8
+ .igot.plt      0x20000854        0x0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+                0x20000854                . = ALIGN (0x4)
 
-.bss            0x2000043c      0x588 load address 0x08003730
-                0x2000043c                _sbss = .
-                0x2000043c                __bss_start__ = _sbss
+.bss            0x20000854      0x6b4 load address 0x080054e8
+                0x20000854                _sbss = .
+                0x20000854                __bss_start__ = _sbss
  *(.bss)
- .bss           0x2000043c       0x1c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
+ .bss           0x20000854       0x1c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtbegin.o
  *(.bss*)
- .bss.uwTick    0x20000458        0x4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x20000458                uwTick
- .bss.hadc1     0x2000045c       0x30 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
-                0x2000045c                hadc1
- .bss.htim1     0x2000048c       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x2000048c                htim1
- .bss.htim2     0x200004d4       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x200004d4                htim2
- .bss.htim3     0x2000051c       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x2000051c                htim3
- .bss.htim6     0x20000564       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
-                0x20000564                htim6
- .bss.huart2    0x200005ac       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x200005ac                huart2
- .bss.huart3    0x200005ec       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x200005ec                huart3
- .bss.huart4    0x2000062c       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
-                0x2000062c                huart4
+ .bss.uwTick    0x20000870        0x4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x20000870                uwTick
+ .bss.hadc1     0x20000874       0x30 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
+                0x20000874                hadc1
+ .bss.heap_end.0
+                0x200008a4        0x4 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .bss.htim1     0x200008a8       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x200008a8                htim1
+ .bss.htim2     0x200008f0       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x200008f0                htim2
+ .bss.htim3     0x20000938       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x20000938                htim3
+ .bss.htim6     0x20000980       0x48 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x20000980                htim6
+ .bss.huart2    0x200009c8       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x200009c8                huart2
+ .bss.huart3    0x20000a08       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x20000a08                huart3
+ .bss.huart4    0x20000a48       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x20000a48                huart4
+ .bss.fac_ms    0x20000a88        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .bss.fac_us    0x20000a8c        0x1 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ *fill*         0x20000a8d        0x3 
  .bss.temp_flag_2
-                0x2000066c        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000a90        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .bss.temp_flag_3
-                0x20000670        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000a94        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .bss.temp_flag_4
-                0x20000674        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000a98        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .bss.temp_flag_5
-                0x20000678        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .bss.uart2_    0x2000067c       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x2000067c                uart2_
- *fill*         0x20000743        0x1 
+                0x20000a9c        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .bss.uart2_    0x20000aa0       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000aa0                uart2_
+ *fill*         0x20000b67        0x1 
  .bss.uart2_index
-                0x20000744        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x20000744                uart2_index
+                0x20000b68        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000b68                uart2_index
  .bss.uart2_receive_flag
-                0x20000748        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x20000748                uart2_receive_flag
- .bss.uart3_    0x2000074c       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x2000074c                uart3_
- *fill*         0x20000813        0x1 
+                0x20000b6c        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000b6c                uart2_receive_flag
+ .bss.uart3_    0x20000b70       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000b70                uart3_
+ *fill*         0x20000c37        0x1 
  .bss.uart3_index
-                0x20000814        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x20000814                uart3_index
+                0x20000c38        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000c38                uart3_index
  .bss.uart3_receive_flag
-                0x20000818        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x20000818                uart3_receive_flag
- .bss.uart4_    0x2000081c       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x2000081c                uart4_
- *fill*         0x200008e3        0x1 
+                0x20000c3c        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000c3c                uart3_receive_flag
+ .bss.uart4_    0x20000c40       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000c40                uart4_
+ *fill*         0x20000d07        0x1 
  .bss.uart4_index
-                0x200008e4        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x200008e4                uart4_index
+                0x20000d08        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000d08                uart4_index
  .bss.uart4_receive_flag
-                0x200008e8        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x200008e8                uart4_receive_flag
- .bss.uart5_    0x200008ec       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x200008ec                uart5_
- *fill*         0x200009b3        0x1 
+                0x20000d0c        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000d0c                uart4_receive_flag
+ .bss.uart5_    0x20000d10       0xc7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000d10                uart5_
+ *fill*         0x20000dd7        0x1 
  .bss.uart5_index
-                0x200009b4        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x200009b4                uart5_index
+                0x20000dd8        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000dd8                uart5_index
  .bss.uart5_receive_flag
-                0x200009b8        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
-                0x200009b8                uart5_receive_flag
- .bss.sys_time  0x200009bc        0x4 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
-                0x200009bc                sys_time
+                0x20000ddc        0x4 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x20000ddc                uart5_receive_flag
+ .bss.motor_    0x20000de0       0x90 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                0x20000de0                motor_
+ .bss.tracker_  0x20000e70       0x48 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                0x20000e70                tracker_
+ .bss.gHuart    0x20000eb8        0x4 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                0x20000eb8                gHuart
+ .bss.sys_time  0x20000ebc        0x4 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+                0x20000ebc                sys_time
  .bss.__lock___atexit_recursive_mutex
-                0x200009c0        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x200009c0                __lock___atexit_recursive_mutex
+                0x20000ec0        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x20000ec0                __lock___atexit_recursive_mutex
+ *fill*         0x20000ec1        0x3 
+ .bss.__lock___malloc_recursive_mutex
+                0x20000ec4        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x20000ec4                __lock___malloc_recursive_mutex
+ *fill*         0x20000ec5        0x3 
+ .bss.__lock___sfp_recursive_mutex
+                0x20000ec8        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x20000ec8                __lock___sfp_recursive_mutex
+ *fill*         0x20000ec9        0x3 
+ .bss.__lock___sinit_recursive_mutex
+                0x20000ecc        0x1 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x20000ecc                __lock___sinit_recursive_mutex
+ *fill*         0x20000ecd        0x3 
+ .bss.__malloc_current_mallinfo
+                0x20000ed0       0x28 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000ed0                __malloc_current_mallinfo
+ .bss.__malloc_max_sbrked_mem
+                0x20000ef8        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000ef8                __malloc_max_sbrked_mem
+ .bss.__malloc_max_total_mem
+                0x20000efc        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000efc                __malloc_max_total_mem
+ .bss.__malloc_top_pad
+                0x20000f00        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x20000f00                __malloc_top_pad
+ .bss.errno     0x20000f04        0x4 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
+                0x20000f04                errno
  *(COMMON)
-                0x200009c4                . = ALIGN (0x4)
- *fill*         0x200009c1        0x3 
-                0x200009c4                _ebss = .
-                0x200009c4                __bss_end__ = _ebss
+                0x20000f08                . = ALIGN (0x4)
+                0x20000f08                _ebss = .
+                0x20000f08                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200009c4      0x604 load address 0x08003730
-                0x200009c8                . = ALIGN (0x8)
- *fill*         0x200009c4        0x4 
-                0x200009c8                PROVIDE (end = .)
+                0x20000f08      0x600 load address 0x080054e8
+                0x20000f08                . = ALIGN (0x8)
+                0x20000f08                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x20000bc8                . = (. + _Min_Heap_Size)
- *fill*         0x200009c8      0x200 
-                0x20000fc8                . = (. + _Min_Stack_Size)
- *fill*         0x20000bc8      0x400 
-                0x20000fc8                . = ALIGN (0x8)
+                0x20001108                . = (. + _Min_Heap_Size)
+ *fill*         0x20000f08      0x200 
+                0x20001508                . = (. + _Min_Stack_Size)
+ *fill*         0x20001108      0x400 
+                0x20001508                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2638,48 +2614,92 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .ARM.attributes
                 0x000002c0       0x2d CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
  .ARM.attributes
-                0x000002ed       0x2d CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+                0x000002ed       0x2d CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .ARM.attributes
-                0x0000031a       0x2d CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x0000031a       0x2d CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
  .ARM.attributes
-                0x00000347       0x2d CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x00000347       0x2d CMakeFiles/holtek.elf.dir/Src/tim.c.obj
  .ARM.attributes
-                0x00000374       0x2d CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x00000374       0x2d CMakeFiles/holtek.elf.dir/Src/usart.c.obj
  .ARM.attributes
-                0x000003a1       0x2d CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+                0x000003a1       0x2d CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .ARM.attributes
-                0x000003ce       0x2d CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+                0x000003ce       0x2d CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .ARM.attributes
-                0x000003fb       0x2d CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x000003fb       0x2d CMakeFiles/holtek.elf.dir/bsp/led.c.obj
  .ARM.attributes
-                0x00000428       0x2d CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+                0x00000428       0x2d CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .ARM.attributes
-                0x00000455       0x21 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x00000455       0x2d CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
  .ARM.attributes
-                0x00000476       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x00000482       0x2d CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .ARM.attributes
-                0x000004a3       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+                0x000004af       0x2d CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
  .ARM.attributes
-                0x000004d0       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+                0x000004dc       0x21 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
  .ARM.attributes
-                0x000004fd       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x000004fd       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .ARM.attributes
-                0x0000052a       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+                0x0000052a       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000557       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+                0x00000557       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
  .ARM.attributes
-                0x00000584       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x00000584       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
  .ARM.attributes
-                0x000005b1       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+                0x000005b1       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
  .ARM.attributes
-                0x000005de       0x1d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
+                0x000005de       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000060b       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000638       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000665       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000692       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+ .ARM.attributes
+                0x000006bf       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000006ec       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000719       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+ .ARM.attributes
+                0x00000746       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x00000773       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+ .ARM.attributes
+                0x000007a0       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x000007cd       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x000007fa       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x00000827       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x00000854       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+ .ARM.attributes
+                0x00000881       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x000008ae       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+ .ARM.attributes
+                0x000008db       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+ .ARM.attributes
+                0x00000908       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x00000935       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x00000962       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+ .ARM.attributes
+                0x0000098f       0x2d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)
+ .ARM.attributes
+                0x000009bc       0x1d d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(holtek.elf elf32-littlearm)
 LOAD linker stubs
 LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
 LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x1633f
+.debug_info     0x00000000    0x17b41
  .debug_info    0x00000000      0x80e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_info    0x0000080e      0xf10 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_info    0x0000171e      0xbd7 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2692,20 +2712,23 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_info    0x00009a67     0x1845 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_info    0x0000b2ac      0xa72 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
  .debug_info    0x0000bd1e      0x3c2 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
- .debug_info    0x0000c0e0     0x1854 CMakeFiles/holtek.elf.dir/Src/main.c.obj
- .debug_info    0x0000d934      0x211 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000db45      0xa39 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000e57e      0x248 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_info    0x0000e7c6     0x13d2 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_info    0x0000fb98      0xc6d CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_info    0x00010805      0xb0b CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_info    0x00011310      0xf13 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_info    0x00012223      0x8df CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_info    0x00012b02     0x307b CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .debug_info    0x00015b7d      0x7a0 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .debug_info    0x0001631d       0x22 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_info    0x0000c0e0     0x1815 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+ .debug_info    0x0000d8f5      0x211 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000db06      0xa39 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000e53f      0x750 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_info    0x0000ec8f      0x248 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x0000eed7     0x13d2 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_info    0x000102a9      0xc6d CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_info    0x00010f16      0x275 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_info    0x0001118b      0xb0b CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_info    0x00011c96      0xf13 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_info    0x00012ba9     0x307b CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_info    0x00015c24      0x4d2 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_info    0x000160f6     0x1289 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_info    0x0001737f      0x7a0 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_info    0x00017b1f       0x22 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_abbrev   0x00000000     0x2cf1
+.debug_abbrev   0x00000000     0x3238
  .debug_abbrev  0x00000000      0x1f4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_abbrev  0x000001f4      0x1fc CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_abbrev  0x000003f0      0x237 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2721,17 +2744,20 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_abbrev  0x00001973      0x1f5 CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .debug_abbrev  0x00001b68       0xe5 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_abbrev  0x00001c4d      0x1a6 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001df3      0x13e CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x00001f31      0x241 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_abbrev  0x00002172      0x1ca CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_abbrev  0x0000233c      0x1f9 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_abbrev  0x00002535      0x12d CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_abbrev  0x00002662      0x205 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_abbrev  0x00002867      0x2b5 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .debug_abbrev  0x00002b1c      0x1c3 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .debug_abbrev  0x00002cdf       0x12 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_abbrev  0x00001df3      0x1da CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_abbrev  0x00001fcd      0x13e CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x0000210b      0x241 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_abbrev  0x0000234c      0x1ca CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_abbrev  0x00002516      0x109 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_abbrev  0x0000261f      0x1f9 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_abbrev  0x00002818      0x12d CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_abbrev  0x00002945      0x2b5 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_abbrev  0x00002bfa      0x1b5 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_abbrev  0x00002daf      0x2b4 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_abbrev  0x00003063      0x1c3 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_abbrev  0x00003226       0x12 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_loc      0x00000000     0xc8e8
+.debug_loc      0x00000000     0xd070
  .debug_loc     0x00000000      0x141 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_loc     0x00000141      0xad9 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_loc     0x00000c1a      0x8bc CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2744,15 +2770,18 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_loc     0x00008d76     0x1951 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_loc     0x0000a6c7       0x84 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
  .debug_loc     0x0000a74b       0x15 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_loc     0x0000a760       0xff CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_loc     0x0000a85f      0x1be CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_loc     0x0000aa1d       0xf8 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_loc     0x0000ab15       0xab CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_loc     0x0000abc0       0xba CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_loc     0x0000ac7a      0x35c CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_loc     0x0000afd6     0x1912 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_loc     0x0000a760      0x3a2 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_loc     0x0000ab02       0xff CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_loc     0x0000ac01      0x1be CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_loc     0x0000adbf       0xf8 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_loc     0x0000aeb7      0x244 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_loc     0x0000b0fb       0xab CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_loc     0x0000b1a6       0xba CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_loc     0x0000b260     0x1946 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_loc     0x0000cba6      0x141 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_loc     0x0000cce7      0x389 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
 
-.debug_aranges  0x00000000      0xf00
+.debug_aranges  0x00000000      0xff0
  .debug_aranges
                 0x00000000       0xe0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
@@ -2778,31 +2807,37 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_aranges
                 0x00000b30       0x20 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
  .debug_aranges
-                0x00000b50       0x38 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                0x00000b50       0x40 CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000b88       0x20 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x00000b90       0x20 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x00000ba8       0xa0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+                0x00000bb0       0xa0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x00000c48       0x28 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+                0x00000c50       0x90 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .debug_aranges
-                0x00000c70       0x60 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+                0x00000ce0       0x28 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x00000cd0       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+                0x00000d08       0x60 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
  .debug_aranges
-                0x00000d10       0x50 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+                0x00000d68       0x40 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
  .debug_aranges
-                0x00000d60       0x20 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+                0x00000da8       0x30 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .debug_aranges
-                0x00000d80       0x60 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
+                0x00000dd8       0x50 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .debug_aranges
-                0x00000de0       0xc8 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+                0x00000e28       0x20 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
  .debug_aranges
-                0x00000ea8       0x30 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+                0x00000e48       0xc8 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  .debug_aranges
-                0x00000ed8       0x28 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x00000f10       0x38 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_aranges
+                0x00000f48       0x50 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_aranges
+                0x00000f98       0x30 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_aranges
+                0x00000fc8       0x28 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_ranges   0x00000000      0xe20
+.debug_ranges   0x00000000      0xee0
  .debug_ranges  0x00000000       0xd0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_ranges  0x000000d0       0xe0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_ranges  0x000001b0       0x70 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2815,20 +2850,23 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_ranges  0x00000938      0x1c0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_ranges  0x00000af8       0x20 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
  .debug_ranges  0x00000b18       0x10 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
- .debug_ranges  0x00000b28       0x28 CMakeFiles/holtek.elf.dir/Src/main.c.obj
- .debug_ranges  0x00000b50       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_ranges  0x00000b60       0x90 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_ranges  0x00000bf0       0x18 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_ranges  0x00000c08       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_ranges  0x00000c58       0x30 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_ranges  0x00000c88       0x40 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_ranges  0x00000cc8       0x10 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_ranges  0x00000cd8       0x50 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_ranges  0x00000d28       0xb8 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .debug_ranges  0x00000de0       0x20 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .debug_ranges  0x00000e00       0x20 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_ranges  0x00000b28       0x30 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+ .debug_ranges  0x00000b58       0x10 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_ranges  0x00000b68       0x90 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_ranges  0x00000bf8       0x80 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_ranges  0x00000c78       0x18 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_ranges  0x00000c90       0x50 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_ranges  0x00000ce0       0x30 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_ranges  0x00000d10       0x20 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_ranges  0x00000d30       0x40 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_ranges  0x00000d70       0x10 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_ranges  0x00000d80       0xb8 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_ranges  0x00000e38       0x28 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_ranges  0x00000e60       0x40 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_ranges  0x00000ea0       0x20 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_ranges  0x00000ec0       0x20 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_line     0x00000000     0xfc89
+.debug_line     0x00000000    0x10686
  .debug_line    0x00000000      0x5a2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_line    0x000005a2      0xf1c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_line    0x000014be      0xc0e CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2841,67 +2879,76 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_line    0x0000a439     0x1c16 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_line    0x0000c04f      0x389 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
  .debug_line    0x0000c3d8      0x28f CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
- .debug_line    0x0000c667      0x44e CMakeFiles/holtek.elf.dir/Src/main.c.obj
- .debug_line    0x0000cab5      0x1c0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x0000cc75      0x407 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000d07c      0x289 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_line    0x0000d305      0x747 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_line    0x0000da4c      0x509 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_line    0x0000df55      0x6c7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_line    0x0000e61c      0x245 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_line    0x0000e861      0x4ac CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_line    0x0000ed0d      0xc37 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .debug_line    0x0000f944      0x2b5 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .debug_line    0x0000fbf9       0x90 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_line    0x0000c667      0x44d CMakeFiles/holtek.elf.dir/Src/main.c.obj
+ .debug_line    0x0000cab4      0x1c0 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x0000cc74      0x407 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_line    0x0000d07b      0x42b CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_line    0x0000d4a6      0x289 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x0000d72f      0x747 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_line    0x0000de76      0x509 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_line    0x0000e37f      0x2f5 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_line    0x0000e674      0x6c7 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_line    0x0000ed3b      0x245 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_line    0x0000ef80      0xc3e CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_line    0x0000fbbe      0x299 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_line    0x0000fe57      0x4ea CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_line    0x00010341      0x2b5 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_line    0x000105f6       0x90 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
 
-.debug_str      0x00000000     0x44e2
- .debug_str     0x00000000      0x8d8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+.debug_str      0x00000000     0x4ad0
+ .debug_str     0x00000000      0x8d3 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                                 0x92c (size before relaxing)
- .debug_str     0x000008d8      0x65f CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_str     0x000008d3      0x65f CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
                                 0x8f7 (size before relaxing)
- .debug_str     0x00000f37      0x2a4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+ .debug_str     0x00000f32      0x2a4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
                                 0x898 (size before relaxing)
- .debug_str     0x000011db      0x3e2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x000011d6      0x3e2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
                                 0x9db (size before relaxing)
- .debug_str     0x000015bd      0x1e2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x000015b8      0x1e2 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
                                 0x424 (size before relaxing)
- .debug_str     0x0000179f      0x34a CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x0000179a      0x34a CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                                 0x64f (size before relaxing)
- .debug_str     0x00001ae9      0x149 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x00001ae4      0x149 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
                                 0x435 (size before relaxing)
- .debug_str     0x00001c32     0x11c3 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x00001c2d     0x11c3 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
                                0x165c (size before relaxing)
- .debug_str     0x00002df5      0x5d0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x00002df0      0x5d0 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
                                 0xe86 (size before relaxing)
- .debug_str     0x000033c5      0x718 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x000033c0      0x718 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
                                 0xbc6 (size before relaxing)
- .debug_str     0x00003add       0x5b CMakeFiles/holtek.elf.dir/Src/adc.c.obj
+ .debug_str     0x00003ad8       0x5b CMakeFiles/holtek.elf.dir/Src/adc.c.obj
                                 0xa33 (size before relaxing)
- .debug_str     0x00003b38       0x2e CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
+ .debug_str     0x00003b33       0x2e CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
                                 0x29c (size before relaxing)
- .debug_str     0x00003b66      0x162 CMakeFiles/holtek.elf.dir/Src/main.c.obj
-                                0x8ea (size before relaxing)
- .debug_str     0x00003cc8       0x2e CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x00003b61      0x15c CMakeFiles/holtek.elf.dir/Src/main.c.obj
+                                0x8e4 (size before relaxing)
+ .debug_str     0x00003cbd       0x2e CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
                                 0x23e (size before relaxing)
- .debug_str     0x00003cf6      0x165 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_str     0x00003ceb      0x165 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
                                 0x90e (size before relaxing)
- .debug_str     0x00003e5b       0x60 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00003e50      0x22f CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+                                0x422 (size before relaxing)
+ .debug_str     0x0000407f       0x60 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
                                 0x273 (size before relaxing)
- .debug_str     0x00003ebb       0x69 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_str     0x000040df       0x69 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
                                 0xf30 (size before relaxing)
- .debug_str     0x00003f24       0x3b CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_str     0x00004148       0x3b CMakeFiles/holtek.elf.dir/Src/usart.c.obj
                                 0xab7 (size before relaxing)
- .debug_str     0x00003f5f      0x176 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_str     0x00004183       0x4c CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+                                0x250 (size before relaxing)
+ .debug_str     0x000041cf      0x171 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
                                 0x724 (size before relaxing)
- .debug_str     0x000040d5       0x38 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_str     0x00004340       0x38 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
                                 0x233 (size before relaxing)
- .debug_str     0x0000410d      0x16a CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
-                                0x40b (size before relaxing)
- .debug_str     0x00004277      0x1ef CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_str     0x00004378      0x1e3 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
                                 0x41f (size before relaxing)
- .debug_str     0x00004466       0x3a CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_str     0x0000455b      0x114 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+                                0x2c2 (size before relaxing)
+ .debug_str     0x0000466f      0x3e5 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+                                0xb0d (size before relaxing)
+ .debug_str     0x00004a54       0x3a CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
                                 0x72c (size before relaxing)
- .debug_str     0x000044a0       0x42 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
+ .debug_str     0x00004a8e       0x42 CMakeFiles/holtek.elf.dir/startup/startup_stm32f103xe.s.obj
                                  0x6a (size before relaxing)
 
 .comment        0x00000000       0x4d
@@ -2921,16 +2968,19 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/main.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/tim.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
 
-.debug_frame    0x00000000     0x29c4
+.debug_frame    0x00000000     0x3264
  .debug_frame   0x00000000      0x1cc CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_frame   0x000001cc      0x2c4 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_frame   0x00000490      0x19c CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
@@ -2943,21 +2993,43 @@ LOAD d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-ma
  .debug_frame   0x00001928      0x4e8 CMakeFiles/holtek.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_frame   0x00001e10       0x68 CMakeFiles/holtek.elf.dir/Src/adc.c.obj
  .debug_frame   0x00001e78       0x38 CMakeFiles/holtek.elf.dir/Src/gpio.c.obj
- .debug_frame   0x00001eb0       0x70 CMakeFiles/holtek.elf.dir/Src/main.c.obj
- .debug_frame   0x00001f20       0x28 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x00001f48      0x168 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_frame   0x000020b0       0x30 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000020e0      0x124 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
- .debug_frame   0x00002204       0x94 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
- .debug_frame   0x00002298       0xc8 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
- .debug_frame   0x00002360       0x2c CMakeFiles/holtek.elf.dir/bsp/led.c.obj
- .debug_frame   0x0000238c       0xdc CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
- .debug_frame   0x00002468      0x324 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
- .debug_frame   0x0000278c       0x4c CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
- .debug_frame   0x000027d8       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
- .debug_frame   0x00002804       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
- .debug_frame   0x00002830       0x5c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000288c       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
- .debug_frame   0x000028ac       0x34 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
- .debug_frame   0x000028e0       0xb0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
- .debug_frame   0x00002990       0x34 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00001eb0       0x90 CMakeFiles/holtek.elf.dir/Src/main.c.obj
+ .debug_frame   0x00001f40       0x28 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x00001f68      0x168 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x000020d0      0x168 CMakeFiles/holtek.elf.dir/Src/syscalls.c.obj
+ .debug_frame   0x00002238       0x30 CMakeFiles/holtek.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00002268      0x124 CMakeFiles/holtek.elf.dir/Src/tim.c.obj
+ .debug_frame   0x0000238c       0x94 CMakeFiles/holtek.elf.dir/Src/usart.c.obj
+ .debug_frame   0x00002420       0x58 CMakeFiles/holtek.elf.dir/bsp/bsp_delay.c.obj
+ .debug_frame   0x00002478       0xc8 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
+ .debug_frame   0x00002540       0x2c CMakeFiles/holtek.elf.dir/bsp/led.c.obj
+ .debug_frame   0x0000256c      0x324 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
+ .debug_frame   0x00002890       0x88 CMakeFiles/holtek.elf.dir/bsp/pid_.c.obj
+ .debug_frame   0x00002918       0xb8 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj
+ .debug_frame   0x000029d0       0x4c CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj
+ .debug_frame   0x00002a1c       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
+ .debug_frame   0x00002a3c       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+ .debug_frame   0x00002a68       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00002a94       0x48 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
+ .debug_frame   0x00002adc       0x5c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00002b38       0x20 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x00002b58       0x70 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+ .debug_frame   0x00002bc8      0x154 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+ .debug_frame   0x00002d1c       0x34 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00002d50       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+ .debug_frame   0x00002ddc       0x54 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x00002e30       0xb0 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00002ee0       0x70 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+ .debug_frame   0x00002f50       0x30 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x00002f80       0x4c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x00002fcc       0x30 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00002ffc       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x00003028       0x8c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+ .debug_frame   0x000030b4       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+ .debug_frame   0x000030e0       0x34 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x00003114       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+ .debug_frame   0x00003140       0x3c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+ .debug_frame   0x0000317c       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+ .debug_frame   0x000031a8       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x000031d4       0x2c d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+ .debug_frame   0x00003200       0x64 d:/gcc-arm-none-eabi-10-2020-q4-major-win32/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reent.o)

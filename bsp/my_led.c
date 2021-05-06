@@ -17,7 +17,7 @@ u16 BACK_COLOR = WHITE;
 void LCD_Writ_Bus(int id, u8 dat) {
     u8 i;
     if (id == 1) {
-        A_OLED_CS_SET();
+        A_OLED_CS_RESET();
         for (i = 0; i < 8; i++
                 ) {
             A_OLED_SCLK_RESET();
@@ -28,7 +28,7 @@ void LCD_Writ_Bus(int id, u8 dat) {
             A_OLED_SCLK_SET();
             dat <<= 1;
         }
-        A_OLED_CS_RESET();
+        A_OLED_CS_SET();
     } else if (id == 2) {
         B_OLED_CS_SET();
         for (i = 0; i < 8; i++
@@ -68,10 +68,11 @@ void LCD_WR_DATA8(int id, u8 dat) {
 void LCD_WR_DATA(int id, u16 dat) {
     if (id == 1)
         A_OLED_DC_SET();
-    else
+    else if(id==2)
         B_OLED_DC_SET();
-    LCD_Writ_Bus(id, dat >> 8);
-    LCD_Writ_Bus(id, dat);
+    else return;
+    LCD_Writ_Bus(id, dat >> 8);//高8位
+    LCD_Writ_Bus(id, dat);//低8位
 }
 
 

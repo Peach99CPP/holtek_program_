@@ -113,7 +113,10 @@ int main(void) {
     /* USER CODE BEGIN WHILE */
     while (1) {//记得改成1
         /* USER CODE END WHILE */
-
+        LCD_Clear(1,WHITE);
+        delay_ms(300);
+        LCD_Clear(1,BLACK);
+        delay_ms(300);
         /* USER CODE BEGIN 3 */
 
     }
