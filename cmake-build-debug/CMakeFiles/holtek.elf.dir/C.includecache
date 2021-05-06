@@ -296,6 +296,8 @@ main.h
 bmp.h
 ../bsp/bmp.h
 
+../bsp/oledfont.h
+
 ../bsp/pid_.h
 main.h
 ../bsp/main.h
@@ -336,6 +338,8 @@ bsp_delay.h
 motor_control.h
 -
 retarget.h
+-
+oledfont.h
 -
 bsp_uart.h
 D:/Clion/stm32/holtek/Src/bsp_uart.h
