@@ -39,7 +39,7 @@ float PID_cal(pid_type_def *pid, float ref, float set) {
     pid->error_[2] = pid->error_[1];
     pid->error_[1] = pid->error_[0];
 
-    pid->error_[0] = ref - set;
+    pid->error_[0] = set-ref;
 
     if (pid->mode == PID_POSITION) {
         pid->Pout_ = pid->kp_ * pid->error_[0];
@@ -76,14 +76,14 @@ void PID_clear(pid_type_def *pid) {
     pid->ref_ = pid->set_ = 0.0f;
 }
 pid_type_def motor_[2],tracker_;
-void global_pid_init()
+void Global_Pid_Init()
 {
     PID_clear(&motor_[0]);
     PID_clear(&motor_[1]);
     PID_clear(&tracker_);
     static const float Tracker_PID[3]={8.0f,0,0};
-    static const float Motor_PID[3]={100.0f,100,0};
+    static const float Motor_PID[3]={12.0f,10,0};
     PID_init(&motor_[0],PID_DELTA,Motor_PID,7000,0);
     PID_init(&motor_[1],PID_DELTA,Motor_PID,7000,0);
-    PID_init(&tracker_,PID_DELTA,Tracker_PID,40,10);
+    PID_init(&tracker_,PID_POSITION,Tracker_PID,40,10);
 }

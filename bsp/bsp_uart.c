@@ -135,54 +135,7 @@ void UART_global_handler(void) {
         uart2_receive_flag = 0;
     }
     if (uart3_receive_flag) {
-        if(uart3_[1] == '0')
-        {
-            led_control(1, 1, 1);
-            motor_set_pwm(1, -move_speed_1);//俯视图右电机
-            motor_set_pwm(0, move_speed_2);
-            delay_ms(500);
-            motor_set_pwm(1, move_speed_1);//俯视图右电机
-            motor_set_pwm(0, -move_speed_2);
-            delay_ms(1000);
-            motor_set_pwm(1, -move_speed_1);//俯视图右电机
-            motor_set_pwm(0, move_speed_2);
-            delay_ms(500);
-            motor_set_pwm(1, 0);//俯视图右电机
-            motor_set_pwm(0, 0);
-        }
-        else if (uart3_[1] == '1') {
-            motor_set_pwm(1, move_speed_1);//俯视图右电机
-            motor_set_pwm(0, move_speed_2);
-        }
-        else if(uart3_[1] == '2') {
-            motor_set_pwm(1, -move_speed_1);//俯视图右电机
-            motor_set_pwm(0, move_speed_2);
-//            delay_ms(3000);
-//            motor_set_pwm(1, move_speed_1);//俯视图右电机
-//            motor_set_pwm(0, -move_speed_2);
-//            delay_ms(3000);
-//            motor_set_pwm(1, 0);//俯视图右电机
-//            motor_set_pwm(0, 0);
-
-        }
-        else if(uart3_[1] == '3') {
-            motor_set_pwm(1, move_speed_1);//俯视图右电机
-            motor_set_pwm(0, move_speed_2);
-        }
-        else if(uart3_[1] == '4') {
-            motor_set_pwm(1, 0);//俯视图右电机
-            motor_set_pwm(0, 0);
-        }
-        else if(uart3_[1] == '5')
-        {
-            avd_on=true;
-        }
-        else if(uart3_[1] == '6')
-        {
-            led_control(1,0,0);
-        }
         uart3_receive_flag = 0;
-        UART_transmit(&huart3, "receive_done\n");
     }
     if (uart4_receive_flag) {
         uart4_receive_flag = 0;

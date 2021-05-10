@@ -35,6 +35,6 @@ typedef struct {
 extern void PID_init(pid_type_def *pid, PID_MODE mode, const float PID[3], float max_out, float max_iout);
 extern float PID_cal(pid_type_def *pid, float ref, float set);
 extern void PID_clear(pid_type_def *pid);
-void global_pid_init();
+void Global_Pid_Init();
 extern pid_type_def motor_[2],tracker_;
 #endif //HOLTEK_PID__H

@@ -55,7 +55,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 void Global_Init(void);
-void screen_display(void);
+void Screen_Display(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -103,10 +103,6 @@ void screen_display(void);
 #define blue_GPIO_Port GPIOA
 #define red_Pin GPIO_PIN_15
 #define red_GPIO_Port GPIOA
-#define holtek_transmit_Pin GPIO_PIN_10
-#define holtek_transmit_GPIO_Port GPIOC
-#define holtek_receive_Pin GPIO_PIN_11
-#define holtek_receive_GPIO_Port GPIOC
 #define B_BL_Pin GPIO_PIN_12
 #define B_BL_GPIO_Port GPIOC
 #define motor2_n_Pin GPIO_PIN_3

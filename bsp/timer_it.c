@@ -6,20 +6,26 @@
 #include <math.h>
 #include "timer_it.h"
 #include "motor_control.h"
+#include "retarget.h"
+#include "pid_.h"
 
+#define MAX_TIME 2147483640
 volatile int sys_time = 0;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim == (&htim6)) {
         sys_time++;
-        if (sys_time % 50 == 0) {
-            speed_cal();
-            if (get_avd()) {//差速转弯避障
-                motor[0].target = -30;
-                motor[1].target = 30;
-            }
+//        if(!sys_time %5 )printf("%d \t %d\r\n",read_encoder(0),read_encoder(1));
+        if (sys_time == 50) {
+//            speed_cal();
+            HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
+            short read0=read_encoder(0),out=(short)(PID_cal(&motor_[0],read0,motor[0].target));
+            motor_set_pwm(0,out);
+//            printf("%d\t%d\r\n",read0,out);
+//            printf("%d\r\n",read0);
+            sys_time = 0;
         }
-        if (sys_time > (2147483640))
+        if (sys_time > (MAX_TIME))
             sys_time = 0;
     }
 

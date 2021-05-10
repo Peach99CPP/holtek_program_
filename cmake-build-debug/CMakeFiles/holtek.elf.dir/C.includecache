@@ -309,8 +309,6 @@ sys/stat.h
 -
 stdio.h
 -
-main.h
-../bsp/main.h
 
 ../bsp/timer_it.h
 main.h
@@ -347,4 +345,6 @@ led.h
 D:/Clion/stm32/holtek/Src/led.h
 my_led.h
 D:/Clion/stm32/holtek/Src/my_led.h
+retarget.h
+D:/Clion/stm32/holtek/Src/retarget.h
 

@@ -17,7 +17,7 @@ void speed_set(int x,int y);
 void set_direct(int motor_number,int dir);
 extern motor_speed  motor[2],global_;
 void motor_set_pwm(int number,int output);
-short raed_encoder(int motor_num);
+short read_encoder(int motor_num);
 void speed_cal(void);
 void motor_stop();
 int get_avd(void);

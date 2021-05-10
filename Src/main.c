@@ -36,6 +36,7 @@
 #include "bsp_uart.h"
 #include"led.h"
 #include "my_led.h"
+#include "retarget.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,32 +101,24 @@ int main(void) {
     MX_TIM2_Init();
     MX_TIM3_Init();
     MX_TIM6_Init();
-    MX_UART4_Init();
     MX_USART2_UART_Init();
     MX_USART3_UART_Init();
     MX_ADC1_Init();
+    MX_UART4_Init();
     /* USER CODE BEGIN 2 */
     Global_Init();
-//    screen_display();
-//    LCD_BigNum(1, 32, 32, 1, RED);
-#define start_x 16
-    LCD_ShowMyChinese(1,0,16,0,holtek,32,32,BROWN);
-    LCD_ShowMyChinese(1,1,start_x+32,0,holtek,32,32,BRRED);
-    LCD_ShowMyChinese(1,2,start_x+32+32,0,holtek,32,32,GRAY);
-    LCD_ShowMyPicture(1,0,32,gImage_face_code,104,64);
+    RetargetInit(&huart4);
+//    motor_set_pwm(1,2000);
+    motor_set_pwm(0, 3000);
+//    Screen_Display();
     /* USER CODE END 2 */
-
-    /* Infinite loop */
-    /* USER CODE BEGIN WHILE */
     while (1) {
+        /* Infinite loop */
+        /* USER CODE BEGIN WHILE */
+        UART_global_handler();
         /* USER CODE END WHILE */
-//        LCD_Clear(1,WHITE);
-//        delay_ms(300);
-//        LCD_Clear(1,BLACK);
-//        delay_ms(300);
-        /* USER CODE BEGIN 3 */
-
     }
+    /* USER CODE BEGIN 3 */
     /* USER CODE END 3 */
 }
 
@@ -171,35 +164,29 @@ void SystemClock_Config(void) {
 }
 
 /* USER CODE BEGIN 4 */
-void Global_Init(void)
-{
+void Global_Init(void) {
     delay_init();
-    RetargetInit(&huart2);//重定向串口2
-    led_control(1, 1, 1);//白光
+    RetargetInit(&huart4);
+    Led_Control(1, 1, 1);//白光
     Init_UARTS();
     Init_TIMS();
     Lcd_Init(1);
     Lcd_Init(2);
-    global_pid_init();
+    Global_Pid_Init();
     LCD_Clear(1, WHITE);
-    led_control(0, 0, 0);
+    Led_Control(0, 0, 0);
     delay_ms(1000);
 }
-void screen_display(void)
-{
-#define Start_x 26
-#define Start_y 30
-#define delta_y 14
-#define delta_x 28
-    led_control(0, 0, 0);
-    LCD_ShowString(1, Start_x, Start_y, "**********", BLACK);
-    LCD_ShowString(1, Start_x, Start_y + delta_y, "**********", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 2 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 3 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 4 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 5 * delta_y, "****", BLACK);
-    LCD_ShowString(1, Start_x + delta_x, Start_y + 6 * delta_y, "****", BLACK);
 
+void Screen_Display(void) {
+#define Start_x 16
+#define Start_y 0
+#define Delta_x 32
+#define Delta_y 32
+    LCD_ShowMyChinese(1, 0, 16, 0, holtek, 32, 32, BROWN);
+    LCD_ShowMyChinese(1, 1, Start_x + Delta_x, 0, holtek, 32, 32, BRRED);
+    LCD_ShowMyChinese(1, 2, Start_x + 2 * Delta_x, 0, holtek, 32, 32, GRAY);
+    LCD_ShowMyPicture(1, 0, Delta_y, gImage_face_code, 64, 64);
 }
 /* USER CODE END 4 */
 

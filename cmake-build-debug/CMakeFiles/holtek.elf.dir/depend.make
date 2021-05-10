@@ -1115,7 +1115,6 @@ CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Drivers/STM32F1xx_HAL_Driver/In
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../bsp/retarget.c
 CMakeFiles/holtek.elf.dir/bsp/retarget.c.obj: ../bsp/retarget.h
@@ -1154,6 +1153,8 @@ CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../Inc/tim.h
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/motor_control.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/pid_.h
+CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/retarget.h
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/timer_it.c
 CMakeFiles/holtek.elf.dir/bsp/timer_it.c.obj: ../bsp/timer_it.h
 
