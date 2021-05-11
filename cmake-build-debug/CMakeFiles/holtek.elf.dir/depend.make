@@ -640,6 +640,7 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Inc/usart.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/bmp.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/bsp_delay.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/bsp_uart.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/font.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/motor_control.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/my_led.h
@@ -647,6 +648,7 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/oledfont.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/pid_.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/retarget.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/timer_it.h
+CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../bsp/tracker.h
 CMakeFiles/holtek.elf.dir/Src/main.c.obj: ../Src/main.c
 
 CMakeFiles/holtek.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
@@ -931,6 +933,7 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bmp.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_delay.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.c
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.h
+CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/font.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/motor_control.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/my_led.h
@@ -970,6 +973,7 @@ CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/bmp.h
+CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/font.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/led.c
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj: ../bsp/my_led.h
@@ -1048,6 +1052,7 @@ CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/bmp.h
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/bsp_delay.h
+CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/font.h
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/my_led.c
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/my_led.h
 CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj: ../bsp/oledfont.h

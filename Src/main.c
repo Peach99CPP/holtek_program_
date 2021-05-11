@@ -33,6 +33,7 @@
 #include <motor_control.h>
 #include <retarget.h>
 #include <oledfont.h>
+#include <tracker.h>
 #include "bsp_uart.h"
 #include"led.h"
 #include "my_led.h"

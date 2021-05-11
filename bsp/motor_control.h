@@ -21,6 +21,7 @@ short read_encoder(int motor_num);
 void speed_cal(void);
 void motor_stop();
 int get_avd(void);
+void set_avd(bool state);
 void turn(void);
 extern bool avd_on;
 void speed_run(int speed);

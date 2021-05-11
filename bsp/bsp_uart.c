@@ -78,7 +78,6 @@ void USART3_IRQHandler(void) {
                     {
                         animal_inf = uart3_[1];
                     }
-
                     temp_flag_3 = 0;
                 }
                 else { uart3_[uart3_index++] = data; }
@@ -163,21 +162,40 @@ void UART_global_handler(void) {
     }
 }
 
-int Animal_Recognition(void) {
-    uint8_t cmd[3] = {(int) 'P', (int) 'P', (int) 'P'};
-    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
-    while (!animal_inf);
+void Animal_Recognition(void) {
+    uint8_t cmd[3] = {(int) 'P', (int) 'P', (int) 'P'},i;
+    animal_inf=0;
+    for(i=0;i<3;++i)
+    {
+        HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+        delay_ms(100);
+    }
+    while (animal_inf==0);
+    LCD_Clear(1, WHITE);
+    LCD_Clear(2, WHITE);
     switch (animal_inf) {
         case 1:
+            LCD_ShowMyChinese(1, 0, 32, 45, dog, 64, 64, BLACK);
+            LCD_ShowMyChinese(2, 1, 32, 45, dog, 64, 64, BLACK);
             //TODO
             break;
         case 2:
+            LCD_ShowMyChinese(1, 0, 32, 45, cat, 64, 64, BLACK);
+            LCD_ShowMyChinese(2, 1, 32, 45, cat, 64, 64, BLACK);
             //TODO
             break;
         case 3:
+            LCD_ShowMyChinese(1, 0, 32, 45, hen, 64, 64, BLACK);
+            LCD_ShowMyChinese(2, 1, 32, 45, hen, 64, 64, BLACK);
             //TODO
             break;
+        case 4:
+            LCD_ShowMyChinese(1, 0, 32, 45, horse, 64, 64, BLACK);
+            LCD_ShowMyChinese(2, 1, 32, 45, horse, 64, 64, BLACK);
+            break;
         default:
+            LCD_Clear(1,WHITE);
+            LCD_Clear(2,WHITE);
             break;
     }
     animal_inf = 0;

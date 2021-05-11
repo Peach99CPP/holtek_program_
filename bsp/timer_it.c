@@ -18,11 +18,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         if (sys_time == 50) {
             speed_cal();
             HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
-//            motor_set_pwm(1,1000);
-//            motor_set_pwm(0,1000);
-//            printf("%d\t%d\r\n",read_encoder(0),read_encoder(1));
-//            short read0=read_encoder(0),out=(short)(PID_cal(&motor_[0],read0,motor[0].target));
-//            motor_set_pwm(0,out);
             sys_time = 0;
         }
         if (sys_time > (MAX_TIME))

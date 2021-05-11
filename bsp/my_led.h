@@ -6,6 +6,7 @@
 #define HOLTEK_MY_LED_H
 #include "main.h"
 #include "bmp.h"
+#include "font.h"
 #define USE_HORIZONTAL 0  //设置横屏或者竖屏显示 0或1为竖屏 2或3为横屏
 
 #if USE_HORIZONTAL==0||USE_HORIZONTAL==1
@@ -124,6 +125,5 @@ void LCD_ShowNum1(int id,u16 x,u16 y,float num,u8 len,u16 color);
 void LCD_ShowPicture(int id,u16 x1,u16 y1,u16 x2,u16 y2);
 void LCD_ShowMyChinese(int id,u8 index,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size,u16 color );
 void LCD_ShowMyPicture(int id,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size);
-
 
 #endif //HOLTEK_MY_LED_H

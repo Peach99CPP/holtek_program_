@@ -85,19 +85,21 @@ short read_encoder(int motor_num) {
 
 void speed_cal(void) {//left 0 right 1
     //TODO:调试后删除输出语句
-    motor[0].target = global_.vx - global_.vy * speed_k+0.1*mv_pid;//+ get_tracker_num();
-    motor[1].target = global_.vx - global_.vy * speed_k+0.1*mv_pid;
-    mv_pid=0;
+    float tracker_num=get_tracker_num();
+    motor[0].target = global_.vx - global_.vy * speed_k - 0.1 * mv_pid+tracker_num;//+ get_tracker_num();
+    motor[1].target = global_.vx + global_.vy * speed_k + 0.1 * mv_pid-tracker_num;
+    mv_pid = 0;
     if (0) {//差速转弯避障
         motor[0].target = -30;
         motor[1].target = 30;
     }
-    short read_0=read_encoder(0);
-    short read_1=read_encoder(1);
-    int out_0=(short)PID_cal(&motor_[0], read_0, motor[0].target),out_1=(short)PID_cal(&motor_[1], read_1, motor[1].target);
+    short read_0 = read_encoder(0);
+    short read_1 = read_encoder(1);
+    int out_0 = (short) PID_cal(&motor_[0], read_0, motor[0].target), out_1 = (short) PID_cal(&motor_[1], read_1,
+                                                                                              motor[1].target);
     motor_set_pwm(0, out_0);
     motor_set_pwm(1, out_1);
-//    printf("%d\t%d\r\n",read_0,read_1);
+    printf("%d\t%d\t%f\r\n",read_0,read_1,tracker_num);
 }
 
 void motor_stop() {
@@ -107,7 +109,7 @@ void motor_stop() {
 
 void turn(void) {
     motor[0].target = 30;
-    motor[1].target = 30;
+    motor[1].target = -30;
     delay_ms(10000);
     speed_set(0, 0);
 }
@@ -115,4 +117,8 @@ void speed_run(int speed)
 {
     motor_set_pwm(1,speed);
     motor_set_pwm(0,speed);
+}
+void set_avd(bool state)
+{
+    avd_on=state;
 }
