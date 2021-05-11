@@ -928,11 +928,13 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  ../Inc/usart.h
+ D:/Clion/stm32/holtek/bsp/bmp.h
  D:/Clion/stm32/holtek/bsp/bsp_delay.h
  D:/Clion/stm32/holtek/bsp/bsp_uart.c
  D:/Clion/stm32/holtek/bsp/bsp_uart.h
  D:/Clion/stm32/holtek/bsp/led.h
  D:/Clion/stm32/holtek/bsp/motor_control.h
+ D:/Clion/stm32/holtek/bsp/my_led.h
  D:/Clion/stm32/holtek/bsp/retarget.h
  D:/Clion/stm32/holtek/bsp/tracker.h
 CMakeFiles/holtek.elf.dir/bsp/led.c.obj
@@ -1006,6 +1008,7 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  D:/Clion/stm32/holtek/bsp/bsp_delay.h
+ D:/Clion/stm32/holtek/bsp/bsp_uart.h
  D:/Clion/stm32/holtek/bsp/motor_control.c
  D:/Clion/stm32/holtek/bsp/motor_control.h
  D:/Clion/stm32/holtek/bsp/pid_.h

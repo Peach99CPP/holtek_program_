@@ -927,11 +927,13 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/In
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../Inc/usart.h
+CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bmp.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_delay.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.c
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/bsp_uart.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/led.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/motor_control.h
+CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/my_led.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/retarget.h
 CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj: ../bsp/tracker.h
 
@@ -1005,6 +1007,7 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../Drivers/STM32F1xx_HAL_Driv
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../Inc/main.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../Inc/stm32f1xx_hal_conf.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/bsp_delay.h
+CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/bsp_uart.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/motor_control.c
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/motor_control.h
 CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj: ../bsp/pid_.h

@@ -109,12 +109,14 @@ int main(void) {
     Global_Init();
     RetargetInit(&huart4);
 //    motor_set_pwm(1,2000);
-    motor_set_pwm(0, 3000);
+
+    speed_set(0, 0);
 //    Screen_Display();
     /* USER CODE END 2 */
+
+    /* Infinite loop */
+    /* USER CODE BEGIN WHILE */
     while (1) {
-        /* Infinite loop */
-        /* USER CODE BEGIN WHILE */
         UART_global_handler();
         /* USER CODE END WHILE */
     }

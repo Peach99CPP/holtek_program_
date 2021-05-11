@@ -8,6 +8,7 @@
 #include "pid_.h"
 #include "bsp_delay.h"
 #include "retarget.h"
+#include "bsp_uart.h"
 #define speed_k 0.3
 bool avd_on=false;
 motor_speed motor[2], global_;
@@ -84,18 +85,19 @@ short read_encoder(int motor_num) {
 
 void speed_cal(void) {//left 0 right 1
     //TODO:调试后删除输出语句
-    motor[0].target = global_.vx - global_.vy * speed_k;//+ get_tracker_num();
-    motor[1].target = global_.vx - global_.vy * speed_k;
+    motor[0].target = global_.vx - global_.vy * speed_k+0.1*mv_pid;//+ get_tracker_num();
+    motor[1].target = global_.vx - global_.vy * speed_k+0.1*mv_pid;
+    mv_pid=0;
     if (0) {//差速转弯避障
         motor[0].target = -30;
         motor[1].target = 30;
     }
     short read_0=read_encoder(0);
     short read_1=read_encoder(1);
-    int out_0=PID_cal(&motor_[0], read_0, motor[0].target),out_1=PID_cal(&motor_[1], read_1, motor[1].target);
+    int out_0=(short)PID_cal(&motor_[0], read_0, motor[0].target),out_1=(short)PID_cal(&motor_[1], read_1, motor[1].target);
     motor_set_pwm(0, out_0);
     motor_set_pwm(1, out_1);
-
+//    printf("%d\t%d\r\n",read_0,read_1);
 }
 
 void motor_stop() {

@@ -9,18 +9,22 @@
 #include "motor_control.h"
 #include "tracker.h"
 #include "bsp_delay.h"
+#include "my_led.h"
+
 #include <string.h>
 
 int uart2_receive_flag, uart3_receive_flag, uart4_receive_flag, uart5_receive_flag,
-        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index;
+        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index, mv_pid = 0, animal_inf = 0;
 static int temp_flag_4 = 0, temp_flag_2 = 0, temp_flag_3 = 0, temp_flag_5 = 0;
 uint8_t uart2_[MAX_SIZE], uart3_[MAX_SIZE], uart4_[MAX_SIZE], uart5_[MAX_SIZE];
 
 void Init_UARTS(void) {//初始化串口
     //全部是接收中断
+    __HAL_UART_ENABLE(&huart4);
     __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE);
     __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
-    __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);
+    __HAL_UART_ENABLE_IT(&huart4, UART_IT_RXNE);\
+
 }
 
 void UART_transmit(UART_HandleTypeDef *huart, char ch[])//通过全局printf函数发送数据
@@ -62,6 +66,19 @@ void USART3_IRQHandler(void) {
             if (temp_flag_3) {
                 if (data == 0X43) {
                     uart3_receive_flag = 1;
+                    mv_pid = 0, animal_inf = 0;
+                    if (uart3_[0] == 1)//小球模式
+                    {
+                        mv_pid += uart3_[2] << 8;
+                        mv_pid += uart3_[3];
+                        if (uart3_[1] == 2)
+                            mv_pid *= (-1);
+
+                    } else if (uart3_[0] == 2)//图片模式
+                    {
+                        animal_inf = uart3_[1];
+                    }
+
                     temp_flag_3 = 0;
                 }
                 else { uart3_[uart3_index++] = data; }
@@ -113,8 +130,9 @@ void UART5_IRQHandler(void) {
                 if (data == 0X43) {
                     uart5_receive_flag = 1;
                     temp_flag_5 = 0;
+                } else {
+                    uart5_[uart5_index++] = data;
                 }
-                else { uart5_[uart5_index++] = data; }
                 if (uart5_index == MAX_SIZE) {
                     temp_flag_5 = 0;
                     memset(&uart5_, 0, sizeof(uart5_));
@@ -143,5 +161,24 @@ void UART_global_handler(void) {
     if (uart5_receive_flag) {
         uart5_receive_flag = 0;
     }
+}
 
+int Animal_Recognition(void) {
+    uint8_t cmd[3] = {(int) 'P', (int) 'P', (int) 'P'};
+    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+    while (!animal_inf);
+    switch (animal_inf) {
+        case 1:
+            //TODO
+            break;
+        case 2:
+            //TODO
+            break;
+        case 3:
+            //TODO
+            break;
+        default:
+            break;
+    }
+    animal_inf = 0;
 }
