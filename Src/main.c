@@ -108,24 +108,14 @@ int main(void) {
     MX_UART4_Init();
     /* USER CODE BEGIN 2 */
     Global_Init();
-    RetargetInit(&huart2);
-//    Screen_Display();
-    speed_set(0,0);
-    speed_set(70,0);
-    delay_ms(5000);
-    speed_set(0,0);
-    delay_ms(100);
+    Screen_Display();
     start_pro();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
-//        UART_global_handler();
-//        speed_set(90,0);
-//        delay_ms(1000);
-//        speed_set(0,0);
-//        delay_ms(1000);
+        UART_global_handler();
         /* USER CODE END WHILE */
     }
     /* USER CODE BEGIN 3 */
@@ -176,7 +166,7 @@ void SystemClock_Config(void) {
 /* USER CODE BEGIN 4 */
 void Global_Init(void) {
     delay_init();
-    RetargetInit(&huart4);
+    RetargetInit(&huart2);
     Led_Control(1, 1, 1);//白光
     Init_UARTS();
     Init_TIMS();
@@ -187,10 +177,14 @@ void Global_Init(void) {
     tracker_set(false);
     set_avd(false);
     LCD_Clear(1, WHITE);
-    Led_Control(0, 0, 0);
+    LCD_Clear(2, WHITE);
+    delay_ms(500);
+    Led_Control(1, 0, 0);
+    delay_ms(1000);
 }
 
 void Screen_Display(void) {
+#ifdef old_mode
 #define Start_x 16
 #define Start_y 0
 #define Delta_x 32
@@ -198,9 +192,13 @@ void Screen_Display(void) {
     LCD_ShowMyChinese(1, 0, 16, 0, holtek, 32, 32, BROWN);
     LCD_ShowMyChinese(1, 1, Start_x + Delta_x, 0, holtek, 32, 32, BRRED);
     LCD_ShowMyChinese(1, 2, Start_x + 2 * Delta_x, 0, holtek, 32, 32, GRAY);
+    LCD_ShowMyChinese(2, 0, 16, 0, holtek, 32, 32, BROWN);
+    LCD_ShowMyChinese(2, 1, Start_x + Delta_x, 0, holtek, 32, 32, BRRED);
+    LCD_ShowMyChinese(2, 2, Start_x + 2 * Delta_x, 0, holtek, 32, 32, GRAY);
     LCD_ShowMyPicture(1, 0, Delta_y, gImage_face_code, 64, 64);
     LCD_ShowMyPicture(2, 0, Delta_y, gImage_face_code, 64, 64);
-
+#endif
+    LCD_Show_Expressions(3);
 }
 /* USER CODE END 4 */
 

@@ -86,12 +86,11 @@ short read_encoder(int motor_num) {
     return num;
 }
 
-void speed_cal(void) {//left 0 right 1
+void speed_cal(void) {
     //TODO:调试后删除输出语句
     float tracker_num=get_tracker_num();
     motor[0].target = (int)(global_.vx) - global_.vy * speed_k - 0.1 * mv_pid+tracker_num;//+ get_tracker_num();
     motor[1].target = (int)(global_.vx)+ global_.vy * speed_k + 0.1 * mv_pid-tracker_num;
-    mv_pid = 0;
     motor[0].target*=-4.2f;
     motor[1].target*=-4.2f;
     short read_0 = -read_encoder(0);
@@ -103,6 +102,7 @@ void speed_cal(void) {//left 0 right 1
     motor_set_pwm(0, out_0);
     motor_set_pwm(1, out_1);
     printf("%d,%d,%d,%d\r\n",read_0,read_1,(int)motor[0].target,(int)motor[1].target);
+    mv_pid = 0;
 }
 
 void motor_stop() {
@@ -126,7 +126,6 @@ void set_avd(bool state)
 }
 void start_pro(void)
 {
-    Led_Control(1,0,0);
     speed_set(-60,0);
     delay_ms(5000);
     speed_set(0,0);
@@ -137,4 +136,5 @@ void start_pro(void)
     delay_ms(10000);
     speed_set(0,0);
     tracker_set(false);
+    LCD_Show_Expressions(2);
 }

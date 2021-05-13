@@ -327,6 +327,9 @@
 		<Unit filename="D:/Clion/stm32/holtek/bsp/font.h">
 			<Option target="holtek.elf"/>
 		</Unit>
+		<Unit filename="D:/Clion/stm32/holtek/bsp/holtek_font.h">
+			<Option target="holtek.elf"/>
+		</Unit>
 		<Unit filename="D:/Clion/stm32/holtek/bsp/led.c">
 			<Option target="holtek.elf"/>
 		</Unit>

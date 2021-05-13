@@ -156,6 +156,7 @@ void UART_global_handler(void) {
     }
     if (uart4_receive_flag) {
         if (uart4_[0] == 0) {
+            Led_Control(0,0,1);
             if (uart4_[1] == 0&&(boot_flag!=1)) {
                 boot_flag=1;
                 speed_set(50, 0);
@@ -171,12 +172,18 @@ void UART_global_handler(void) {
                 speed_set(0, 50);
                 delay_ms(4000);
                 speed_set(0, 0);
+                delay_ms(100);
             } else if (uart4_[1] == 2) {
                 speed_set(-50, 0);
-                delay_ms(10000);
+                delay_ms(8000);
                 speed_set(0, 0);
+                LCD_Show_Expressions(1);
+                delay_ms(1000);
             } else if (uart4_[1] == 3) {
+                Led_Control(0,1,0);
                 motor_stop();
+                LCD_Clear(1,WHITE);
+                LCD_Clear(2,WHITE);
                 u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
                 for (i = 0; i < 3; ++i) {
                     HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
@@ -185,6 +192,7 @@ void UART_global_handler(void) {
             }
         }
         else if (uart4_[0] == 1) {
+            LCD_Show_Expressions(2);
             if (uart4_[1] == 1) {
                 speed_set(0,0);
                 u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;

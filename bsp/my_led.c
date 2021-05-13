@@ -273,8 +273,9 @@ void LCD_Clear(int id, u16 Color) {
 void LCD_ShowChinese(int id, u16 x, u16 y, u8 index, u8 size, u16 color) {  //字体已经写死了
     u8 i, j;
     u8 *temp, size1;//指针
+    unsigned char *Hzk16,*Hzk32;
     if (size == 16) {
-        temp = Hzk16;
+        temp =Hzk16;
     }//选择字号
     if (size == 32) {
         temp = Hzk32;
@@ -304,7 +305,7 @@ void LCD_ShowChinese(int id, u16 x, u16 y, u8 index, u8 size, u16 color) {  //�
 ******************************************************************************/
 void LCD_showTest(int id, u16 x, u16 y, u8 index, u16 color) {
     u8 i, j;
-    u8 *temp, size1;//指针
+    u8 *temp, size1,*My_num;//指针
     temp = My_num;//指定写入的
     LCD_Address_Set(id, x, y, x + 32 - 1, y + 32 - 1); //设置一个汉字的区域
     size1 = 32 * 32 / 8;
@@ -521,6 +522,7 @@ void LCD_ShowChar(int id, u16 x, u16 y, u8 num, u8 mode, u16 color) {
     u8 temp;
     u8 pos, t;
     u16 x0 = x;
+    u8 * asc2_1608;
     if (x > LCD_W - 16 || y > LCD_H - 16)
         return;        //设置窗口
     num = num - ' ';//得到偏移后的值
@@ -652,6 +654,7 @@ void LCD_ShowNum1(int id, u16 x, u16 y, float num, u8 len, u16 color) {
 ******************************************************************************/
 void LCD_ShowPicture(int id, u16 x1, u16 y1, u16 x2, u16 y2) {
     int i;
+    u8 * gImage_scren_code_img=gImage_a1_l;
     LCD_Address_Set(id, x1, y1, x2, y2);
     for (i = 0; i < 1600; i++
             ) {
@@ -690,5 +693,27 @@ void LCD_ShowMyPicture(int id,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size)
     {
         LCD_WR_DATA8(id, ptr[i * 2 + 1]);
         LCD_WR_DATA8(id, ptr[i * 2]);
+    }
+}
+void LCD_Show_Expressions(int id)
+{
+#define x_start 0
+#define y_start 0
+    LCD_Clear(1,WHITE);
+    LCD_Clear(2,WHITE);
+    if(id==1)
+    {
+        LCD_ShowMyPicture(1,x_start,y_start,gImage_a1_l,64,79);
+        LCD_ShowMyPicture(2,x_start,y_start,gImage_a1_r,64,79);
+    }
+    else if(id==2)
+    {
+        LCD_ShowMyPicture(1,x_start,y_start,gImage_a1_l,64,79);
+        LCD_ShowMyPicture(2,x_start,y_start,gImage_a1_r,64,79);
+    }
+    else if(id==3)
+    {
+        LCD_ShowMyPicture(1,x_start,y_start,gImage_a3_l,64,74);
+        LCD_ShowMyPicture(2,x_start,y_start,gImage_a3_r,64,71);
     }
 }
