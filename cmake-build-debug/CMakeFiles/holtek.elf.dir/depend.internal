@@ -642,6 +642,7 @@ CMakeFiles/holtek.elf.dir/Src/main.c.obj
  ../bsp/bsp_delay.h
  ../bsp/bsp_uart.h
  ../bsp/font.h
+ ../bsp/holtek_font.h
  ../bsp/led.h
  ../bsp/motor_control.h
  ../bsp/my_led.h
@@ -935,6 +936,7 @@ CMakeFiles/holtek.elf.dir/bsp/bsp_uart.c.obj
  D:/Clion/stm32/holtek/bsp/bsp_uart.c
  D:/Clion/stm32/holtek/bsp/bsp_uart.h
  D:/Clion/stm32/holtek/bsp/font.h
+ D:/Clion/stm32/holtek/bsp/holtek_font.h
  D:/Clion/stm32/holtek/bsp/led.h
  D:/Clion/stm32/holtek/bsp/motor_control.h
  D:/Clion/stm32/holtek/bsp/my_led.h
@@ -975,6 +977,7 @@ CMakeFiles/holtek.elf.dir/bsp/led.c.obj
  ../Inc/stm32f1xx_hal_conf.h
  D:/Clion/stm32/holtek/bsp/bmp.h
  D:/Clion/stm32/holtek/bsp/font.h
+ D:/Clion/stm32/holtek/bsp/holtek_font.h
  D:/Clion/stm32/holtek/bsp/led.c
  D:/Clion/stm32/holtek/bsp/led.h
  D:/Clion/stm32/holtek/bsp/my_led.h
@@ -1015,6 +1018,7 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  D:/Clion/stm32/holtek/bsp/bsp_delay.h
  D:/Clion/stm32/holtek/bsp/bsp_uart.h
  D:/Clion/stm32/holtek/bsp/font.h
+ D:/Clion/stm32/holtek/bsp/holtek_font.h
  D:/Clion/stm32/holtek/bsp/led.h
  D:/Clion/stm32/holtek/bsp/motor_control.c
  D:/Clion/stm32/holtek/bsp/motor_control.h
@@ -1058,6 +1062,7 @@ CMakeFiles/holtek.elf.dir/bsp/my_led.c.obj
  D:/Clion/stm32/holtek/bsp/bmp.h
  D:/Clion/stm32/holtek/bsp/bsp_delay.h
  D:/Clion/stm32/holtek/bsp/font.h
+ D:/Clion/stm32/holtek/bsp/holtek_font.h
  D:/Clion/stm32/holtek/bsp/my_led.c
  D:/Clion/stm32/holtek/bsp/my_led.h
  D:/Clion/stm32/holtek/bsp/oledfont.h

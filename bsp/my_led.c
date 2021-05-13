@@ -6,7 +6,6 @@
 #include "timer_it.h"
 #include "bsp_delay.h"
 #include "oledfont.h"
-
 u16 BACK_COLOR = WHITE;
 
 /******************************************************************************

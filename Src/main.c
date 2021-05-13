@@ -109,6 +109,9 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     Global_Init();
     Screen_Display();
+    LCD_Show_Expressions(1);
+    LCD_Show_Expressions(2);
+    LCD_Show_Expressions(3);
     start_pro();
     /* USER CODE END 2 */
 
