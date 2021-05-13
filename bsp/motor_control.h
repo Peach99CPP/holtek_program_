@@ -25,4 +25,5 @@ void set_avd(bool state);
 void turn(void);
 extern bool avd_on;
 void speed_run(int speed);
+void start_pro(void);
 #endif //HOLTEK_MOTOR_CONTROL_H

@@ -109,10 +109,7 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     Global_Init();
     RetargetInit(&huart4);
-//    motor_set_pwm(1,2000);
-
-    speed_set(0, 0);
-//    Screen_Display();
+    start_pro();
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -176,6 +173,9 @@ void Global_Init(void) {
     Lcd_Init(1);
     Lcd_Init(2);
     Global_Pid_Init();
+    speed_set(0, 0);
+    tracker_set(false);
+    set_avd(false);
     LCD_Clear(1, WHITE);
     Led_Control(0, 0, 0);
     delay_ms(1000);

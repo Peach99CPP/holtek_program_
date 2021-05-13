@@ -9,6 +9,9 @@
 #include "bsp_delay.h"
 #include "retarget.h"
 #include "bsp_uart.h"
+#include "led.h"
+#include "my_led.h"
+
 #define speed_k 0.3
 bool avd_on=false;
 motor_speed motor[2], global_;
@@ -103,8 +106,7 @@ void speed_cal(void) {//left 0 right 1
 }
 
 void motor_stop() {
-    motor_set_pwm(1,0);
-    motor_set_pwm(0,0);
+    global_.vx=global_.vy=0;
 }
 
 void turn(void) {
@@ -121,4 +123,18 @@ void speed_run(int speed)
 void set_avd(bool state)
 {
     avd_on=state;
+}
+void start_pro(void)
+{
+    Led_Control(1,0,0);
+    speed_set(-30,0);
+    delay_ms(1000);
+    speed_set(0,0);
+    delay_ms(5000);
+    Led_Control(0,0,1);
+    tracker_set(true);
+    speed_set(50,0);
+    delay_ms(3000);
+    speed_set(0,0);
+    tracker_set(false);
 }

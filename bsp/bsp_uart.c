@@ -14,7 +14,7 @@
 #include <string.h>
 
 int uart2_receive_flag, uart3_receive_flag, uart4_receive_flag, uart5_receive_flag,
-        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index, mv_pid = 0, animal_inf = 0;
+        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index, mv_pid = 0, animal_inf = 0,boot_flag=0;
 static int temp_flag_4 = 0, temp_flag_2 = 0, temp_flag_3 = 0, temp_flag_5 = 0;
 uint8_t uart2_[MAX_SIZE], uart3_[MAX_SIZE], uart4_[MAX_SIZE], uart5_[MAX_SIZE];
 
@@ -155,13 +155,103 @@ void UART_global_handler(void) {
         uart3_receive_flag = 0;
     }
     if (uart4_receive_flag) {
+        if (uart4_[0] == 0) {
+            if (uart4_[1] == 0&&(boot_flag!=1)) {
+                boot_flag=1;
+                speed_set(50, 0);
+                tracker_set(true);
+                delay_ms(500);
+                speed_set(0, 0);
+                delay_ms(100);
+                speed_set(-50,0);
+                delay_ms(550);
+                speed_set(0,0);
+                tracker_set(false);
+            } else if (uart4_[1] == 1) {
+                speed_set(0, 50);
+                delay_ms(2000);
+                speed_set(0, 0);
+            } else if (uart4_[1] == 2) {
+                speed_set(-50, 0);
+                delay_ms(5000);
+                speed_set(0, 0);
+            } else if (uart4_[1] == 3) {
+                motor_stop();
+                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+                }
+                delay_ms(100);
+            }
+        }
+        else if (uart4_[0] == 1) {
+            if (uart4_[1] == 1) {
+                speed_set(0,0);
+                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+                }
+                u8 cmd_[3] = {(int) ('B'), (int) ('B'), (int) ('B')};
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd_, 3, 0xff);
+                }
+                delay_ms(100);
+            }
+            else if (uart4_[1] == 2) {
+                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+                }
+                Animal_Recognition();
+            }
+            else if (uart4_[1]==3)
+            {
+                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+                }
+                u8 cmd_t[]={(int)('C'),(int)('C'),(int)('C')};
+                for (i = 0; i < 3; ++i) {
+                    HAL_UART_Transmit(&huart3, cmd_t, 3, 0xff);
+                }
+            }
+        }
+        else if (uart4_[0] == 5) {
+            int animal = uart4_[1];
+            LCD_Clear(1, WHITE);
+            LCD_Clear(2, WHITE);
+            switch (animal) {
+                case 1:
+                    LCD_ShowMyChinese(1, 0, 32, 45, dog, 64, 64, BLACK);
+                    LCD_ShowMyChinese(2, 1, 32, 45, dog, 64, 64, BLACK);
+                    //TODO
+                    break;
+                case 2:
+                    LCD_ShowMyChinese(1, 0, 32, 45, cat, 64, 64, BLACK);
+                    LCD_ShowMyChinese(2, 1, 32, 45, cat, 64, 64, BLACK);
+                    //TODO
+                    break;
+                case 3:
+                    LCD_ShowMyChinese(1, 0, 32, 45, hen, 64, 64, BLACK);
+                    LCD_ShowMyChinese(2, 1, 32, 45, hen, 64, 64, BLACK);
+                    //TODO
+                    break;
+                case 4:
+                    LCD_ShowMyChinese(1, 0, 32, 45, horse, 64, 64, BLACK);
+                    LCD_ShowMyChinese(2, 1, 32, 45, horse, 64, 64, BLACK);
+                    break;
+                default:
+                    LCD_Clear(1, WHITE);
+                    LCD_Clear(2, WHITE);
+                    break;
+            }
+        }
         uart4_receive_flag = 0;
     }
     if (uart5_receive_flag) {
         uart5_receive_flag = 0;
     }
 }
-
 void Animal_Recognition(void) {
     uint8_t cmd[3] = {(int) 'P', (int) 'P', (int) 'P'},i;
     animal_inf=0;
