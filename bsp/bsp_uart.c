@@ -169,11 +169,11 @@ void UART_global_handler(void) {
                 tracker_set(false);
             } else if (uart4_[1] == 1) {
                 speed_set(0, 50);
-                delay_ms(2000);
+                delay_ms(4000);
                 speed_set(0, 0);
             } else if (uart4_[1] == 2) {
                 speed_set(-50, 0);
-                delay_ms(5000);
+                delay_ms(10000);
                 speed_set(0, 0);
             } else if (uart4_[1] == 3) {
                 motor_stop();

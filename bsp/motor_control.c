@@ -15,7 +15,7 @@
 #define speed_k 0.3
 bool avd_on=false;
 motor_speed motor[2], global_;
-
+short temp_read_1=0,temp_read_0=0;
 void speed_set(int x, int y) {
     global_.vx = x;
     global_.vy = y;
@@ -96,11 +96,13 @@ void speed_cal(void) {//left 0 right 1
     motor[1].target*=-4.2f;
     short read_0 = -read_encoder(0);
     short read_1 = -read_encoder(1);
+    if(abs(read_0-temp_read_0)>400) read_0=temp_read_0;else temp_read_0=read_0;
+    if(abs(read_1-temp_read_1)>400) read_1=temp_read_1; else temp_read_1=read_1;
     int out_0 = (short) PID_cal(&motor_[0], read_0, motor[0].target), out_1 = (short) PID_cal(&motor_[1], read_1,
                                                                                               motor[1].target);
     motor_set_pwm(0, out_0);
     motor_set_pwm(1, out_1);
-//    printf("%d,%d,%d,%d\r\n",read_0,read_1,(int)motor[0].target,(int)motor[1].target);
+    printf("%d,%d,%d,%d\r\n",read_0,read_1,(int)motor[0].target,(int)motor[1].target);
 }
 
 void motor_stop() {
@@ -125,14 +127,14 @@ void set_avd(bool state)
 void start_pro(void)
 {
     Led_Control(1,0,0);
-    speed_set(-30,0);
-    delay_ms(3000);
+    speed_set(-60,0);
+    delay_ms(5000);
     speed_set(0,0);
     delay_ms(6000);
     Led_Control(0,0,1);
     tracker_set(true);
-    speed_set(30,0);
-    delay_ms(6000);
+    speed_set(60,0);
+    delay_ms(10000);
     speed_set(0,0);
     tracker_set(false);
 }
