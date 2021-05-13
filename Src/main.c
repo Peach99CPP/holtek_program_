@@ -108,14 +108,19 @@ int main(void) {
     MX_UART4_Init();
     /* USER CODE BEGIN 2 */
     Global_Init();
-    RetargetInit(&huart4);
-    start_pro();
+    RetargetInit(&huart2);
+    Screen_Display();
+//    start_pro();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
         UART_global_handler();
+        speed_set(100,0);
+        delay_ms(2000);
+        speed_set(0,0);
+        delay_ms(2000);
         /* USER CODE END WHILE */
     }
     /* USER CODE BEGIN 3 */
@@ -178,7 +183,6 @@ void Global_Init(void) {
     set_avd(false);
     LCD_Clear(1, WHITE);
     Led_Control(0, 0, 0);
-    delay_ms(1000);
 }
 
 void Screen_Display(void) {
