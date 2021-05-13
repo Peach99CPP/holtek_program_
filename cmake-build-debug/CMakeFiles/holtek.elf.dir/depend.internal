@@ -1011,10 +1011,14 @@ CMakeFiles/holtek.elf.dir/bsp/motor_control.c.obj
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
+ D:/Clion/stm32/holtek/bsp/bmp.h
  D:/Clion/stm32/holtek/bsp/bsp_delay.h
  D:/Clion/stm32/holtek/bsp/bsp_uart.h
+ D:/Clion/stm32/holtek/bsp/font.h
+ D:/Clion/stm32/holtek/bsp/led.h
  D:/Clion/stm32/holtek/bsp/motor_control.c
  D:/Clion/stm32/holtek/bsp/motor_control.h
+ D:/Clion/stm32/holtek/bsp/my_led.h
  D:/Clion/stm32/holtek/bsp/pid_.h
  D:/Clion/stm32/holtek/bsp/retarget.h
  D:/Clion/stm32/holtek/bsp/tracker.h

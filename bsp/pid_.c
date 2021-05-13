@@ -82,7 +82,7 @@ void Global_Pid_Init()
     PID_clear(&motor_[1]);
     PID_clear(&tracker_);
     static const float Tracker_PID[3]={8.0f,0,0};
-    static const float Motor_PID[3]={12.0f,10,0};
+    static const float Motor_PID[3]={18.0f,9,0};
     PID_init(&motor_[0],PID_DELTA,Motor_PID,7000,0);
     PID_init(&motor_[1],PID_DELTA,Motor_PID,7000,0);
     PID_init(&tracker_,PID_POSITION,Tracker_PID,40,10);
