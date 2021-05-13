@@ -110,17 +110,13 @@ int main(void) {
     Global_Init();
     RetargetInit(&huart2);
     Screen_Display();
-//    start_pro();
+    start_pro();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
         UART_global_handler();
-        speed_set(100,0);
-        delay_ms(2000);
-        speed_set(0,0);
-        delay_ms(2000);
         /* USER CODE END WHILE */
     }
     /* USER CODE BEGIN 3 */
