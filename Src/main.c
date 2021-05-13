@@ -108,8 +108,10 @@ int main(void) {
     MX_UART4_Init();
     /* USER CODE BEGIN 2 */
     Global_Init();
-    RetargetInit(&huart2);
-    Screen_Display();
+//    RetargetInit(&huart2);
+    delay_ms(5000);
+//    Screen_Display();
+    speed_set(0,0);
     start_pro();
     /* USER CODE END 2 */
 
@@ -117,6 +119,10 @@ int main(void) {
     /* USER CODE BEGIN WHILE */
     while (1) {
         UART_global_handler();
+//        speed_set(300,0);
+//        delay_ms(1000);
+//        speed_set(0,0);
+//        delay_ms(1000);
         /* USER CODE END WHILE */
     }
     /* USER CODE BEGIN 3 */
@@ -190,6 +196,8 @@ void Screen_Display(void) {
     LCD_ShowMyChinese(1, 1, Start_x + Delta_x, 0, holtek, 32, 32, BRRED);
     LCD_ShowMyChinese(1, 2, Start_x + 2 * Delta_x, 0, holtek, 32, 32, GRAY);
     LCD_ShowMyPicture(1, 0, Delta_y, gImage_face_code, 64, 64);
+    LCD_ShowMyPicture(2, 0, Delta_y, gImage_face_code, 64, 64);
+
 }
 /* USER CODE END 4 */
 
