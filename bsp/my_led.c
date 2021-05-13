@@ -30,7 +30,7 @@ void LCD_Writ_Bus(int id, u8 dat) {
         }
         A_OLED_CS_SET();
     } else if (id == 2) {
-        B_OLED_CS_SET();
+        B_OLED_CS_RESET();
         for (i = 0; i < 8; i++
                 ) {
             B_OLED_SCLK_RESET();
@@ -41,7 +41,7 @@ void LCD_Writ_Bus(int id, u8 dat) {
             B_OLED_SCLK_SET();
             dat <<= 1;
         }
-        B_OLED_CS_RESET();
+        B_OLED_CS_SET();
     }
 }
 

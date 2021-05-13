@@ -111,17 +111,21 @@ int main(void) {
     RetargetInit(&huart2);
 //    Screen_Display();
     speed_set(0,0);
-//    start_pro();
+    speed_set(70,0);
+    delay_ms(5000);
+    speed_set(0,0);
+    delay_ms(100);
+    start_pro();
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
 //        UART_global_handler();
-        speed_set(90,0);
-        delay_ms(1000);
-        speed_set(0,0);
-        delay_ms(1000);
+//        speed_set(90,0);
+//        delay_ms(1000);
+//        speed_set(0,0);
+//        delay_ms(1000);
         /* USER CODE END WHILE */
     }
     /* USER CODE BEGIN 3 */

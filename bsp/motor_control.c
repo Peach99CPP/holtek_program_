@@ -132,8 +132,8 @@ void start_pro(void)
     speed_set(0,0);
     delay_ms(6000);
     Led_Control(0,0,1);
-    tracker_set(true);
-    speed_set(60,0);
+    tracker_set(false);
+    speed_set(70,0);
     delay_ms(10000);
     speed_set(0,0);
     tracker_set(false);
