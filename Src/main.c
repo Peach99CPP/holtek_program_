@@ -112,6 +112,7 @@ int main(void) {
     RetargetInit(&huart2);
     //TODO:上场运行时需要开启下面的函数
 //    start_pro();
+    //TODO 比赛前记得开启！切记！！！
 
     /* USER CODE END 2 */
 

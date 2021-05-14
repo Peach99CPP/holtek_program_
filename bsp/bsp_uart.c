@@ -176,7 +176,7 @@ void UART_global_handler(void) {
             }
             else if (uart4_[1] == 1) {
                 speed_set(0, 50);
-                delay_ms(4000);
+                delay_ms(8000);
                 speed_set(0, 0);
                 delay_ms(300);
             } else if (uart4_[1] == 2)
@@ -192,6 +192,7 @@ void UART_global_handler(void) {
             }
             else if (uart4_[1] == 4)
             {
+                LCD_Show_Expressions(2);
                 MV_Quit();
                 speed_set(0, 0);
                 delay_ms(300);

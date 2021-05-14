@@ -13,17 +13,23 @@
 #include "my_led.h"
 
 #define speed_k 0.3
-bool avd_on=false;
+bool avd_on = false;
+int mv_output[5] = {0};
 motor_speed motor[2], global_;
-short temp_read_1=0,temp_read_0=0;
-void speed_set(int x, int y) {
+short temp_read_1 = 0, temp_read_0 = 0;
+
+void speed_set(int x, int y)
+{
     global_.vx = x;
     global_.vy = y;
 }
 
-int get_avd(void) {
+int get_avd(void)
+{
     if (!avd_on)
+    {
         return 0;
+    }
     else {
         if (HAL_GPIO_ReadPin(avd_GPIO_Port, avd_Pin) != GPIO_PIN_SET)
             return 0;
@@ -86,18 +92,32 @@ short read_encoder(int motor_num) {
     return num;
 }
 
-void speed_cal(void) {
+void speed_cal(void)
+{
     //TODO:调试后删除输出语句
-    mv_pid*=0.07;
-    float tracker_num=get_tracker_num();
-    motor[0].target = (int)(global_.vx) - global_.vy * speed_k -  mv_pid+tracker_num;//+ get_tracker_num();
-    motor[1].target = (int)(global_.vx)+ global_.vy * speed_k +  mv_pid-tracker_num;
-    motor[0].target*=-4.2f;
-    motor[1].target*=-4.2f;
+    float tracker_num = get_tracker_num();
+    motor[0].target = (int) (global_.vx) - global_.vy * speed_k - Get_MV_pid() + tracker_num;//+ get_tracker_num();
+    motor[1].target = (int) (global_.vx) + global_.vy * speed_k + Get_MV_pid() - tracker_num;
+    motor[0].target *= -4.2f;
+    motor[1].target *= -4.2f;
     short read_0 = -read_encoder(0);
     short read_1 = -read_encoder(1);
-    if(abs(read_0-temp_read_0)>400) read_0=temp_read_0;else temp_read_0=read_0;
-    if(abs(read_1-temp_read_1)>400) read_1=temp_read_1; else temp_read_1=read_1;
+    if (abs(read_0 - temp_read_0) > 400)
+    {
+        read_0 = temp_read_0;
+    }
+    else
+    {
+        temp_read_0 = read_0;
+    }
+    if (abs(read_1 - temp_read_1) > 400)
+    {
+        read_1 = temp_read_1;
+    }
+    else
+    {
+        temp_read_1 = read_1;
+    }
     int out_0 = (short) PID_cal(&motor_[0], read_0, motor[0].target), out_1 = (short) PID_cal(&motor_[1], read_1,
                                                                                               motor[1].target);
     motor_set_pwm(0, out_0);
@@ -129,13 +149,29 @@ void start_pro(void)
 {
     speed_set(-60,0);
     delay_ms(5000);
-    speed_set(0,0);
+    speed_set(0, 0);
     delay_ms(10000);
-    Led_Control(0,0,1);
+    Led_Control(0, 0, 1);
     tracker_set(true);
-    speed_set(70,0);
+    speed_set(70, 0);
     delay_ms(8000);
-    speed_set(0,0);
+    speed_set(0, 0);
     tracker_set(false);
     LCD_Show_Expressions(2);
+}
+
+int Get_MV_pid(void)
+{
+    u8 i;
+    mv_output[0] = mv_output[1];
+    mv_output[1] = mv_output[2];
+    mv_output[2] = mv_output[3];
+    mv_output[3] = mv_output[4];
+    mv_output[4] = mv_pid;
+    int  sum = 0;
+    for (i = 0; i < 5; ++i)
+    {
+        sum += mv_output[i];
+    }
+    return 0.15*sum / 5;
 }

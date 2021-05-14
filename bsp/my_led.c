@@ -696,14 +696,14 @@ void LCD_ShowMyPicture(int id,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size)
 }
 void LCD_Show_Expressions(int id)
 {
-#define x_start 32
-#define y_start 32
+#define x_start 64
+#define y_start 30
     LCD_Clear(1,WHITE);
     LCD_Clear(2,WHITE);
     if(id==1)
     {
         LCD_ShowMyPicture(1,x_start,y_start,gImage_a1_l,64,79);
-        LCD_ShowMyPicture(2,x_start,y_start,gImage_a1_r,64,79);
+        LCD_ShowMyPicture(2,64,y_start,gImage_a1_r,64,79);
     }
     else if (id == 2)
     {
