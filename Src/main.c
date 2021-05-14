@@ -110,7 +110,7 @@ int main(void) {
     Global_Init();
     Screen_Display();
     //TODO:上场运行时需要开启下面的函数
-//    start_pro();
+    start_pro();
 
     /* USER CODE END 2 */
 

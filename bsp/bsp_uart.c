@@ -14,8 +14,8 @@
 #include <string.h>
 
 int uart2_receive_flag, uart3_receive_flag, uart4_receive_flag, uart5_receive_flag,
-        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index, mv_pid = 0, animal_inf = 0,boot_flag=0;
-static int temp_flag_4 = 0, temp_flag_2 = 0, temp_flag_3 = 0, temp_flag_5 = 0;
+        uart2_index, uart3_index = 0, uart4_index, uart4_index, uart5_index, mv_pid = 0, animal_inf = 0, boot_flag = 0;
+int temp_flag_4 = 0, temp_flag_2 = 0, temp_flag_3 = 0, temp_flag_5 = 0;
 uint8_t uart2_[MAX_SIZE], uart3_[MAX_SIZE], uart4_[MAX_SIZE], uart5_[MAX_SIZE];
 
 void Init_UARTS(void) {//初始化串口
@@ -43,7 +43,7 @@ void USART2_IRQHandler(void) {
                     uart2_receive_flag = 1;
                     temp_flag_2 = 0;
                 }
-                else { uart2_[uart2_index++] = data; }
+                else { uart4_[uart2_index++] = data; }//TODO 检查数据存放位置
                 if (uart2_index == MAX_SIZE) {
                     temp_flag_2 = 0;
                     memset(&uart2_, 0, sizeof(uart2_));
@@ -105,14 +105,15 @@ void UART4_IRQHandler(void) {
                 if (data == 0X43) {
                     uart4_receive_flag = 1;
                     temp_flag_4 = 0;
+                } else {
+                    uart4_[uart4_index++] = data;
                 }
-                else { uart4_[uart4_index++] = data; }
                 if (uart4_index == MAX_SIZE) {
                     temp_flag_4 = 0;
                     memset(&uart4_, 0, sizeof(uart4_));
                 }
             }
-            if (data == 0X53 && (!temp_flag_4)) {//防止误操作
+            if (data == 0X53 && (temp_flag_4 == 0)) {//防止误操作
                 temp_flag_4 = 1;
                 uart4_index = 0;
             }
@@ -148,13 +149,13 @@ void UART5_IRQHandler(void) {
 void UART_global_handler(void) {
 #define move_speed_1  5000
 #define move_speed_2 5000
-    if (uart2_receive_flag) {
-        uart2_receive_flag = 0;
-    }
+//    if (uart2_receive_flag) {
+//        uart2_receive_flag = 0;
+//    }
     if (uart3_receive_flag) {
         uart3_receive_flag = 0;
     }
-    if (uart4_receive_flag) {
+    if (uart4_receive_flag || (uart2_receive_flag==1 )) {
         if (uart4_[0] == 0) {
             Led_Control(0,0,1);
             if (uart4_[1] == 0&&(boot_flag!=1)) {

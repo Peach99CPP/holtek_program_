@@ -696,8 +696,8 @@ void LCD_ShowMyPicture(int id,u16 x,u16 y,const u8 * ptr,u16 x_size,u16 y_size)
 }
 void LCD_Show_Expressions(int id)
 {
-#define x_start 0
-#define y_start 0
+#define x_start 32
+#define y_start 32
     LCD_Clear(1,WHITE);
     LCD_Clear(2,WHITE);
     if(id==1)
