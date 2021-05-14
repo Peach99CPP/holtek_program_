@@ -88,10 +88,10 @@ short read_encoder(int motor_num) {
 
 void speed_cal(void) {
     //TODO:调试后删除输出语句
-    mv_pid*=0.06;
+    mv_pid*=0.07;
     float tracker_num=get_tracker_num();
-    motor[0].target = (int)(global_.vx) - global_.vy * speed_k -  0.5*mv_pid+tracker_num;//+ get_tracker_num();
-    motor[1].target = (int)(global_.vx)+ global_.vy * speed_k +  0.5*mv_pid-tracker_num;
+    motor[0].target = (int)(global_.vx) - global_.vy * speed_k -  mv_pid+tracker_num;//+ get_tracker_num();
+    motor[1].target = (int)(global_.vx)+ global_.vy * speed_k +  mv_pid-tracker_num;
     motor[0].target*=-4.2f;
     motor[1].target*=-4.2f;
     short read_0 = -read_encoder(0);
