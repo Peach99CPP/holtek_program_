@@ -94,8 +94,6 @@ void speed_cal(void) {
     motor[1].target = (int)(global_.vx)+ global_.vy * speed_k +  0.5*mv_pid-tracker_num;
     motor[0].target*=-4.2f;
     motor[1].target*=-4.2f;
-//    if (mv_pid!=0)printf("%d\r\n",mv_pid);
-//    if(motor[0].target>0) motor[0].target*=1.2;
     short read_0 = -read_encoder(0);
     short read_1 = -read_encoder(1);
     if(abs(read_0-temp_read_0)>400) read_0=temp_read_0;else temp_read_0=read_0;

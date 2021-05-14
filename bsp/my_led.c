@@ -705,14 +705,29 @@ void LCD_Show_Expressions(int id)
         LCD_ShowMyPicture(1,x_start,y_start,gImage_a1_l,64,79);
         LCD_ShowMyPicture(2,x_start,y_start,gImage_a1_r,64,79);
     }
-    else if(id==2)
+    else if (id == 2)
     {
-        LCD_ShowMyPicture(1,x_start,y_start,gImage_a1_l,64,79);
-        LCD_ShowMyPicture(2,x_start,y_start,gImage_a1_r,64,79);
+        LCD_ShowMyPicture(1, x_start, y_start, gImage_a1_l, 64, 79);
+        LCD_ShowMyPicture(2, x_start, y_start, gImage_a1_r, 64, 79);
     }
-    else if(id==3)
+    else if (id == 3)
     {
-        LCD_ShowMyPicture(1,x_start,y_start,gImage_a3_l,64,74);
-        LCD_ShowMyPicture(2,x_start,y_start,gImage_a3_r,64,71);
+        LCD_ShowMyPicture(1, x_start, y_start, gImage_a3_l, 64, 74);
+        LCD_ShowMyPicture(2, x_start, y_start, gImage_a3_r, 64, 71);
     }
+}
+
+void Show_Chinese(int number)
+{
+    LCD_Clear(1, WHITE);
+    LCD_Clear(2, WHITE);
+    delay_ms(50);
+    LCD_ShowMyChinese(1,2*number-2,32,32,chinese_font,64,64,BROWN);
+    LCD_ShowMyChinese(2,2*number-1,32,32,chinese_font,64,64,BROWN);
+
+}
+void LED_ShowMY_Num(int id,int num)
+{
+    LCD_Clear(id,WHITE);
+    LCD_ShowMyChinese(id,num,32,32,My_Num,64,64,RED);
 }
