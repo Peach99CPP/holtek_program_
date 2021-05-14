@@ -38,13 +38,12 @@ void USART2_IRQHandler(void) {
     if (USART2->SR & (1 << 5)) {
         data = USART2->DR;
         if (!uart2_receive_flag) {
-            Led_Control(1,1,0);
             if (temp_flag_2) {
                 if (data == 0X43) {
                     uart2_receive_flag = 1;
                     temp_flag_2 = 0;
                 }
-                else { uart4_[uart2_index++] = data; }//TODO 检查数据存放位置
+                else { uart2_[uart2_index++] = data; }//TODO 检查数据存放位置
                 if (uart2_index == MAX_SIZE) {
                     temp_flag_2 = 0;
                     memset(&uart2_, 0, sizeof(uart2_));
@@ -98,12 +97,16 @@ void USART3_IRQHandler(void) {
 
 void UART4_IRQHandler(void) {
     //协议内容
-    uint8_t data;
+    uint8_t data,i;
     if (UART4->SR & (1 << 5)) {
         data = UART4->DR;
         if (!uart4_receive_flag) {//未接收完成
             if (temp_flag_4) {
                 if (data == 0X43) {
+                    for(i=0;i<uart4_index;++i)
+                    {
+                        uart4_[i]-='0';
+                    }
                     uart4_receive_flag = 1;
                     temp_flag_4 = 0;
                 } else {
@@ -148,33 +151,34 @@ void UART5_IRQHandler(void) {
 }
 
 void UART_global_handler(void) {
-#define move_speed_1  5000
-#define move_speed_2 5000
-//    if (uart2_receive_flag) {
-//        uart2_receive_flag = 0;
-//    }
+//TODO:测试完毕后删除所有的输出打印语句
+    if (uart2_receive_flag) {
+        uart2_receive_flag = 0;
+    }
     if (uart3_receive_flag) {
         uart3_receive_flag = 0;
+
     }
-    if (uart4_receive_flag || (uart2_receive_flag==1 )) {
+    if (uart4_receive_flag ) {
+        Led_Control(0,1,1);
         if (uart4_[0] == 0) {
-            Led_Control(0,0,1);
             if (uart4_[1] == 0&&(boot_flag!=1)) {
                 boot_flag=1;
                 speed_set(50, 0);
                 tracker_set(true);
-                delay_ms(500);
+                delay_ms(1500);
                 speed_set(0, 0);
-                delay_ms(100);
+                delay_ms(500);
                 speed_set(-50,0);
-                delay_ms(550);
+                delay_ms(1550);
                 speed_set(0,0);
                 tracker_set(false);
-            } else if (uart4_[1] == 1) {
+            }
+            else if (uart4_[1] == 1) {
                 speed_set(0, 50);
                 delay_ms(4000);
                 speed_set(0, 0);
-                delay_ms(100);
+                delay_ms(300);
             } else if (uart4_[1] == 2) {
                 speed_set(-50, 0);
                 delay_ms(8000);
@@ -186,6 +190,7 @@ void UART_global_handler(void) {
                 motor_stop();
                 LCD_Clear(1,WHITE);
                 LCD_Clear(2,WHITE);
+                Led_Control(1,1,1);
                 u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
                 for (i = 0; i < 3; ++i) {
                     HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
@@ -205,6 +210,7 @@ void UART_global_handler(void) {
                 for (i = 0; i < 3; ++i) {
                     HAL_UART_Transmit(&huart3, cmd_, 3, 0xff);
                 }
+                Led_Control(0,1,0);
                 delay_ms(100);
             }
             else if (uart4_[1] == 2) {
@@ -257,6 +263,7 @@ void UART_global_handler(void) {
             }
         }
         uart4_receive_flag = 0;
+        Led_Control(1,1,1);
     }
     if (uart5_receive_flag) {
         uart5_receive_flag = 0;
@@ -299,4 +306,28 @@ void Animal_Recognition(void) {
             break;
     }
     animal_inf = 0;
+}
+void MV_Quit(void)
+{
+    u8 cmd[]={(int)('Q'),(int)('Q'),(int)('Q')};
+    HAL_UART_Transmit(&huart3,cmd,3,0xff);
+    delay_ms(500);
+}
+void MV_Ball(void)
+{
+    u8 cmd[]={(int)('B'),(int)('B'),(int)('B')};
+    HAL_UART_Transmit(&huart3,cmd,3,0xff);
+    delay_ms(500);
+}
+void MV_Chinese(void)
+{
+    u8 cmd[]={(int)('C'),(int)('C'),(int)('C')};
+    HAL_UART_Transmit(&huart3,cmd,3,0xff);
+    delay_ms(500);
+}
+void MV_Animal(void)
+{
+    u8 cmd[]={(int)('P'),(int)('P'),(int)('P')};
+    HAL_UART_Transmit(&huart3,cmd,3,0xff);
+    delay_ms(500);
 }

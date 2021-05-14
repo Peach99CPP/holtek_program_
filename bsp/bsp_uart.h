@@ -14,4 +14,9 @@ extern int temp_flag_4 , temp_flag_2 , temp_flag_3, temp_flag_5 ;
 void Animal_Recognition(void);
 extern uint8_t uart2_[MAX_SIZE], uart3_[MAX_SIZE], uart4_[MAX_SIZE], uart5_[MAX_SIZE];
 extern void UART_global_handler(void);
+void MV_Quit(void);
+void MV_Ball(void);
+void MV_Chinese(void);
+void MV_Animal(void);
+
 #endif //HOLTEK_BSP_UART_H
