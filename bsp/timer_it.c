@@ -17,7 +17,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         sys_time++;
         if (sys_time == 50) {
             speed_cal();
-            HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
+//            HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
             sys_time = 0;
         }
         if (sys_time > (MAX_TIME))

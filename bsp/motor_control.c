@@ -93,6 +93,7 @@ void speed_cal(void) {
     motor[1].target = (int)(global_.vx)+ global_.vy * speed_k + 0.1 * mv_pid-tracker_num;
     motor[0].target*=-4.2f;
     motor[1].target*=-4.2f;
+//    if(motor[0].target>0) motor[0].target*=1.2;
     short read_0 = -read_encoder(0);
     short read_1 = -read_encoder(1);
     if(abs(read_0-temp_read_0)>400) read_0=temp_read_0;else temp_read_0=read_0;
@@ -129,11 +130,11 @@ void start_pro(void)
     speed_set(-60,0);
     delay_ms(5000);
     speed_set(0,0);
-    delay_ms(6000);
+    delay_ms(10000);
     Led_Control(0,0,1);
     tracker_set(true);
     speed_set(70,0);
-    delay_ms(10000);
+    delay_ms(8000);
     speed_set(0,0);
     tracker_set(false);
     LCD_Show_Expressions(2);
