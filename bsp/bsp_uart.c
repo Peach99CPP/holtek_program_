@@ -43,7 +43,7 @@ void USART2_IRQHandler(void) {
                     uart2_receive_flag = 1;
                     temp_flag_2 = 0;
                 }
-                else { uart2_[uart2_index++] = data; }//TODO 检查数据存放位置
+                else { uart2_[uart2_index++] = data; };
                 if (uart2_index == MAX_SIZE) {
                     temp_flag_2 = 0;
                     memset(&uart2_, 0, sizeof(uart2_));
@@ -179,82 +179,54 @@ void UART_global_handler(void) {
                 delay_ms(4000);
                 speed_set(0, 0);
                 delay_ms(300);
-            } else if (uart4_[1] == 2) {
-                speed_set(-50, 0);
-                delay_ms(8000);
-                speed_set(0, 0);
-                LCD_Show_Expressions(1);
-                delay_ms(1000);
-            } else if (uart4_[1] == 3) {
-                Led_Control(0,1,0);
-                motor_stop();
-                LCD_Clear(1,WHITE);
-                LCD_Clear(2,WHITE);
-                Led_Control(1,1,1);
-                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
-                }
-                delay_ms(100);
-            }
-        }
-        else if (uart4_[0] == 1) {
-            LCD_Show_Expressions(2);
-            if (uart4_[1] == 1) {
-                speed_set(0,0);
-                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
-                }
-                u8 cmd_[3] = {(int) ('B'), (int) ('B'), (int) ('B')};
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd_, 3, 0xff);
-                }
-                Led_Control(0,1,0);
-                delay_ms(100);
-            }
-            else if (uart4_[1] == 2) {
-                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
-                }
-                Animal_Recognition();
-            }
-            else if (uart4_[1]==3)
+            } else if (uart4_[1] == 2)
             {
-                u8 cmd[3] = {(int) ('Q'), (int) ('Q'), (int) ('Q')}, i;
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
-                }
-                u8 cmd_t[]={(int)('C'),(int)('C'),(int)('C')};
-                for (i = 0; i < 3; ++i) {
-                    HAL_UART_Transmit(&huart3, cmd_t, 3, 0xff);
-                }
+                MV_Ball();
+            }
+            else if (uart4_[1] == 3)
+            {
+                speed_set(-60, 0);
+                delay_ms(5000);
+                speed_set(0, 0);
+                delay_ms(500);
+            }
+            else if (uart4_[1] == 4)
+            {
+                MV_Quit();
+                speed_set(0, 0);
+                delay_ms(300);
             }
         }
-        else if (uart4_[0] == 5) {
+        else if (uart4_[0] == 1)
+        {
+            if (uart4_[1] == 0)
+            {
+                MV_Chinese();
+            }
+            else if (uart4_[1] == 1)
+            {
+                Show_Chinese(3);
+            }
+            else if (uart4_[1] == 2)
+            {
+                Show_Chinese(4);
+            }
+        }
+        else if (uart4_[0] == 2)
+        {
+            MV_Animal();
             int animal = uart4_[1];
             LCD_Clear(1, WHITE);
             LCD_Clear(2, WHITE);
-            switch (animal) {
-                case 1:
+            switch (animal)
+            {
+                case 2:
                     LCD_ShowMyChinese(1, 0, 32, 45, dog, 64, 64, BLACK);
                     LCD_ShowMyChinese(2, 1, 32, 45, dog, 64, 64, BLACK);
-                    //TODO
                     break;
-                case 2:
+                case 1:
                     LCD_ShowMyChinese(1, 0, 32, 45, cat, 64, 64, BLACK);
                     LCD_ShowMyChinese(2, 1, 32, 45, cat, 64, 64, BLACK);
-                    //TODO
-                    break;
-                case 3:
-                    LCD_ShowMyChinese(1, 0, 32, 45, hen, 64, 64, BLACK);
-                    LCD_ShowMyChinese(2, 1, 32, 45, hen, 64, 64, BLACK);
-                    //TODO
-                    break;
-                case 4:
-                    LCD_ShowMyChinese(1, 0, 32, 45, horse, 64, 64, BLACK);
-                    LCD_ShowMyChinese(2, 1, 32, 45, horse, 64, 64, BLACK);
                     break;
                 default:
                     LCD_Clear(1, WHITE);
@@ -262,8 +234,52 @@ void UART_global_handler(void) {
                     break;
             }
         }
+        else if (uart4_[0] == 3)
+        {
+            if (uart4_[1] == 1)
+            {
+                Show_Chinese(5);
+            }
+            else
+            {
+                Show_Chinese(6);
+            }
+        }
+        else if (uart4_[0] == 4)
+        {
+            if (uart4_[1] == 1)
+            {
+                LCD_ShowMyChinese(1, 12, 32, 32, chinese_font, 64, 64, BROWN);
+                LCD_ShowMyChinese(2, 12, 32, 32, chinese_font, 64, 64, BROWN);
+            }
+            else
+            {
+                LCD_ShowMyChinese(1, 13, 32, 32, chinese_font, 64, 64, BROWN);
+                LCD_ShowMyChinese(1, 13, 32, 32, chinese_font, 64, 64, BROWN);
+            }
+        }
+        else if (uart4_[0] == 5)
+        {
+            if (uart4_[1] == 1)
+            {
+                LED_ShowMY_Num(1, 4);
+                LED_ShowMY_Num(2, 5);
+            }
+            else if (uart4_[1] == 2)
+            {
+                LED_ShowMY_Num(1, 0);
+                LED_ShowMY_Num(2, 6);
+
+            }
+            else if (uart4_[1] == 3)
+            {
+                LED_ShowMY_Num(1, 1);
+                LED_ShowMY_Num(2, 8);
+            }
+
+        }
         uart4_receive_flag = 0;
-        Led_Control(1,1,1);
+        Led_Control(1, 1, 1);
     }
     if (uart5_receive_flag) {
         uart5_receive_flag = 0;
@@ -284,50 +300,46 @@ void Animal_Recognition(void) {
         case 1:
             LCD_ShowMyChinese(1, 0, 32, 45, dog, 64, 64, BLACK);
             LCD_ShowMyChinese(2, 1, 32, 45, dog, 64, 64, BLACK);
-            //TODO
             break;
         case 2:
             LCD_ShowMyChinese(1, 0, 32, 45, cat, 64, 64, BLACK);
             LCD_ShowMyChinese(2, 1, 32, 45, cat, 64, 64, BLACK);
-            //TODO
-            break;
-        case 3:
-            LCD_ShowMyChinese(1, 0, 32, 45, hen, 64, 64, BLACK);
-            LCD_ShowMyChinese(2, 1, 32, 45, hen, 64, 64, BLACK);
-            //TODO
-            break;
-        case 4:
-            LCD_ShowMyChinese(1, 0, 32, 45, horse, 64, 64, BLACK);
-            LCD_ShowMyChinese(2, 1, 32, 45, horse, 64, 64, BLACK);
             break;
         default:
-            LCD_Clear(1,WHITE);
-            LCD_Clear(2,WHITE);
+            LCD_Clear(1, WHITE);
+            LCD_Clear(2, WHITE);
             break;
     }
     animal_inf = 0;
 }
+
 void MV_Quit(void)
 {
-    u8 cmd[]={(int)('Q'),(int)('Q'),(int)('Q')};
-    HAL_UART_Transmit(&huart3,cmd,3,0xff);
+    u8 cmd[] = {(int) ('Q'), (int) ('Q'), (int) ('Q')};
+    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
     delay_ms(500);
 }
+
 void MV_Ball(void)
 {
-    u8 cmd[]={(int)('B'),(int)('B'),(int)('B')};
-    HAL_UART_Transmit(&huart3,cmd,3,0xff);
-    delay_ms(500);
+    MV_Quit();
+    u8 cmd[] = {(int) ('B'), (int) ('B'), (int) ('B')};
+    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+    delay_ms(100);
 }
+
 void MV_Chinese(void)
 {
-    u8 cmd[]={(int)('C'),(int)('C'),(int)('C')};
-    HAL_UART_Transmit(&huart3,cmd,3,0xff);
-    delay_ms(500);
+    MV_Quit();
+    u8 cmd[] = {(int) ('C'), (int) ('C'), (int) ('C')};
+    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+    delay_ms(100);
 }
+
 void MV_Animal(void)
 {
-    u8 cmd[]={(int)('P'),(int)('P'),(int)('P')};
-    HAL_UART_Transmit(&huart3,cmd,3,0xff);
-    delay_ms(500);
+    MV_Quit();
+    u8 cmd[] = {(int) ('P'), (int) ('P'), (int) ('P')};
+    HAL_UART_Transmit(&huart3, cmd, 3, 0xff);
+    delay_ms(100);
 }
