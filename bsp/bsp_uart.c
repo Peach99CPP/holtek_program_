@@ -38,6 +38,7 @@ void USART2_IRQHandler(void) {
     if (USART2->SR & (1 << 5)) {
         data = USART2->DR;
         if (!uart2_receive_flag) {
+            Led_Control(1,1,0);
             if (temp_flag_2) {
                 if (data == 0X43) {
                     uart2_receive_flag = 1;
